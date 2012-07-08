@@ -1,0 +1,13 @@
+{$IFDEF DN}
+
+  {$DEFINE CL_MASTER}
+
+{$ENDIF}
+
+
+{$IFDEF NLCLIENT}
+
+  {$DEFINE CL_MASTER}
+
+{$ENDIF}
+

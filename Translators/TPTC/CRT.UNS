@@ -1,0 +1,159 @@
+NOSOUND
+nosound
+2 8 0 0 0 0
+SOUND
+sound
+2 8 0 0 1 0
+DELAY
+delay
+2 8 0 0 1 0
+NORMVIDEO
+normvideo
+2 8 0 0 0 0
+HIGHVIDEO
+highvideo
+2 8 0 0 0 0
+LOWVIDEO
+lowvideo
+2 8 0 0 0 0
+TEXTBACKGROUND
+textbackground
+2 8 0 0 1 0
+TEXTCOLOR
+textcolor
+2 8 0 0 1 0
+DELLINE
+delline
+2 8 0 0 0 0
+INSLINE
+insline
+2 8 0 0 0 0
+CLREOL
+clreol
+2 8 0 0 0 0
+CLRSCR
+clrscr
+2 8 0 0 0 0
+WHEREY
+wherey
+2 0 0 0 0 0
+WHEREX
+wherex
+2 0 0 0 0 0
+GOTOXY
+gotoxy
+2 8 0 0 2 0
+WINDOW
+window
+2 8 0 0 4 0
+TEXTMODE
+textmode
+2 8 0 0 1 0
+READKEY
+getch
+2 4 0 0 0 0
+KEYPRESSED
+kbhit
+2 7 0 0 0 0
+ASSIGNCRT
+assigncrt
+2 8 0 0 1 1
+WINDMAX
+windmax
+0 0 0 0 -1 0
+WINDMIN
+windmin
+0 0 0 0 -1 0
+TEXTATTR
+textattr
+0 0 0 255 -1 0
+LASTMODE
+lastmode
+0 0 0 0 -1 0
+CHECKSNOW
+checksnow
+0 7 0 1 -1 0
+DIRECTVIDEO
+directvideo
+0 7 0 1 -1 0
+CHECKEOF
+checkeof
+0 7 0 1 -1 0
+CHECKBREAK
+checkbreak
+0 7 0 1 -1 0
+BLINK
+Blink
+1 0 0 128 -1 0
+WHITE
+WHITE
+1 0 0 15 -1 0
+YELLOW
+YELLOW
+1 0 0 14 -1 0
+LIGHTMAGENTA
+LIGHTMAGENTA
+1 0 0 13 -1 0
+LIGHTRED
+LIGHTRED
+1 0 0 12 -1 0
+LIGHTCYAN
+LIGHTCYAN
+1 0 0 11 -1 0
+LIGHTGREEN
+LIGHTGREEN
+1 0 0 10 -1 0
+LIGHTBLUE
+LIGHTBLUE
+1 0 0 9 -1 0
+DARKGRAY
+DARKGRAY
+1 0 0 8 -1 0
+LIGHTGRAY
+LIGHTGRAY
+1 0 0 7 -1 0
+BROWN
+BROWN
+1 0 0 6 -1 0
+MAGENTA
+MAGENTA
+1 0 0 5 -1 0
+RED
+RED
+1 0 0 4 -1 0
+CYAN
+CYAN
+1 0 0 3 -1 0
+GREEN
+GREEN
+1 0 0 2 -1 0
+BLUE
+BLUE
+1 0 0 1 -1 0
+BLACK
+BLACK
+1 0 0 0 -1 0
+C80
+C80
+1 0 0 256 -1 0
+C40
+C40
+1 0 0 256 -1 0
+FONT8X8
+Font8x8
+1 0 0 256 -1 0
+MONO
+Mono
+1 0 0 7 -1 0
+CO80
+CO80
+1 0 0 3 -1 0
+BW80
+BW80
+1 0 0 2 -1 0
+CO40
+CO40
+1 0 0 1 -1 0
+BW40
+BW40
+1 0 0 0 -1 0

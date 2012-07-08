@@ -1,0 +1,162 @@
+INPUT
+input
+0 6 0 0 -1 0
+OUTPUT
+output
+0 6 0 0 -1 0
+CON
+con
+0 6 0 0 -1 0
+LST
+lst
+0 6 0 0 -1 0
+INTR
+intr
+2 8 0 0 2 2
+MSDOS
+msdos
+2 8 0 0 1 1
+FSCANV
+fscanv
+2 0 0 0 2 1
+CPOS
+cpos
+2 0 0 0 2 0
+SPOS
+spos
+2 0 0 0 2 0
+SBLD
+sbld
+2 8 0 0 2 0
+CTOS
+ctos
+2 3 0 0 1 0
+SCAT
+scat
+2 3 0 0 1 0
+INSET
+inset
+2 7 0 0 2 0
+SETOF
+setof
+2 5 0 0 1 0
+SETREC
+setrec
+0 5 0 0 -1 0
+DEC
+dec
+2 8 0 0 1 0
+INC
+inc
+2 8 0 0 1 0
+LENGTH
+strlen
+2 0 0 0 1 0
+UPCASE
+toupper
+2 4 0 0 1 0
+CLOSE
+fclose
+2 8 0 0 1 0
+FLUSH
+fflush
+2 8 0 0 1 0
+EOF
+feof
+2 7 0 0 1 0
+FILLCHAR
+fillchar
+2 8 0 0 3 1
+MOVE
+move
+2 8 0 0 3 3
+VAL
+val
+2 8 0 0 3 6
+COPY
+copy
+2 3 0 0 3 0
+DELETE
+delete
+2 8 0 0 3 0
+PARAMSTR
+paramstr
+2 3 0 0 1 0
+PARAMCOUNT
+paramcount
+0 0 0 32767 -1 0
+SEEKEOF
+seekeof
+2 7 0 0 1 0
+SEEK
+seek
+2 8 0 0 2 0
+SETTEXTBUF
+settextbuf
+2 8 0 0 3 2
+APPEND
+append
+2 8 0 0 1 1
+REWRITE
+rewrite
+2 8 0 0 1 1
+RESET
+reset
+2 8 0 0 1 1
+ASSIGN
+assign
+2 8 0 0 2 0
+RELEASE
+release
+2 8 0 0 1 1
+MARK
+mark
+2 8 0 0 1 1
+DISPOSE
+dispose
+2 8 0 0 1 1
+MAXAVAIL
+maxavail
+2 1 0 0 0 0
+MEMAVAIL
+memavail
+2 1 0 0 0 0
+LO
+lo
+2 0 0 0 1 0
+HI
+hi
+2 0 0 0 1 0
+ORD
+ord
+2 0 0 0 1 0
+SUCC
+succ
+2 0 0 0 1 0
+PRED
+pred
+2 0 0 0 1 0
+INT
+int
+2 2 0 0 1 0
+ROUND
+ceil
+2 2 0 0 1 0
+TRUNC
+trunc
+2 1 0 0 1 0
+SQRT
+sqrt
+2 2 0 0 1 0
+SQR
+sqr
+2 2 0 0 1 0
+TAN
+tan
+2 2 0 0 1 0
+COS
+cos
+2 2 0 0 1 0
+SIN
+sin
+2 2 0 0 1 0

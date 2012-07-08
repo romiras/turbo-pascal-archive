@@ -1,0 +1,1 @@
+call builddn resource nobpc

@@ -1,0 +1,3053 @@
+
+
+.topic NoContext=0
+No help available for this context
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Press a [ESC] button
+
+.topic _=65535
+
+.topic Dragging=1
+  ÜÜÜÜÜÜ
+   Size
+  ßßßßßß
+ If you press Shift while you use the arrow
+ keys, you can change the size of the window.
+ When it's at the size you want, press Enter.
+
+ If a window has a Resize corner, you can drag
+ that corner to resize the window.
+
+  ÜÜÜÜÜÜ
+   Move
+  ßßßßßß
+ When you choose Window³Size/Move, the active
+ window moves in response to the arrow keys.
+ Once you've moved the window to where you want
+ it, press Enter.
+
+ You can also move a window by dragging its
+ title bar.
+
+ See {Help Index:Index}
+
+.topic Index=2
+
+      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   ÚÄÄ´ Welcome to DOS Navigator! ÛÄÄ
+   ³  ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ  Û
+   ³                                 Û
+   ³ {About Navigator and its authors:CommonInfo} Û
+   ³ {Navigator Windows:NavigatorsWindows}               Û
+   ³ ÍÍÍÍÍÍÍÍ Interface ÍÍÍÍÍÍÍÍÍÍÍÍ Û
+   ³ {Hotkey Overview:HotOverView}                 Û
+   ³ {Interface overview:Interface}              Û
+   ³ {Main menu:MainMenu}                       Û
+   ³ {Customizing your system:OptionsMenu}         Û
+   ³ ÍÍÍÍÍÍÍÍ Utilities ÍÍÍÍÍÍÍÍÍÍÍÍ Û
+   ³ {Working with files:Files}              Û
+   ³ {Working with disks:DiskOperations}              Û
+   ³ {Working with archives:Archives}           Û
+   ³ {Working with file descriptions:FilesBBS}  Û
+   ³ {User Menu:UserMenu}                       Û
+   ³ {Point-and-shoot operations:ExtFile}      Û
+   ³ {OS/2 support:OS2Support}                    Û
+   ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ
+
+.topic HelpOnHelp=3
+.title Using Help
+
+ ş What you're reading right now is a "Help screen".
+ ş Most Help screens have some highlighted
+   items ("Help keywords") on them that lead
+   to another Help screen.
+
+ ÚÄÄÄÄÄ¿ You can use the arrow keys to move
+ ³Arrow³ the cursor from one Help keyword to
+ ÀÄÄÄÄÄÙ another, then press Enter to choose
+        that item.
+
+ ÚÄ[ğ)Ä¿ With the mouse, you can click Help
+ ³Mouse³ keyword to choose that item.
+ ÀÄÄÄÄÄÙ
+
+
+.topic CommonInfo
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ³ About Navigator and Û
+  ³    its authors      Û
+  ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ
+
+
+
+ DOS Navigator is developed by two groups of programmers:
+ RIT Research Labs and AxoNSoft of RIT Ltd.
+
+           Stefan Tanurkov (RIT, ex-AxoNSoft)
+           Slava Filimonov (RIT)
+           Dmitry Dotsenko (AxoNSoft)
+           Ilya Bagdasarov (RIT)
+           Max Masyutin    (RIT, FRIENDS Software)
+
+ Fidonet   2:469/77 Stefan Tanurkov
+           2:469/12 Sergey Demchenko
+
+
+ Address:  RITLABS S.R.L.
+           str. Stefan cel Mare 180, office 101
+           Chisinau 2004
+           Moldova
+
+
+The authors are grateful to all who supported the creation of Dos Navigator,
+assisted by councils and ideas, as well as all who did not obstruct.
+
+.topic FeaturesOverview
+.title Overview
+ ù {Multi-windowed interface:WindowsFeature}
+ ù {Text Editor:EditorFeature}
+ ù {Archives support:Archives}
+ ù Power and useful {File Find:FileFind}
+ ù {Clipboard:Clipboard}
+ ù {Phone Book:Phone}
+ ù {SpreadSheet:SpreadSheet}
+ ù {File Panels:FilePanel} of {File Manager:FileManager}
+ ù {Direct Disk Access:DirectDiskAccess} to Standard DOS devices
+ ù {Calculator:Calculator}
+ ù {Make List File:MakeListFile}
+ ù {Screen Savers:Savers}
+ ù {User Menus:UserMenu}
+ ù {Point and shot:ExtFile} on [Enter], [Shift-Enter], [Alt-Enter]
+ ù {CD Player:CDPlayer}
+ ù Games: {Tetris:Tetris} and {Pentix:Pentix}
+
+.topic WindowsFeature
+.title Windows Feature
+
+.topic HotOverView
+.title Hotkey Overview
+
+        ---        Shift       Ctrl          Alt
+
+  F1    {Help       :Index}{Archive     :ArchiveFiles}{Panl1 on/off  :_}{Select Panl1  :SelectDriveExtended}
+  F2    {User Menu  :UserMenu}{Extract     :Extract}{Panl2 on/off  :_}{Select Panl2  :SelectDriveExtended}
+  F3    {View       :View}{Phonebook   :Phone}{New manager   :ManagerCommands}{Altern View   :View}
+  F4    {Edit       :Editor}{Open        :_}{Close window  :WindowsFeature}{Altern Edit   :Editor}
+  F5    {Copy       :CopyFiles}{Split       :SplitFiles}{Move window   :WindowsFeature}{User screen   :_}
+  F6    {Move       :RenameMove}{Reanimator  :Reanimator}{Calculator    :Calculator}{Enter command :_}
+  F7    {Mkdir      :MkDir}{Format      :Format}{UU Encode     :UUEncode}{Find file     :FileFind}
+  F8    {Delete     :DeleteFiles}{Single Del  :_}{UU Decode     :UUDecode}{Cmd history   :CmdHistory}
+  F9    {Next Wnd   :WindowsFeature}{Prev Wnd    :WindowsFeature}{Print         :PrintManager}{Game          :Game}
+  F10   {Main Menu  :MainMenu}{Ega Lines   :_}{VideoMode 1   :_}{VideoMode 2   :_}
+  F11              {Sprdsheet   :SpreadSheet}{CD player     :CDPlayer}{Link          :NavyLink}
+
+
+         Alt                        Ctrl
+
+  A      {Manual Dial     :ManualDial}
+  B      {Sort Method     :SortBy}           {ASCII Table          :AsciiChart}
+  C      {Select Drive    :SelectDriveExtended}           {Compare Directories  :CompareDirs}
+  D      {Disk Menu       :DiskMenu}
+  E      {Attributes      :FileAttr}
+  F      {File Menu       :FileMenu}
+  G      {Dir Size        :_}
+  H                                 {Dir Branch           :_}
+  I      {Info Panel      :DiskInfo}
+  J      {Terminal        :Terminal}
+  K      {Columns Setup   :ColumnsSetup}           {Toggle Descriptions  :_}
+  L      {Make List File  :MakeListFile}           {Info Panel           :DiskInfo}
+  M      {Manager Menu    :ManagerCommands}
+  N      {Archiver Setup  :ArcSetup}
+  O      {Options Menu    :OptionsMenu}           {Output screen        :_}
+  P      {Panel Menu      :PanelMenu}           {Inactive Panl On/Off :_}
+  Q      {SmartPad        :Editor}           {Quick view           :_}
+  R      {Re-read Panel   :_}           {Re-read              :_}
+  S      {Panel Options   :PanelSetup}
+  T      {ChangeDir Tree  :TreeDialog}           {Tree Panel           :DirTree}
+  U      {Utilities Menu  :UtilMenu}           {Change Panels        :_}
+  V      {Read List File  :_}           {Com.Line Overstr/Ins :_}
+  W      {Window Menu     :Windows}
+  X      {Exit            :_}
+  Y      {Memory Info     :MemoryInfo}           {Toggle Full Mode     :_}
+  Z      {Zoom Window     :WindowsFeature}
+
+
+.topic EditorFeature
+.title Text Editor
+
+.topic MainMenu
+.title Main menu
+
+  {ğ:MenuBox}         - From this menu is possible to call some
+  additional functions and to view information about Navigator version.
+  {File:FileMenu}      - Menu with file operations.
+  {Disk:DiskMenu}      - Here you find some utilities to work with
+  disks and to recover deleted files.
+  {Utilities:UtilMenu} - Menu to call main Navigator windows.
+  {Panel:PanelMenu}     - Menu with file panel options.
+  {Manager:ManagerCommands}   - Special commands for file manager.
+  {Options:OptionsMenu}   - Configuration menu.
+  {Window:Windows}    - Working with windows.
+
+.topic MenuBox
+.title Menu ğ
+
+{About...:_} - Information about the current version of DN: the name of
+the program, the version-number, date of creation of current version,
+information about current user (who has registered this version).
+
+{Refresh display:_} - Redraw all windows in Navigator, if screen
+was messed up.
+
+{Screen rest:_} - Activate the current Screen Saver immediately
+
+{Screen Grabber:_} - Activate Screen Grabber - a tool helping to
+copy a portion of the screen to the Clipboard (mostly it is called
+via hotkey)
+
+{User screen:_} - Show user screen ( i.e. working screen of DOS ).
+
+{Output window:_} - Same as {User screen:_} but in separate window.
+
+{SmartPad:_} - Bring up SmartPad(TM) - a small editor available in
+most palces in DN which helps to make some notes.
+
+{Trashcan on/off:_} - Make Trashcan visible or hide it away from the Desktop.
+
+{EGA/VGA lines:_} - Switch video mode to 43/50 lines on screen
+(This function is available only on EGA/VGA and compatible adapters).
+
+{Custom video mode 1/2:_} - Switch to {custom video mode:CustomVideo}, set in
+{Configuration:Configuration}
+
+{Game:_} - Play rest game (Tetris or Pentix).
+
+
+.topic ExtendedVideo
+.title Extended Video Modes
+
+   SVGA extended video modes support.
+
+.topic FileMenu
+.title Menu File
+
+You can access the available operations on files and directories from
+this menu.
+
+  {View:View} - View a file. Submenu indicates its type:
+    {As is         :_} - According to extension
+    {As Text       :_} - View as text
+    {As Hex        :_} - View in hexadecimal format
+    {As DataBase   :_} - View as database
+    {As Spreadsheet:_} - View as a spreadsheet
+    {Alternate view:_} - View the file using the external viewing window.
+
+  {Edit:Editor} - Edit file submenu.
+    {Edit           :_} - Edit file using external editor
+    {Alternate edit :_} - Edit file using internal editor
+    {Edit new file  :_} - Create & edit new file
+
+  {Find           :FileFind} - Search for a file.
+  {Copy           :CopyFiles} - Copy current or selected file(s).
+  {Rename/Move    :RenameMove} - Rename/Move the file/directory to another disk/directory.
+  {Copy to archive:ArchiveFiles} - Copy files to external archive
+  {Extract archive:Extract} - Extract files from external archive
+  {Split/Combine  :SplitFiles} - Split/Combine multiple file volumes.
+  {Print          :PrintManager} - Print file in the Background.
+  {Make directory :MkDir} - Create a new directory, group of directories.
+  {Delete         :DeleteFiles} - Delete file or directory.
+  {File Attributes:FileAttr} - Set file or directory attributes.
+  {UU Encode file :UUEncode} - Encode binary file before sending via E-Mail
+  {UU Decode file :UUDecode} - Decode file, received by E-Mail
+
+  {Exit:_} - Exit from Navigator.
+
+.topic RenameMove
+.title Rename/Move
+
+.topic DiskMenu
+.title Menu Disk
+
+This menu offers you various functions for working with disks.
+
+  {Format disk   :Format} - Format a diskette in the background
+                      (Available only if you are working in
+                      Dos Navigator).
+  {Volume label  :VolLabel} - Set volume label of disk.
+  {Reanimator    :Reanimator} - Restore (undelete) erased files.
+  {Disk editor   :DiskEditor} - Editing data on disk directly.
+                      WARNING!! Improper using the Disk Editor
+                      can seriously damage your data!
+  {Directory Tree:DirTree} - Open a new File Manager using Directory
+                      Tree dialog box.
+
+.topic UtilMenu
+.title Menu Utilities
+
+  {Memory Information:MemoryInfo} - Information about programs,
+                           system drivers and buffers in memory.
+                           Also shows hooked interrupt vectors.
+  {System Information:_} - Information about the machine, on which
+                           Navigator is running
+
+  {Calculator        :Calculator} - Use calculator.
+  {ASCII Table       :AsciiChart} - Show ASCII table, emulate key-press if
+                           a character is chosen.
+  {Phone Book        :Phone} - Telephone book
+  {Open spreadsheet  :SpreadSheet} - Create/open spreadsheet
+  {CD Player         :CDPlayer} - Opens CD Player.
+
+  {Terminal          :Terminal} - Open terminal window.
+  {Navigator Link    :NavyLink} - Run serial port link
+  {Manual Dial       :ManualDial} - Dial a phonenumber.
+  {Disconnect        :_} - Modem goes on hook and cancels dialing
+                           of telephone number.
+
+  {User Menu         :UserMenu} - Show user menu, if there is no local
+                           menu present in the current directory,
+                           show global menu.
+  {DOS Environment   :EnvEditor} - Edit/View DOS environment variables
+  {Commands History  :CmdHistory} - Show History window: list of previously
+                           used DOS commands.
+  {File Edit History :_}
+  {File View History :_}
+
+.topic PanelMenu
+.title Menu Panel
+
+{Make list file:_} - Create a list of the marked filenames.
+
+{Compare directories:CompareDirs} - Compare two directories.
+
+{Count directory length:_} - Calculate size of directory
+
+{Setup columns:_} - Select the details you want to be shown in the
+current file panel (size, date, time, description).
+
+{Setup panel:PanelSetup} - Configure the current panel.
+
+{Sort by:_} - Choose file Sort order.
+
+{Select group:_} - Mark a group of files.
+
+{Unselect group:_} - Remove marks for a group of files.
+
+{Invert selection:_} - Invert the current selection.
+
+{Advanced Filter:AdvancedFilter} - Select the filter of the current panel
+
+{Change drive:_} - Change the drive for the current panel.
+
+{Change directory:_} - Change the current directory using
+Directory Tree dialog box.
+
+{Re-read:_} - Re-read the current directory.
+
+{Quick dirs:QuickDirs} - Call the menu of quick access directories
+
+{History of directories:_} - Select one of the directories visited
+previously
+
+.topic QuickRun
+.title Quick Run
+
+This is the way to launch a batch file by pressing Ctrl+Alt+Fn key combination
+(n=1,2,..10). Batch files are stored in text file DN.XRN using following format:
+
+ ...
+ >n
+ command_n1
+ command_n2
+ ...
+ command_nx
+ ...
+
+Here the line containing `>n' is the header of batch according to Ctrl+Alt+Fn
+combination, `command_n1', `command_n2' etc. are DOS commands which will be
+executed when the batch is called.
+
+
+.topic OptionsMenu
+.title Menu Options
+
+
+  {Configuration:Configuration} - Configuration of DOS Navigator options.
+  {File Manager :SubMenuFileMgr} - File Manager configuration.
+  {Archives     :Archives} - Archives configuration.
+
+  {Quick run file edit   :QuickRun} - Configure Quick-running programs.
+  {Extension file edit   :ExtFile} - Configure extensions.
+  {Highlight groups      :Highlight} - Define groups of files to highlight.
+  {Global menu definition:GUserMenu} - Edit the global user menu.
+  {Local menu definition :LUserMenu} - Edit a local user menu.
+  {Viewers               :ViewFile} - Configure external viewers.
+  {Editors               :ViewFile} - Configure external editors.
+
+  {Save desktop:_} - Write DN configuration to file.
+  {Load desktop:_} - Read DN configuration from file.
+
+  {Colors      :_} - Edit the color palette of Navigator.
+  {Save palette:_} - Write current DN color palette to file.
+  {Load palette:_} - Read DN color palette from file.
+
+.topic NavigatorsWindows
+               ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   ÚÄÄÄÄÄÄÄÄÄÄÄ´Navigator windowsÛÄÄÄÄÄÄÄÄÄÄ
+   ³           ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ          Û
+   ³                                        Û
+   ³ {Working with a lot of windows:Windows}          Û
+   ³  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  Û
+   ³ {File Manager:FileManager}                           Û
+   ³ {Viewing text and binary files:View}          Û
+   ³ {Text editor:Editor}                            Û
+   ³ {Disk editor:DiskEditor}                            Û
+   ³ {Directory tree:DirTree}                         Û
+   ³ {SpreadSheet:SpreadSheet}                            Û
+   ³ {Calculator:Calculator}                             Û
+   ³ {Terminal:Terminal}                               Û
+   ³ {Files reanimator:Reanimator}                       Û
+   ³ {Telephone book:Phone}                         Û
+   ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ
+
+; ³ View a database file                       Û
+
+.topic FileManager
+.title File Manager
+
+The File Manager is the main Navigator window for working with files.
+With its help the majority of the file-operations can be performed in
+Navigator. The File Manager window is created by choosing Manager|New
+from the menubar.
+After this, Navigator asks you the drive letter, with which you want to
+work, and after you have chosen one, you will see the window with two
+file panels.
+You can set file panel options by selecting them from the Manager
+menu.
+
+The various items of the File Manager window are:
+  - {File panel:FilePanel} - Main panel of the File Manager
+  - {Directory tree:DirTree}
+  - {Information panel:_}
+  - {Quick view panel:_}
+  - {Temp and Find disk :TempList}
+
+It looks like this:
+
+ ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»ÉÍÍÍÍÍÍÍÍ E:\ ÍÍÍÍÍ[]Í»
+ º ²E:\²                ºARC         ³ EXE     º
+ º  ÃÄ[+] BBS           şºBBS         ³ FOXPRO2 º
+ º  ÃÄ[+] TP            ±ºBP          ³ HELP    º
+ º  ÃÄ[+] BP            ±ºBPRTL       ³ LEX     º
+ º  ÃÄÄÄLEX             ±ºCOM         ³ NC      º
+ º  ÃÄ[+] ARC           ºÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄº
+ º°E:\°°°°°°°°°°°°°°°°°°ºº dnhlp.txt      14,83 º
+ º°1535°files°with°77,43ºº¿ No files selected  º
+ ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼ÈÍ³ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÄÙ
+             ³             ³         ³
+         The right panel   ³ The left panel
+                           ³
+    Panels divider, that can be "dragged" to the left and right
+    by using a mouse. This way, you can change the size of the
+    panels. You can also use the keys Alt -  and Alt - .
+
+See also { "File Manager Commands":ManagerCommands}
+
+.topic ManagerCommands
+.title File Manager Commands
+
+These commands are accessible from the Manager menu. They can be used
+to configure the Manager window for the users needs.
+
+{New:_} - Opens a new Manager window
+
+{Directory tree:_} - If there is no active {directory tree:DirTree},
+it pops up in the inactive panel, and in case of its presence - the
+tree is removed from the window.
+
+{Info:_} - The same applies to the Info screen. It shows some info
+about the disk.
+
+{Quick view:_} - The same for the Quick View panel. It lets you view a
+highlighted file.
+
+{Swap panels:_} - Swap location of the panels.
+
+{Show/hide left panel:_} - Shows/Hides left Manager panel.
+
+{Show/hide right panel:_} - Shows/Hides right Manager panel.
+
+{Change drive left:_} - Change disk of left panel without activating
+it. If the panel was not visible, it becomes visible after choosing
+a disk.
+
+{Change drive right:_} - The same for the right panel.
+
+.topic Windows
+.title Work with windows
+
+Navigator is a multi-windowed environment, therefore many unexperienced
+users may have some difficulties with working with Navigator.
+The other users can simply ignore multi-windowed interface, thus
+losing the set of convinient opportunities and time.
+Besides, the fact that this multi-windowed system is easy and pleasant,
+all windows have the same 'appearance' ({"Types of windows":WindowsType},
+so you can learn how to work with Navigator quickly. You can switch
+between windows using the mouse or commands {Window|Next:_} and {Window|Previous:_}
+(all window-manipulating commands have hotkeys).
+The window can be closed by the command Window|Close. With help of
+{Window|Zoom:_} command it is possible to maximize the window to the size of whole
+screen, as well as to return it to previous size.
+
+The list of currently opened windows, is available with {Window|List:_}.
+
+The size and location of a window can be changed with help of a mouse, or
+through the command {Window|Size/Move:_}. When that command is chosen,
+moving the window is possible with the arrows     , while changing
+of its size can be done with the same arrows, together with <Shift>.
+
+The user can re-arrange the windows on the screen choosing "cascade"
+({Window|Cascade:_}) or "tile" ({Window|Tile:_}).
+
+.topic WindowsType
+.title Types of windows
+
+     ÚÄÄ Click here with mouse to close the window
+     ³
+     ³           Click here to zoom the window to fit
+     ³           the whole screen   ³
+     ³                              ³
+     ³      ÚÄÄÄÄÄÄ Name of window  ³
+     ³      ³                       ³
+     ³  ÚÄÄÄÄÄ If you click and drag on top of the
+     ³  ³   ³  framework, you can change the position
+     ³  ³   ³  of the window        ³
+                                 
+  ÉÍ[ş]ÍÍ Edit - A:\DN\DNHLP.TXT 1Í[]Í»
+  º                                    
+  º                                    ±
+  º                                    ş
+  º                  Scroller  ÄÄÄÄÄÄÄ±
+  º                           ³        ±
+  º                           ³        ±
+  º                           ³        ±
+  º                                   
+  ÈÍÍÍ35:12 [172]ÍÍÍÍ±ş±±±±±±±±±±±±ÄÙ
+                                      
+    Dragging this corner will change  ³
+    the size of the windowÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+.topic Files
+.title Working with files
+
+Navigator offers the following possible operations for working with files
+and directories:
+
+  - {copying/moving:CopyFiles}
+  - {Merge files:AppendFiles}
+  - {Split large files to multiple volumes:SplitFiles}
+  - {Erasing files or directories:DeleteFiles}
+  - View the contents a file:
+      - {Archives:Archives}
+      - {Databases:View}
+      - {Binary:View}
+      - {Text:View}
+  - {Edit a text file:Editor}
+  - Create a file or directory
+  - {Search for files:FileFind} using wildcards and contents
+  - Copy files to {the temporary disk:TempList}
+  - Copy files to an archive panel
+
+.topic DeleteFiles
+.title Erasing of files
+
+Navigator allows you to delete the files and directories, which are not
+empty. This is possible with the command File|Delete. If you have
+enabled {direct disk access:DirectDiskAccess} in the configuration, erasing, is
+considerably faster! However, it is not supported on network drives.
+
+When trying to erase a non-empty directory Navigator will prompt you
+about that:
+
+ ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ Confirm ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+ º                                                  º
+ º                 Directory C:\QQP                 º
+ º                   Is not empty.                  º
+ º              Do you wish delete it?              º
+ º                                                  º
+ º °°°No°°°Ü     °°Yes°°°Ü   °°All°°°Ü   °Cancel°Ü  º
+ º  ßßßßßßßß      ßßßßßßßß    ßßßßßßßß    ßßßßßßßß  º
+ ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+If you simply "automatically" press ENTER, nothing will take place.
+
+In case you are erasing several not empty directories and You are
+sure, that want to erase them, you can press "All", and the
+confirmation will not be repeated.
+
+Note that you can switch any confirmations of in Options|Configuration|Confirmations
+dialog box. We do not reccomend it, unless are pretty sure that you will not
+press erase hotkey accidently...
+
+
+.topic SplitFiles
+.title Split file to multiple volumes
+
+Dos Navigator can split very large files to several parts a-la DOS Backup.
+The main difference between backup and DN-split is that DN does not erase
+the contents of the disk, but it only uses free disk space. To split or
+Combine a file choose the command File|Split/Combine.
+
+While splitting a file, DN is creating files with extensions ".d??",
+where ?? represents the number of the volume. When combining these
+files, Navigator distinguishes created volumes using extensions
+and internal format.
+
+ WARNING: Files, splitted on multiple volumes with Navigator can
+          only be restored by Navigator! If you don't want to
+          use DN for merging volumes you should use `Binary
+          splitting only' option in Spli dialog box.
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ³ Splitting process Û
+  ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ
+
+  Splitting and Combining files with Navigator looks like this:
+
+  ÉÍÍÍÍÍÍÍÍÍÍÍÍ Split File ÍÍÍÍÍÍÍÍÍÍÍ»
+  º                                   º
+  º            C:\DN.PRG              º
+  º               To                  º
+  º          A:\DN\DN.d01             º
+  º                                   º
+  º Read: ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ º
+  º Write:ÛÛÛÛÛÛ±±±±±±±±±±±±±±±±±±±±± º
+  º                                   º
+  º           °°°Stop°°°Ü             º
+  º            ßßßßßßßßß             º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ³ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+                   ³
+   If this button is depressed, the process
+   is interrupted.
+
+
+When splitting files, and the disk is full,
+Navigator shows the message:
+
+ ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍ Confirm ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+ º                                        º
+ º          Insert disk number 02         º
+ º                                        º
+ º          °°°OK°°°Ü   °Cancel°Ü         º
+ º           ßßßßßßßß    ßßßßßßßß         º
+ ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+If you have inserted a disk, on which a part of file to be splitted
+is already present, you see the message:
+
+ ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍÍ Query ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+ º                                        º
+ º          File already exists:          º
+ º                 DN.D02                 º
+ º             Overwrite it?              º
+ º                                        º
+ º     °°Yes°°°Ü °°Next°°Ü   °Cancel°Ü    º
+ º      ßßßßßßßß  ßßßßßßßß    ßßßßßßßß    º
+ ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+If you choose the button "Yes", this part will be overwritten, and the
+current part of the file will be written to this disk.
+
+
+ See also {"Split dialog box":SplitDialog}
+
+.topic CombineDialog
+.title Combine multiple splitted volumes to file
+
+   You may select a destination directory
+
+ See also {Split file:SplitFiles}.
+
+.topic SplitDialog
+.title Split-file dialog box
+
+     ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍÍÍÍ Split file ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+     º Split file dn.prg to                          º
+ ÚÄÄº ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ º
+ ³   º                                               º
+ ³ ÚÄÄÄ[ ] Binary splitting only°°°°°°°°°°°°°°°°°°° º
+ ³ÚÄÄÄÄ[ ] Verify disk writes°°°°°°°°°°°°°°°°°°°°°° º
+ ³³³ º                                               º
+ ³³³ º        °°°OK°°°Ü °Cancel°Ü °°Tree°°Ü °°Help°°Üº
+ ³³³ º         ßßßßßßßß  ßßßßßßßß  ßßßßßßß  ßßßßßßßßº
+ ³³³ ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ³ÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+ ³³³                                  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ÀÄÄ here the name of the file or directory appears, ³
+  ³³ where the result of the work should go.         ³
+  ³³                                                 ³
+  ³³ If you press this button, you can choose the   ÄÙ
+  ³³ destination from a Tree.
+  ³³
+  ³À Tick this box if you don't want to store additional
+  ³  information in the created volumes, so you will be
+  ³  able to combine them without using of Navigator
+  ³
+  ÀÄ If you have a doubt in the quality of diskettes
+     you're splitting the file on, tick this box to
+     be sure that the information is stored OK.
+
+.topic CopyFiles
+.title Copying/moving of files
+
+Navigator allows to copy both files and directories with its contents.
+This can be done with the command File|Copy, when a file panel of
+File Manager is active.
+
+Moving of files and directories is done by the command File|{Rename/Move:RenameMove}.
+It is executed within the limits of one disk, as from disk on disk.
+
+When copying, Navigator can use available EMS/XMS memory if
+`Advanced copy' option is switched on in System Setup dialog box.
+
+ See also {"Copying dialog box":CopyDialog}
+
+.topic CopyDialog
+.title Copy dialog box
+
+   ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ Copy ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+   º Copy file dnhlp.txt to                                 º
+ Úº A:\ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ Şİº
+ ³ º                                                        º
+ ³ º ( ) Overwrite all existing files ¿°°°°°°°°°°°°°°°°°°°  º
+ ³ º ( ) Append to all existing files ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³ º () Ask for overwrite °°°°°°°°°°°Ù°°°°°°°°°°°°°°°°°°°  º  ³
+ ³ º ( ) Skip all existing files°°°°°°°°°°°°°°°°°°°°°°°°°°  º  ³
+ ³ º ( ) Refresh old files°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°  º  ³
+ ³ º                             ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³
+ ³ º [ ] Check free disk space ÄÙ[ ] Copy descriptions°°°  º ³³
+ ³ º [ ] Verify disk writes°°°°°°°[ ] Remove source files°  º ³³
+ ³ º                                                        º ³³
+ ³ º                °°°OK°°°Ü °Cancel°Ü °°Tree°°Ü °°Help°°Ü º ³³
+ ³ º                 ßßßßßßßß  ßßßßßßßß  ßßßßßßßß  ßßßßßßßß º ³³
+ ³ ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼ ³³
+ ³                                                            ³³
+ À Line with filemask, to which the given file(s)             ³³
+   will be copied. Wildcards are allowed.                     ³³
+                                                              ³³
+   The possible options for copying:                   ÄÄ¿    ³³
+                                                         ³    ³³
+    "Overwrite all existing files" - overwrite           ³    ³³
+    already existing files without requests,             ³    ³³
+    speeds up the copying process, as does not           ³    ³³
+    check the existence of a created file.               ³    ³³
+                                                         ³    ³³
+    "Append to all existing files" - adding the          ³    ³³
+    contents of a copied file to an already              ÃÄÄÄÄ³Ù
+    existing file without request. If a group            ³    ³
+    of files is copied, it is necessary to take          ³    ³
+                                                         ³    ³
+    care about that, so the files are in the             ³    ³
+    right order.                                         ³    ³
+                                                         ³    ³
+    "Ask for overwrite" - Navigator will ask you         ³    ³
+    if you want to overwrite an already existing         ³    ³
+    file with the file to be copied.                   ÄÄÙ    ³
+    (on by default)                                           ³
+                                                              ³
+    If you enable this option, Navigator will          ÄÄÄÄÄÄÄÙ
+    check the available free space, before
+    writing the file to disk.
+
+
+.topic AppendFiles
+.title Append files
+
+Merging files is copying two or more files to one file.
+This can be done by choosing the copy command, and then enabling the
+option "Append to all existing files" in the dialog box or, when
+Navigator asks you if it should overwrite an existing file, you choose
+the button "Append". (That question will be repeated every time an
+existing file will be overwritten, if a group of files is copied.)
+
+  See also {"Copying of files":CopyFiles}
+
+.topic Editor=1102
+.title Text editor
+
+Navigator's internal text-editor is intended for already existing
+files, and for creating new text-files. The commands used by the
+internal editor, are a little different from Word Star's commands.
+The main difference consists in working with blocks of text- it is
+like the editors from Microsoft Corporation(R), where it is executed
+through the Clipboard.
+
+In Navigator, more than one editor window can be opened at a time.
+You can use as many windows as you want, as long as they all fit
+in your computer's memory.
+To exchange data between them, the same Clipboard used.
+
+ See also {"Editor commands":EditorCommands}
+          {"Editor window":EditorWindow}
+
+.topic EditorWindow = 10000
+.title Editor window
+
+The editor window looks like this:
+
+   ÉÍ[ş]ÍÍÍÍÍÍ Edit - E:\TP\DNHLP\A ÍÍÍÍ1Í[]Í»
+   ºÛÛFileÛÛEditÛÛSearchÛÛParagraphÛÛOptionsÛÛ
+   º                                     ±
+   º   ³     ³      ³            ³      ³     ş
+   º   ³     ³      ³ operation  ³      ³     ±
+   º   ³     ³      ³ with blocks³installation±
+   º   ³     ³      ³ and        ³of editor   ±
+   º   ³     ³      ³ paragraphs Ùoptions     ±
+   º   ³     ³      ³                         ±
+   º   ³     ³      À search operations       ±
+   º   ³     À Text block operations          ±
+   º   À File operations                      ±
+   º                                          
+   ÈÍÍÍÍ12:2 [174]Í()Íş±±±±±±±±±±±±±±±±±±±ÄÙ
+                 
+        ³  ³   ³    À Block Type: Horizontal
+        ³  ³   ³      or Vertical
+        ³  ³   À Decimal ASCII code of the,
+        ³  ³     symbol which the cursor is on
+        ³  À Number of current column
+        À Number of current line
+
+  See also:{"Types of windows":WindowsType}
+
+.topic EditorCommands
+         ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ÚÄÄÄÄÄÄÄ³ Editor commands ÛÄÄÄÄÄÄ
+ ³       ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ      Û
+ ³                                Û
+ ³ {Work with blocks:BlockCommands}               Û
+ ³ {Moving on text:MovementCommands}                 Û
+ ³ {Inserting and deleting:InsDelCommands}         Û
+ ³ {Other additional commands:MiscCommands}      Û
+ ³                                Û
+ ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ
+
+.topic BlockCommands
+.title Working with blocks
+
+To mark a block of text, you can use the standard cursor keys, together
+with the <Shift> key. With the mouse you can select text by moving the
+mouse cursor while pressing the left mouse-button.
+
+        Action                      Key
+ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍ
+  Mark the beginning of a block   ³ Ctrl+K B
+  Mark the end of a block         ³ Ctrl+K K
+  Copy the block to Clipboard     ³ Ctrl+Ins
+  Move the block to Clipboard     ³ Shift+Del
+  Insert the copied block         ³ Shift+Ins
+  Delete the block                ³ Ctrl+Del
+  Read the block from file        ³ Ctrl+K R
+  Write the block to a file       ³ Ctrl+K W
+  Move the block left to right    ³ Ctrl+K I
+  Move the block to the left      ³ Ctrl+K U
+  Switch block-type (Vert./Hor.)  ³ Ctrl+B V
+  Align the block on end          ³ Ctrl+B J
+  Align the block on right end    ³ Ctrl+B R
+  Align the block on left end     ³ Ctrl+B L
+  Center the block                ³ Ctrl+B C
+
+.topic MovementCommands
+.title Moving on text
+
+        What move?                  Key
+  ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+   One character to the left³ Ctrl + S or 
+   One character to right   ³ Ctrl + D or 
+   One word to the left     ³ Ctrl + A or Ctrl + 
+   One word to the right    ³ Ctrl + F or Ctrl + 
+   One line upwards         ³ Ctrl + E or 
+   One line downwards       ³ Ctrl + X or 
+   Scroll upwards           ³ Ctrl + W
+   Scroll downwards         ³ Ctrl + Z
+   One page upwards         ³ Ctrl + R or PgUp
+   One page downwards       ³ Ctrl + C or PgDn
+
+.topic InsDelCommands
+.title Insertion and deleting
+
+  ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+   Toggle Insert/Overwrite  ³
+    Mode                    ³ Ctrl+V or Ins
+   Delete the current line  ³ Ctrl+Y
+   Delete from the cursor-  ³
+    position to end of line ³ Ctrl+Q Y
+   Delete character at the  ³
+    left                    ³ Ctrl+H or Backspace
+   Delete character at the  ³
+    right                   ³ Ctrl+G or Del
+   Delete word after cursor ³ Ctrl+T
+   Delete word before cursor³ Ctrl+Backspace
+
+.topic MiscCommands
+.title Editor commands
+
+There is a small, but in the authors opinion pleasant, feature to work with
+in the internal editor: if you press the right mouse button, a
+line with numbers appears, that moves together with the mouse cursor within
+the borders of the window.
+
+Another feature of the editor is multilevel undo.
+
+  ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+   Call menu                      ³ F10
+   Save text                      ³ Ctrl+K S or F2
+   Read a file from disk          ³ F3
+   Close the editor Window        ³ Alt+F3
+                                  ³
+   Insert a TAB                   ³ Ctrl+I or Tab
+   Undo                           ³ Alt+Backspace
+                                  ³
+   Toggle Line Draw mode          ³ Ctrl+Q M or F4
+                                  ³
+   Place a position marker in     ³
+    the text                      ³ Ctrl+K n (n=0..9)
+   Return to a marker             ³ Ctrl+Q n (n=0..9)
+   Insert any symbol in the text  ³
+      {ASCII Table:AsciiChart}                 ³ Ctrl+P
+                                  ³
+   Insert Current Date            ³ Ctrl+Q D
+   Insert Current Time            ³ Ctrl+Q T
+                                  ³
+   Uppercase Current Word         ³ Ctrl+[
+   Lowercase Current Word         ³ Ctrl+]
+   Capitalize Current Word        ³ Ctrl+\
+                                  ³
+   Search for a string            ³ Ctrl+Q F
+   Search and replace             ³ Ctrl+Q A
+   Repeat the last search         ³ Ctrl+L
+   Cancel operation               ³ Esc
+
+.topic DiskOperations
+.title Working with disks
+
+Navigator performs following operations with disks:
+
+  - {Format a diskette:Format}
+  - {Install a volume label:VolLabel}
+  - {Restore an erased file:Reanimator}
+  - {Editing disk by direct access:DiskEditor}
+
+All these operations (except for formatting) are available ONLY
+if the option "{Direct disk access:DirectDiskAccess}" in the
+configuration dialog box is enabled!
+
+.topic FilePanel=1100
+.title File Panel
+
+File panel is the main panel of the File Manager. It gives the user the
+opportunity to work with files and directories and to perform operations
+on groups of files and/or directories. The user can change the parameters
+for each panel using the command Panel|Setup Panel, with ALT-S.
+
+To tag (or untag) files for group operations use the Insert key or,
+for tagging files using a mask, the command Panel|Select Group
+(Panel|Unselect Group to untag) is used. If you want, that the
+tagged files become not untagged and the untagged become tagged, use the
+command Panel|Invert Selection.
+
+Note: marking of directories must be done manually.
+
+Panel|Make list file command is used whenever you want to create a list
+of currently marked files.
+
+
+ See also {"Types of file panel":PanelWide}
+          {"Installation of file panel parameters":PanelSetup}
+          {"File panel Hot keys":PanelHotKeys}
+
+.topic LinkPanel
+.title Link Panel
+
+
+.topic PanelWide=11000
+.title Type of file panel
+
+The file panel of the file manager appears on your screen like this:
+
+   ÉÍ[ş]ÍÍÍÍÍÍÍÍ E:\TP\DNHLP ÍÍÍÍÍÍÍÍÍ[]Í»
+   º..          ³            ³            
+   º a          ³            ³            ş
+   º dn      hlp³            ³            ±
+   º {The list of files, which can:_}         ±
+   º            {appear like this:_}          ±
+   º a          ³ 1,059 ³23-05-93³21:48   ±
+   º dn      hlp³ 27,724³23-05-93³21:22   ±
+   º dnhlp   hlp³ 21,870³22-05-93³14:15   ±
+   º dn      old³ 7,507 ³22-05-93³13:09   
+   ºÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   º..          < UP - DIR > 7-04-93 13:50ÄÄÄ¿³
+   º          No files selected           ÄÄ¿³³
+   º Total:8 files with 88,508 bytes      Ä¿³³³
+   º 16,748,544 free bytes on drive E:    ¿³³³³
+   ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÄÙ³³³³³
+                                           ³³³³³
+           The amount of free space on diskÙ³³³³
+      Information about all files on panel ÄÙ³³³
+      (their used space and common length)   ³³³
+     The same information about marked filesÄÙ³³
+     The information about the currently  ÄÄÄÄÙ³
+     highlighted file                          ³
+                              Info Divider ÄÄÄÄÙ
+
+All the elements which are part of the file panel can be included
+or excluded by switching on or of the appropriate toggle in the menu-option
+Options|Defaults|File Panel.
+
+.topic PanelSetup
+.title Installation of file panel parameters
+
+{Sort by:_} - Type of sorting. Files can be sorted by name,
+extension, size, creation date and time or unsorted.
+The last means that files will be shown in the same order, as
+they are showed by the DOS command "DIR". (Provided you did not use
+the /O switch!)
+
+{Show:_} - What should be visible on the screen?
+
+  Directory length - Show the total count of all files in a
+   subdirectory, including all underlying directories.
+
+  Info divider - Show a divider (a line) between the list of files and
+   the information part (you can select a different color to divide
+   the files from the information part)
+
+  Current file - Show the information about the currently selected file.
+
+  Selected files - Show the information about the selected files.
+
+  Totals - Show the information about all files, which are visible
+   on the file panel.
+
+  Free space - Show the amount of available free space on the current
+   disk. This way you will not need the information screen (Ctrl-L).
+
+  Auto change directory - Automatically change subdirectories when
+   "walking" through a directory tree.
+
+  Standard drag-and-drop - Interface with mouse.
+
+  Put executable first - Show the executable files
+   (BAT, COM, EXE, BTM) at the beginning of the filelist,
+   independent from the selected sorting order.
+
+  Put archives first - Show the archived files
+   (ZIP, ARJ, ZOO, etc.) at the beginning of the filelist,
+   independent from the selected sorting order.
+
+  Files highlight - "Illumination" of files of various
+   types by different colors. It is possible to define
+   five groups of user files.
+
+ {File mask:_} - Filter for filenames. Every single files mask,
+   is separated from the next one with a semi-colon (";").
+   The files that will fit on one of these masks are shown in the
+   file panel. All others are invisible.
+
+.topic PanelDefaults
+.title Panel Defaults
+
+.topic PanelHotKeys
+.title File panel Hot keys
+
+ {Tagging:_}
+ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+ Toggle file tagging ...................... Ins
+
+ Select/unselect a group of files with      Ctrl+Gray Plus
+ highlight type same as current file type.. (Minus for unselect)
+
+ Select/unselect a group of files with      Ctrl+Shift+Gray Plus
+ extension same as current file extension.. (Minus for unselect)
+
+ Copy names of tagged files to Clipboard .. Ctrl-Ins
+
+ {Miscellaneous commands:_}
+ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+  Re-read directory ......................... Alt+R, Ctrl+R
+  Swap panels ............................... Ctrl+U
+  Toggle Information in passive Panel ....... Alt+I, Ctrl+L
+  Hide/show inactive File Panel ............. Ctrl+P
+
+ {Copy to Command line:_}
+ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+ Current file name  ...................... Ctrl+Enter
+ Full pathname of current file ........... Shift+Ctrl+Enter
+ Directory name of right File Panel ...... Ctrl+]
+ Directory name of left File Panel ....... Ctrl+[
+
+ {Directory changing:_}
+ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+ Change current directory to upper dir
+ (exit from archive file find, Temp drive) .. Ctrl+PgUp
+
+ Change current directory to root ........... Ctrl+\
+
+ Mark directory for "quick changing" ........ Ctrl+Shift+Alt+N (1..9)
+
+ "Quick change" directory ................... Alt+N (1..9)
+
+ History of directories visited previously .. Alt+Backspace
+
+
+.topic DriveInfoSetup
+.title Drive Information Setup
+
+Set fields to show in information panel.
+
+.topic ExtFile
+.title Start of files on extensions
+
+When the user is in the file panel, it would be handy if DN would start a
+certain program depending on the extension of the current file. DN makes it
+possible!
+
+It is ossible to start not just one command but a complete list of
+commands or to call a menu for choosing several options.
+That could be done with the Extension file - the file describing how to
+work with particular filetypes, determined by the extension.
+
+To start a certain command, you just move the cursor to
+the file you want, and use one of the following key combinations:
+   Enter, Shift-Enter or Alt-Enter.
+When you press the last combination, the menu will appear.
+
+To describe the commands for each extension, you choose the
+
+Options|Extension file edit menu option.
+The format of each entry in the file being edited is following:
+
+ ??? <the opening symbol>...
+                          DOS command or
+                          {menu description:MenuFormat} (for Alt-Enter)
+                          ... <the closing symbol>
+
+Here ??? is a particular extension, opening and closing symbols should
+correspond to one of the following combinations:
+     Enter - '/' and '/',
+     Shift-Enter - '(' and ')'   and
+     Alt-Enter - '[' and ']'
+
+If you want to use the filename in your command, insert a '!',
+name with extension - '!.!', directory of file - '!\'.
+To indicate the symbol '!', use '!!'.
+
+A fragment of the file of extensions:
+
+ Asm{{    @echo off
+         echo $[1;36;40m[J[1;36;44m
+         Echo ÛßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßÛ
+         echo Û Assembling and linking COM file ...Û
+         echo ÛÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ
+         echo $[1;37;40m
+         tasm !
+         tlink /t/x !.obj
+         echo $[1;36;40m}
+ asm(    @echo off
+         echo $[1;36;40m[J[1;36;44m
+         echo ÛßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßÛ
+         echo Û Assembling and linking EXE file... Û
+         echo ÛÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ
+         echo $[1;37;40m
+         tasm !
+         tlink /x !.obj
+         echo $[1;36;40m)
+ asm[
+    >1 ~A~ssemble only
+        tasm !
+    >1 Assemble & link ~C~OM file
+       tasm !
+       tlink /t/x !.obj
+    >1 Assemble & link E~X~E file
+       tasm !
+       tlink /x !.obj
+   ]
+
+.topic Interface
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³ General information about interface Û
+ ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ
+
+When Navigator is running, on screen is possible to observe following image,
+which represents the working environment of Navigator:
+
+       {This is -:_}{main Navigator menu:MainMenu}{, when it is said, that for an :_}
+       {³ action the command String1|String2 should be used, :_}
+       {³ often whole String1 means the title of one of submenu main:_}
+       {³ menu ( or local menu of one of windows ), and String2 - the :_}
+       {³ title item of this submenu. This command could be also called:_}
+       {³ by key combination mentioned in the menu.:_}
+       {:_}
+ÛÛğÛÛFileÛÛDiskÛÛUtilitiesÛÛPanelÛÛManagerÛÛOptionsÛÛWindowÛÛÛÛÛÛÛÛÛÛÛ22:29:19
+                             ÉÍ[ş]ÍÍÍÍÍÍÍÍ E:\TP\DNHLP ÍÍÍÍÍÍÍÍÍ[]Í»
+ C:\DN>arj f dn              º..          ³            ³            
+ ARJ 2.30 Copyright (c) 1990-º dn      hlp³            ³            ±
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ E:\TP\DNHLP\mº dn      txt³            ³            ±
+ ³ 2.6 Start DN              º manual dn  ³            ³            ±
+ ³                           º manual txt ³            ³            ±
+ ³ For start DN you have onlyº            ³            ³            ±
+ ³ are located its working fiº            ³            ³            ş
+ ³ Whereas DN is a shell progº            ³            ³            ±
+ ³ program   of   such  type º            ³            ³            ±
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄº            ³            ³            
+      ÃÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄºÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄº
+ C:\DN³    1 ³               º manual.dn   31,019   18-05-93   14:26º
+      ³    2 ³               º          No files selected           º
+ E:\TP³    3 ³               ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÄÙ
+      ³    4 ³                                         ³
+      ³    5 ³       { All the area between command:_}     ³
+ E:\TP³    6 ³       { by line and line of main menu is called:_}
+      ³    7 ³       { Desktop. All Navigator windows:_}
+      ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄ{ are located on Desktop:_}ÄÄÄÄÄÄÄÙ
+ E:\TP\DNHLP>snip:_}
+ Snipper 1.0 ( c ) 1987 Ziff Communications co.
+ E:\TP\DNHLP >dir {<ÄÄÄÄÄÄÄÄ this is DOS command line:_}
+ ÛB SortÛÛC DriveÛÛS SetupÛÛL ListÛÛV TempÛÛR Re-readÛÛY Memory InfoÛÛX QuitÛÛÛÛ:_}
+   {:_}
+   {Àline of Navigator status. Here are showed accessible:_}
+   {at present command of DN and those hot keys. The status:_}
+   {line contains the list of commands and reacts on depression:_}
+   {of keys <Shift>, <Ctrl>, <Alt>.:_}
+
+
+DN windows are the working areas of program containing necessary information.
+All sets (large enough) of DN windows is possible to separate on two large
+groups: working windows and dialog boxes. The main distinction between
+them is that it is possible to have several working windows of the same
+type on the Desktop and to switch between them, while only one dialog box
+can be active at any moment and there is no possibility to switch to
+other windows when a dialog is active.
+
+The dialog boxes are intended first of all for entering Navigator
+settings, parameters of various operations such as file copying,
+formatting of flexible disks or unerasing of erased files and some
+other functions (for example, viewing Memo field in Database viewer).
+
+File Manager, File Viewer and File Editor windows are examples of working
+windows.
+
+See also:{"Types of windows":WindowsType}
+
+.topic DirTree
+.title Directory tree
+
+The panel (or window) of directory tree permits to user proceed in
+(or to indicate for copying) any directories. For moving on tree the
+cursor arrows are used, and [ENTER] - confirms chosen directory.
+
+The panel (or window) of directory tree appears as follows:
+
+ {Current disk:_}
+   {³:_}
+   {³:_}  ÉÍ[ş]ÍÍÍÍÍÍÍ Directory Tree ÍÍÍÍÍÍÍ[]Í»
+   {ÀÄÄÄÄ:_} C:\                                 
+      º  ÃÄ[+] DOS {ÄÄÄÄÄÄÄÄÄÄÄÄ Directory with enclosed subdirectories:_}
+      º  ÃÄ[+] TOOLS         {(is opened by blank):_}
+      º  ÃÄ[+] !GAMES                        ±
+      º  ÃÄ[-] DN{ÄÄÄÄÄÄÄÄÄÄÄÄ Opened:_}         ±
+      º  ³ ÃÄÄÄ DOWNLOAD      {subdirectory:_}   ±
+      º  ³ ÀÄÄÄ VIEWERS                      ş
+      º  ÃÄÄÄ WORK {ÄÄÄÄÄÄÄÄÄÄÄÄÄ Directory without enclosed:_}
+      º  ÀÄÄÄ ROMANA.3          {subdirectories:_}
+   {ÚÄÄÄ:_} C:\DN\DOWNLOAD                       ±
+   {³:_}  º 14 files with 153,432 bytes {Ä¿:_}       
+   {³:_}  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÄÙ
+   {³:_}                                 {³:_}
+   {Current directory:_}            {Information:_}
+
+
+To open all directories - {gray +:_}
+
+To close all directories - {gray -:_}
+
+See also:{"Types of windows":WindowsType}
+
+.topic Reanimator
+.title Reanimation of erased files
+
+Reanimator allows you to restore erased files or directories. Unfortunately,
+it is not always possible to restore an erased file, since the information
+on disk can be overwritten with other data.
+
+The reanimator window appears as follows:
+
+
+  NB: Reanimator works only when                   {Chance to recover the file:_}
+  {Direct disk access:DirectDiskAccess} is on                             {to its original state:_}
+                                                                        {³:_}
+ {When restoring,                                       good - possible  ³:_}
+ {DN asks you for ÚÄÄÄÄName of files                    average - 50/50  ³:_}
+ {the first letter³    and information                  poor - impossible³:_}
+ É{³:_}[ş]ÍÍÍÍÍÍÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍÍÍ Reanimator ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»  {³:_}
+ º{³:_}              {³:_}                                                   º  {³:_}
+ º{³:_} Name         {³:_}   Size    {Attr:FileAttr}   Date   Time   Cluster Prognosis {ÄÄÄÄÙ:_}
+ º{ÀÄ:_}?age dat     {³:_}    89,352 -a--  8-10-93  9:05  19,640  average   º
+ º  ?fds     bat     187,792 -a--  8-10-93  9:07 19,684   poor     ş º
+ º  ?om-book arj   1,328,816 -a--  8-10-93  9:43 16,540   average  ± º
+ º  ?ook     arj   1,333,339 -a--  8-10-93  9:32 15,869   poor     ± º
+ º  ?pnet    exe      61,334 -a-- 12-09-93 17:06 16,385   good      º
+ º                                                                   º
+ º         Drive... Ü   View...Ü   Reanimate Ü   Cancel Ü    Help Ü  º
+ º         ßßßßßßßßßß   ßßßßßßßß   ßßßßßßßßßßß   ßßßßßßßß   ßßßßßßß  º
+ ÈÍÍÍÍÍÍÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍÍÍ{³:_}ÍÍÍÍ¼
+             {³             ³            ³           ³           ³:_}
+ {Change Disk Ù      Show the        Restore File    ³          Help:_}
+                    {contents of the file            ³:_}{Cancel the action:_}
+
+See also:{"Types of windows":WindowsType}
+
+.topic Format
+.title Formatting of disks
+
+DOS Navigator allows the formatting of any diskette in background mode,
+on any ( including non-standard ) format.
+The window of formatting appears as follows:
+
+
+  {Disk A or B       The volume label         Arrangement of sectors:_}
+
+           {³                ³                ³:_}
+   ÉÍ[ş]ÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍ Format{³:_}diskette ÍÍÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍ»
+   º       {³:_}                {³:_}                {³:_}         º
+   º  () Drive A         Volume label   Interleave    º
+   º  ( ) Drive B                        1             º
+   º                                                   º
+ {ÚÄÄÄ:_} () Full format     Size      Tracks    Sec/Trk  º
+ {³:_} º  ( ) Quick format     360       76       08    º
+ {³:_} º                       400 ±      77 ±      09 ±   º
+ {³:_} º  [ ] System disk      720 ş      78 ±      10 ş   º
+ {³:_} º  [X] Detect drive     800 ±      79 ş      11 ±   º
+ {³:_} º  [ ] Unconditional   1200       80       15    º
+ {³:_} º      {³:_}                 {³:_}                          º
+ {³:_} º      {³:_}       Ok   Ü    {³:_}   Cancel Ü               º
+ {³:_} º      {³:_}     ßßßßßßßß    {³:_}   ßßßßßßßß               º
+ {³:_} ÈÍÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍÍÍ{³:_}ÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍÍÍÍÍÍ{³:_}ÍÍÍÍÍÍÍÍÍÍÍ¼
+ {³        ³           ³     ³              ³:_}
+ {³ - System disk      ³  Volume label       Cancel option:_}
+ {³ - Check up the type³  of formatted:_}
+ {³ - Do not Ask       ³  diskette:_}
+ {³                    ³:_}
+ { - quick format      ÀÄ Begin the format process:_}
+ { - total format         with these options:_}
+
+
+Once formatting has started, it is possible to switch to an other window
+to perform other work while in the background, formatting of the disk will
+take place.
+
+See also:{"Types of windows":WindowsType}
+
+.topic VolLabel
+.title Volume Label
+
+DOS Navigator allows you to edit the volume label of a disk. The window
+for changing the volume label is easy to use:
+
+      ÉÍ[ş] Set Volume Label ÍÍÍÍÍ»
+      º                           º
+      º Label           °°°OK°°°Ü{ÄÄÄÄÄÄÄ Write label to disk:_}
+      º MS-DOS_5ÛÛÛÛÛÛ   ßßßßßßßß º
+      º  {³:_}              °Cancel°Ü{ÄÄÄÄÄÄÄ Cancel the action:_}
+      º  {³:_}               ßßßßßßßß º
+      ÈÍÍ{³:_}ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+         {³:_}
+
+       {Desired volume label:_}
+
+
+NB: Editing a volume label is only possible if the option
+{Direct disk access:DirectDiskAccess} is turned on!
+
+.topic DiskEditor
+.title Disk Editor
+
+With the Disk Editor you can edit the structure of a disk directly.
+NB: The disk editor is only active if the option {Direct disk access:DirectDiskAccess}
+is turned on!
+
+  !!! WARNING !!!
+  If you don't know anything about the structure of a disk,
+  you should be VERY careful with the disk editor!
+  With the disk editor you can severely damage your data,
+  or even make a complete disk in-accessible!
+
+You can work with the following logical disk structures (in menu{Area:_}):
+
+     {File:_}- Files
+     {Directory:_}- Directory
+     {Drive:_}- Change disk
+     {Cluster:_}- Clusters
+     {Sector:_}- Sectors
+
+In menu {View:_} it is possible to choose the desired display form and
+edit form:
+
+     {As Hex:_}- hexadecimal dump
+     {As Dir:_}- directories
+     {As Text:_}- text format
+     {As FAT:_}- file allocation table
+
+It is possible to perform the following editing operations
+(in menu {Edit:_}):
+
+     {Undo            :_}- undo last operation(s)
+     {Copy            :_}- copy
+     {Paste over      :_}- replace with contents of clipboard
+     {Copy to         :_}- copy to
+     {Fill            :_}- fill are with specific string
+     {Search for      :_}- search for a specific string
+     {Continue search :_}- continue searching
+
+.topic Communication
+.title Communication
+
+The window of configuration of modem permits to indicate the parameters
+of modem used in systems, as well as parameters and communication options.
+It contains the following fields:
+
+{Port:_} - Consecutive port to which is connected the modem.
+
+{Baud:_} - Maximal speed of transmission of given modems.
+
+{Escape code:_} - Code of transfer in command regime (usually {{+++~~:_})
+
+{Onhook:_} - Hook ({ATH0 |:_}).
+
+{Return on-line:_} - Return in regime of transmission/reception ({~ATO1|:_}).
+
+{Offhook:_} - to raise receptor ({~ATH1|:_}).
+
+{Delay:_} - Pause of set on seconds.
+
+{Force answer:_} - To force the answer ({ATA|:_}).
+
+{Dial prefix:_} - Prefix of set of number ({ATDP:_}).
+
+{Dial suffix:_} - Suffix of set of number ({|:_}).
+
+{Init string:_} - Line of initialization (as requested of modem).
+
+{Down:_} - to be disconnect ({ATH|:_}).
+
+{Reset:_} - Initialization of parameters to on-default ({ATZ|:_}).
+
+{Redial:_} - Pause before dial the next number in dialling queue ({30:_} sec).
+
+{Download path:_} - way for reception of files.
+
+
+In fields of configuration are used following symbols:
+
+  {~:_} - Pause 2 sec.
+  {|:_} - Transfer of line.
+
+.topic AdvPortSetup
+.title Advanced Port Setup
+
+
+.topic Archives
+.title Work with archives
+
+In environment of DOS Navigator the work with archives happens nearly
+as with usual directories. The "entrance" in archive is proceeded on
+key F3. Then on screen the panel with name of disk will:
+
+      ARC:archive_name
+
+And total structure of archive as at usual directory. With files and
+directories of archive is possible to be made operations that and with
+usual files in usual panel - F3 - viewing, F5 - copying, F8 - erasing. The
+exit from archive is proceeded as well as exit from subdirectory - depression
+on "..".
+
+When copying/moving from usual panel to indicate as disk the type of archive
+and its name, allocated files will be archived, for example:
+
+      Copy 10 selected files to:
+      ARJ:archive
+
+Are possible descriptors:ARC, ARJ, BSA, BS2, CHZ, HA, HAP, HYP, HPK, LHA,
+LIM, RAR, SQZ, TAR, UC2, ZIP, ZOO)
+
+
+.topic SpreadSheet
+.title SpreadSheet
+
+In each field of spreadsheet is possible to be recorded the numerical
+significance, text, or formula. The kind of field is determined automatically
+on contents:
+
+   Arithmetic sign -  The numerical field begins on
+   "=" -              Formula
+   Other -            The text
+
+The function evaluation is possible:SUM, MUL, IF, sin, cos, tg, ctg, arctg,
+sqr, sqrt, ln, lg, sign.
+
+The possible operations are defined in menu:
+
+Menu {File:_}
+
+ New -        Create a new table
+ Open -       Open an existing table
+ Save -       Save the current table
+ Save as -    Save current table under another name
+ Save text -  Export to text file
+ Exit -       Exit from the spreadsheet editor
+
+Menu {Edit:_}
+
+ Undo -   Undo of operations
+ Cut -    To move the block in Clipboard
+ Copy -   To copy the block in Clipboard
+ Paste -  To copy the block from Clipboard
+ Clear -  To exclude the block
+
+Menu {Search:_}
+
+ Find -              Find field on significance
+ Replace -           Find and replace
+ Search again -      To continue the search/replacement
+ Go to cell number - proceed on mentioned field
+ Go to last error  - proceed on field with error
+
+Menu {Table:_}
+
+ Cell format -       Change format of a field
+ Column width -      Change width of column
+ Insert row -        Insert a row
+ Insert column -     Insert a column
+ Delete row -        Remove a row
+ Delete column -     Remove a column
+
+
+.topic Calculator
+.title Calculator
+Navigator's Calculator is a powerful tool for businessman and
+programmers. You can type any arithmetical expression "as is" and
+get results while you are typing it in the result pane.
+
+Calculator window looks like this:
+
+  ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍÍÍ Calculator ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º                                               º
+  ºÚ ExpressionÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄ¿º
+  º³ 123+234+0x2EF+0324+01010b+sin(1e-1)     ³Şİ³º
+  ºÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÙº
+  º  Copy as ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿º
+  º  () DEC ³                      1108.0998334 ³º
+  º  ( ) HEX ³    {The result:_}                 454 ³º
+ Ú×Ä>( ) BIN ³    {pane:_}               10001010100 ³º
+ ³º  ( ) OCT ³                              2124 ³º
+ ³º  ( ) EXP ³                  1.1080998334E+03 ³º
+ ³º          ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙº
+ ³º   ±Evaluate±Ü ±±Copy±±Ü ±Close±±Ü ±±Help±±Ü   º
+ ³º    ßßßßßßßßßß  ßßßßßßßß  ßßßßßßßß  ßßßßßßßß   º
+ ³ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+ ³
+ À It is possible to copy into Navigator's text Clipboard
+   result of evaluation in Decimal, Hexadecimal, Binary,
+   Octal and Exponential format. Use "Copy" key to do it.
+
+Also you can use Ctrl-Ins key to put selected fragment in Clipboard
+and Shift-Ins to get string in Clipboard to place it in the Expression box.
+
+Use Evaluate button (or Enter key) to put result (in Decimal) in the Expression box.
+
+For hexadecimal, octal, and binary numbers you can use all possible
+combinations which existing in different programming languages
+e.g.  0x23AF=$23AF=23AFh, 01234=1234o, 0b100101=100101b
+
+Also you can input formulas with functions listed below:
+IF, sin, cos, tg, ctg, arctg, sqr, sqrt, ln, lg, sign, rad, grad.
+
+
+.topic TempList
+.title Temp and Find Drive
+
+What is the Temp Drive? Actually, this is a list of files and directories
+from various directories, from various disks - information is not
+copied physically, but it is only mentonied in Temp Drive.
+fter that with these files is possible any operation such as Copy, Move,
+View, Edit etc. Deletion from the Temp Drive does not mean deletion
+file or directory from its physical location, but from the file list.
+
+Find Drive is like Temp Drive but it places the files found on Find File
+(Alt-F7). While the search of files happens, with already found and placed
+in Find Drive it is already possible to work, and this list is filled up in
+accordance with finding of files.
+
+.topic Terminal
+.title Terminal
+
+The terminal supports emulation of the ANSI and AVATAR standards.
+
+Supported file transfer protocols are: XModem, YModem, ZModem, Kermit -
+They work in background mode.
+
+The terminal works in background mode.
+
+The use {is possible using of telephone book :Phone} and
+auto redial from it.
+
+The following operations on keys are possible:
+
+ F2 -     The record in file
+
+ F3 -     The definition LOG-file
+
+ Alt-V - Toggle local echo on or off
+
+ Alt-R - Receive a file
+
+ Alt-S - Send a file
+
+Configuration see {Communication:Communication}
+
+.topic ArcSetup
+.title Installation of achiever
+
+
+
+The window of installations of achiever contains the following fields:
+
+ {Packer:_} - full name with extension of file of archiver
+ {Unpacker:_} - full name with extension of file of unpacker
+ {Extract:_} - parameters for unpacker
+ {Move:_} - archiving with moving of files
+ {Delete:_} - erasing of files from archives
+ {Extract with pathnames:_} - unpacking with pathnames
+ {List char:_} - symbol of list of files
+ {Extract path:_} - unpacking method
+ {Swap on execute:_} - to give all memory
+ {Test:_} - parameters of testing of archive
+ {Password:_} - parameters for definitions of password
+
+.topic Phone
+.title Telephone book
+
+The telephone book window contains the sorted list of users and
+their telephone numbers. The bottom part shows the comments on each user.
+
+The following operations (with buttons) are possible:
+
+ {Ok:_} -   Exit from the telephone book
+ {Dial:_} -  Dial the number (cancellation of dial with Alt-U)
+ {Append:_} - Add a record to the book
+ {Edit:_} -  Edit the current record
+ {Delete:_} - Erase the current record
+
+
+Configuration of the modem can be done
+in menu {Options:OptionsMenu}|Defaults|{Communication:Communication}.
+
+.topic View
+.title Internal text-viewer
+
+The Internal text-viewer of DOS Navigator allows you to look through and
+to edit text and other files. The following operations (with keys) are
+possible:
+
+  F2 - {(Un) Wrap:_} - Wrap line to length of window.
+  F4 - {Hex/ASCII:_} - ASCII or hexadecimal format.
+                    In HEX mode editing of the file is possible.
+  F7 - {Search:_} -  Search for words or sequences of hexadecimal codes.
+              To continue the search press Shift-F7.
+
+  See also:
+    {Types of windows                       :WindowsType}
+    {Viewing and editing files on extensions:ViewFile}
+
+
+.topic Highlight
+.title Highlight groups
+
+The definition of 5 user groups of files is proceeded on extensions divided
+by semicolon. For each the is possible the definition of colors.
+The following breakdown on groups is offered:
+
+The files on which is practical not paid attention or which are usual
+erased (black color):
+
+   BAK;$$$;SWP
+
+The working files of programs, texts, documentation, i.e. the most frequently
+edited files (pleasant for eye by green color):
+
+   TXT;DOC;BAS;FOR;C;CPP;ASM;INC
+
+Graphics, musical files (blue color):
+
+   PIC;GIF;PCX;TIF;IMG;STM;CDM;MOD;SND
+
+The files with which directly work very little, which should not attract
+attention (pleasant for eye dark-green color):
+
+   PRJ;OBJ;LST;DBF;WKS;123
+
+The files of which should attract the attention of user, which should be
+processed at once (very appreciable, but not irritant magenta color):
+
+   !!!;1ST;ME;CUT
+
+.topic Clipboard
+.title Clipboard
+
+ Clipboard stores the text you cut and copy
+from other windows. Any text you cut or copy to Clipboard.
+Text in Clipboard is the text Dos Navigator uses when you
+choose Paste.
+
+.topic ScreenGrabber
+.title Screen Grabber
+
+ Grab a part of display area.
+
+.topic SelectDrive=21000
+.title Drive Selection
+
+  Select one of valid drives.
+
+.topic SelectDriveExtended=21001
+.title Drive Selection
+
+  Select one of valid drives.
+  Also You may select a {TempList:TempList} by pressing a [{SpaceBar:_}] key.
+
+.topic AdvanceSearch
+.title Advanced Search
+
+This dialog box lets you to be extra selective about which files are
+included in a File Find. It is especially important
+when searching for text since you want to open, read, and
+search as few large files as possible. It also makes it
+possible to round up all files a certain age, size, or with a
+certain {file attribute:FileAttr}.
+
+The criteria selected is used the next time you start a search. The
+Find File main dialog box shows "Advanced Search is ON" to remind
+you that you are filtering the files.
+
+Date is after: Input a file date and (optionally) time
+  formatted as: mm-dd-yy [hh:mm] [AM | PM]]. For instance:
+  5-10-90 or 15-1-89 7:0 am. Only files which have been
+  modified after that date and time will be included in the
+  search.
+Date is before: Only files which were last modified before the
+  input date and time will be included in the search.
+
+Size is greater than / less than: Input a range of sizes. You
+  may use K or M at the end; for instance, 2000 is about the
+  same as 2K.
+
+The check boxes let you include only files with a specific
+combination of {file attributes:FileAttr}. For instance, tick the
+Archive bit is set control if the file you want has been
+created/modified since you last backed up.
+
+.topic FileFind
+.title Find File
+
+This command searches the current or specified directory for
+files not only by name, but by contents, date, size and {attributes:FileAttr}.
+Type the {file mask or filter:Wildcards} you wish to locate in the
+File mask text box.
+
+To find files by Text to find type a partial word or
+short phrase (or any fragment of text) in the Containing box
+that you know to be contained in the required file.
+
+The result of file search is a list which is displayed like as
+disk directory in file panel and you can do with files from this
+list all operations accessible in {File:FileMenu} and {Panel:PanelMenu}.
+
+   ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍÍÍÍ Find File ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+   º                                                º
+   º     File mask ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±Şİ º
+   º                                                º
+   º  Text to find ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±Şİ º
+   º                                                º
+   º  Options                Destination            º
+ ÚÄ×ÄÄ[ ] Case sensitive     () Entire diskÄÄÄÄÄÄÄÄ×ÄÄÄ¿
+ ³Ú×ÄÄ[X] Recursive search   ( ) Current directoryÄÄ×ÄÄ¿³
+ ³³º  [ ] {Advanced search:AdvanceSearch}    ( ) All drivesÄÄÄÄÄÄÄÄÄ×Ä¿³³
+ ³³º                                                º ³³³
+ ³³º   ±±±Ok±±±Ü ±Advanced...±Ü ±Cancel±Ü ±±Help±±Ü º ³³³
+ ³³º    ßßßßßßßß  ßßßßßßßßßßßßß  ßßßßßßßß  ßßßßßßßß º ³³³
+ ³³ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼ ³³³
+ ³³                                                   ³³³
+ ÀÅÄÄ if turned off, Navigator will ignore case of searching text
+  ³                                                   ³³³
+  ÀÄÄ if this check box is turned on (default)        ³³³
+      will search in all subdirectories existing      ³³³
+      on destination.                                 ³³³
+                                                      ³³³
+                    Search files on current disk onlyÄÅÅÙ
+                                                      ³³
+                    Search files in current directoryÄÅÙ
+                                                      ³
+   Search files on all accessible disks from C: to Z:ÄÙ
+
+.topic WinMan
+.title Windows Manager
+
+This window list allows you to activate or close a window on Desktop.
+
+.topic Game
+.title Integrated Games
+
+  You can play one of following games:
+  {Tetris:Tetris}
+  {Pentix:Pentix}
+
+.topic Tetris = 16543
+.title Tetris
+
+.topic Pentix = 16544
+.title Pentix
+
+.topic UserMenu
+.title User menu
+
+Navigator allows the user to create a menu for calling external programs
+and DOS-commands. It is stored in the file DN.MNU. When you call the command
+Utilities|User menu, Navigator checks for this file in the current
+directory, and, if it finds the file, it starts a menu from the directory,
+which has the Navigator files.
+
+Creation and editing global (i.e. accessible from any directory) user
+menu is done with help of the command Options|Global menu definition. The
+local menu for each directory can be edited, by choosing
+Options|Local menu definition.
+
+When the user chooses any menu command, then, if it was not the header of
+the following menu level, Navigator creates a temporary .BAT file with
+two parameters: First the name of the file on which the cursor was on,
+and second the name of a file-list of files marked in this panel.
+
+ {Hints:_}: ş If User menu not found in current directory, DN will
+          find out User menu in upper directories.
+        ş It is possible to switch between Local/Global User Menu
+          while User Menu is executed.
+        ş It is possible to start edit User Menu after call to it.
+
+ See also {"Format of user menu file":MenuFormat}
+
+  and {Example of User Menu:MenuExample}.
+
+.topic LUserMenu
+.title Local User Menu
+
+See also: {User Menu:UserMenu}
+
+.topic GUserMenu
+.title Global User Menu
+
+See also: {User Menu:UserMenu}
+
+.topic MenuTips
+.title Menu Tips
+
+.topic MenuExample
+.title Example of User Menu
+
+ Example                            Comment
+
+ >1 Microsoft ~W~indows 3.1      ³ Shortcut a litter 'W'
+    win                          ³ run WIN
+ >1                              ³ Divider
+ >1 ~F~ormat diskette            ³
+   >2 1.4~4~ Mb                  ³ Next level
+     format a: /f:1440 /u        ³
+   >2 1.~2~ Mb                   ³
+     format a: /f:1200 /u        ³
+   >2 ~D~efine...                ³
+     <=format a:                 ³ Edit format params.
+                                 ³ Default is "format a:"
+                                 ³
+ >1 ~M~ail                       ³ Next first level
+                                 ³ menu item
+   >2 ~G~et...                   ³
+     ............                ³ (skip)
+   >2 ~A~rchive                  ³
+     pkzip -mex archive\mail.zip ³ Call archiver
+     pkunzip -t archive\mail.zip ³ Check archive
+   >2 ~~ § àå¨¢¨à®¢ âì          ³
+     pkunzip archive\mail.zip    ³
+ >1                              ³ Divider
+ >1 ~G~ames                      ³
+   .........                     ³ etc.
+
+.topic MenuEdit
+.title Edit User Menu
+
+ To edit current user menu press a [F2] button.
+
+ To edit local user menu is exist next item of the Main Menu:
+  'Options|Local menu definition...'
+
+ To edit global user menu is exist next item of the Main Menu:
+  'Options|Global menu definition...'
+
+.topic MenuFormat
+.title Format of the user menu file
+
+The user menu in Navigator has a very simple structure.
+Each item of this menu begins with the symbol {'>':_}, after which the level
+of this item in hierarchy of menu follows.
+
+Followed by a blank and the name of this item. In the name, it is possible
+
+to enclose a character in {'~':_}, after pressing which, it is possible
+to cause this user command without using the arrows. The following lines
+contain the list of commands.
+
+Here, {"%1":_} is the name of a file-list of files marked in active file
+panel (use {"%2":_} to get file-list from passive file panel). The next
+menu item begins with the symbol {'>':_}.
+
+For creating the next menu level it is necessary to increase the number
+of the level of this item with 1 in comparison with the previous and all
+menu elements of this level.
+
+ See also {Menu macros:ExtMacros}
+  and {Example of User Menu:MenuExample}.
+
+.topic ExtMacros
+.title Menu macros
+
+ {!:_}  - Name of file in active file panel
+ {$:_}  - Name of file in passive file panel
+ {.!:_} - Extension of file in active File Panel
+ {.$:_} - Extension of file in passive File Panel
+ !\ - Directory of file in active File Panel
+ $\ - Directory of file in passive File Panel
+ !/ - Directory of file in active File Panel (without \)
+ $/ - Directory of file in passive File Panel (without \)
+ {!:::_} - Drive of file in active File Panel
+ {$:::_} - Drive of file in passive File Panel
+ {%1:_} - Name of list of selected files in active file panel
+ {%2:_} - Name of list of selected files in passive file panel
+
+ {%3:_}...{%9:_} - User parameters
+ (Is used for input a user values in input box)
+
+  {Hints:_}: ş Empty line after Menu Item header means Menu
+           separator in Menu box.
+         ş It is possible to set title of input box by string
+           which have '<' at start, and to set default text in
+           input box - use '<=' for it.
+
+
+.topic AboutDialog
+.title About...
+
+ This is information about version of {Dos Navigator:CommonInfo}.
+Press {Alt-I:_} to view the Dos Navigator {Team:_}
+
+
+.topic CDplayer
+.title CD Player
+
+ By default CD player is started in minimized state:
+
+
+    É[{ş:_}]ÍÍÍÍÍÍ Celtic Guitar ÍÍÍÍÍÍ[{:_}]Í»
+    ºÚÄÄÄÄTrackÄÄÄÄÄÄÄÄ{Track Time:_}ÄÄÄÄÄ¿º
+    º³  {ÜÜÜ ÜÜÜ:_}      ÜÜÜ   Ü Ü ÜÜÜ   {A:CDplayerOptions}³º
+    º³  {Û Û ÜÜÛ:_}      Û Û ß ÛÜÛ   Û   {I:CDplayerOptions}³º
+    º³  {ÛÜÛ ÛÜÜ:_}      ÛÜÛ ß   Û   Û   {J:CDplayerOptions}³º
+    ºÀ{ÄTwo Irish BalladsÄÄÄÄÄÄÄÄÄÄÄÄÄÄ:_}Ùº
+    ÈÍ{  :_}ÍÍ{ < :_}ÍÍÍÍÍ{  :_}ÍÍÍÍÍ{ > :_}ÍÍ{  :_}ÍÍ¼
+
+  To get additional buttons for sound control you
+have to zoom the CD Player.
+(Control keys are listed in status line in the bottom line of the screen)
+
+   Mouse button click in these areas
+ ş Time mode indicator
+     - switches mode of time indication
+ ş {Play modes indicator (ANJ):CDplayerOptions}
+     - switches current play <Mode>
+ ş Big digits
+     - choose a Track to play from a pane
+ ş The Bottom line of digits border
+     - choose a Track to play from a list of tracks
+
+               ÉÍ[ş]ÍÍÍÍÍÍÍ CD-Player ÍÍÍÍÍÍÍÍ[]Í»
+               ºÚÄÄÄÄTrackÄÄÄÄÄÄÄÄTrack TimeÄÄÄÄÄ¿º
+               º³    Ü ÜÜÜ  ÜÜÜ ÜÜÜ   ÜÜÜ ÜÜÜ   A³º
+               º³    Û ÛÜÜ  ÛÜÜ ÛÜÜ ß ÜÜÛ ÛÜÜ   N³º
+               º³    Û ÜÜÛ  ÛÜÛ ÛÜÛ ß ÛÜÜ ÛÜÛ   J³º
+               ºÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙº
+               º   Ü  < Ü         Ü  > Ü   Ü º
+               º  ßßßß  ßßß  ßßßßßßßßß  ßßß  ßßßß º
+               º    *   Ü       ş      Ü       Ü º
+               º  ßßßßßßß  ßßßßßßßßßßßßß  ßßßßßßß º
+               º  {  Set   :CDplayerOptions}Ü   Time   Ü   Mode   Ü º
+               º  ßßßßßßßßß  ßßßßßßßßß  ßßßßßßßßß º
+               º    Mix   Ü   Order  Ü  { Title  :CDplayerTitle}Ü º
+               º  ßßßßßßßßß  ßßßßßßßßß  ßßßßßßßßß º
+               ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+  Buttons description:
+
+    {  :_}Ü  Play
+    ßßßß
+    {>  :_}Ü  Next Track
+    ßßßß
+    {<  :_}Ü  Previous Track
+    ßßßß
+    { :_}Ü  Fast Forward
+    ßßßß
+    { :_}Ü  Fast Backward
+    ßßßß
+    {*  :_}Ü  Pause
+    ßßßß
+    {ş  :_}Ü  Stop
+    ßßßß
+    {  :_}Ü  Eject
+    ßßßß
+
+<{Set:CDplayerOptions}>
+   - CD Player's options
+<{Time:_}>
+   - Time indication mode switcher (Track\Disk-Left\Time)
+<{Mode:_}>
+   - Play mode switcher (Normal\Intro\Shuffle\One song)
+<{Mix:_}>
+   - Run external sound 'Mixer'
+<{Order:_}>
+   - User defined order of playing.
+<{Title:CDplayerTitle}>
+   - Description of CD title and tracks
+     (The Note: {<Order>:_} and {<Title>:_} buttons is allowed only for REGISTERED users)
+
+.topic CDplayerOptions
+.title CD Player Options
+
+ Options                     Play Mode
+  [X] New disk auto play      ( ) Normal
+  [X] Eject disk at end       ( ) Intro
+  [ ] Lock door               ( ) Shuffle
+  [ ] Repeat mode             ( ) One song
+                              ( ) Order
+
+ External Mixer
+
+
+.topic CDplayerTitle
+.title CD description format
+
+ TITLE:JEAN-MICHEL JARRE "COLLECTION"
+ 01:REVOLUTIONS;               "Revolutions" '88
+ 02:ETHNICOLOR;                "Zoolok"      '84
+ 03:FIRST RENDEZ-VOUS;         "Rendez-vous" '86
+ 04:SECOND RENDEZ-VOUS PART I; "Rendez-vous" '86
+ 05:SECOND RENDEZ-VOUS PART II;"Rendez-vous" '86
+ 06:CALYPSO;                   "Wainitg for Cousteau" '90
+ 07:INDUSTRIAL REVOLUTION PART I;"Revolutions" '88
+ 08:DIVA;                      "Zoolok"      '84
+ 09:FOURTH RENDEZ-VOUS;        "Rendez-vous" '86
+ 10:COMPUTER WEEKEND;          "Revolutions" '88
+ 11:THIRD RENDEZ-VOUS;         "Rendez-vous" '86
+ 12:INDUSTRIAL REVOLUTION PART III;"Revolutions" '88
+ 13:LAST RENDEZ-VOUS (RON'S PIECE);"Rendez-vous" '86
+
+.topic TreeDialog
+.title  Directories tree
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  D:\                            
+  ÃÄÄÂARVID                      ş
+  ³  ÃÄÄÂREADY                   ±
+  ³  ³  ÃÄÄÂUTILS                ±
+  ³  ³  ³  ÃÄÄÂSOUND             ±
+  ³  ³  ³  ³  ÀÄÄÄPLAYER         ±
+  ³  ³  ³  ÃÄÄÂFIDO              ±
+  ³  ³  ³  ³  ÃÄÄÄGECHO          ±
+  ³  ³  ³  ³  ÀÄÄÄUUE            ±
+  ³  ³  ³  ÃÄÄÄCONVERT           ±
+  ³  ³  ³  ÃÄÄÄVIDEO             ±
+  ³  ³  ³  ÃÄÄÄTESTERS           ±
+  ³  ³  ³  ÃÄÄÄCODERS            
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ D:\
+ {3832:_} files with {221,200,115:_} bytes
+
+.topic EnvEditor
+.title Edit DOS Environment
+
+.topic DiskInfo
+.title Information Panel
+
+  This information pane contains
+
+  {Current drive:_} and {current directory:_}
+  {Number of files:_} in current directory and a occupied disk size.
+  {Disk size:_} of current drive
+  {Free Disk size:_} of current drive
+  {Volume label:_} of current drive
+  Size of {conventional memory:_}
+    (usually it equals 640Kb)
+  {Free:_} conventional memory
+  Conventional memory for the {Dos Navigator:_}
+
+  Size of {Expanded:_} and {eXtended:_} memory.
+   (System setup|Use XMS\EMS)
+
+.topic PrintManager
+.title Print Manager
+
+What is the background printing? The background printing is very convenient when You
+want simultaneously to print some files and to engage in by other business
+(editing of file, copying, viewing etc. operation in DN).
+
+Window of background printing possible the following operations (on buttons):
+
+ {Delete:_} - delete of file from current list
+ {Close:_} - leave from regime of background printing
+ {Pause:_} - pause of printing of current file. If the printer is not ready for
+operation, automatically the printing is suspended.
+
+.topic Confirmations
+.title Confirmations
+
+.topic CountrySetup
+.title Country Setup
+
+.topic ReenterPassword
+.title Reenter Password
+
+Enter password again to confirm.
+
+.topic ColumnsDefaults
+.title Columns Defaults
+
+ These is defaults for panels columns.
+
+.topic MouseSetup
+.title Mouse Setup
+
+{Reverse mouse buttons:_} - shift right/left button of mouse by locations.
+
+
+.topic InterfaceSetup
+.title Interface Setup
+
+.topic SetupTerminal
+.title Setup Terminal
+
+.topic AppendPhoneNumber
+.title Append Phone Number
+ Input name, phone number and a short note.
+
+.topic EditPhoneNumber
+.title Edit Phone Number
+ Edit name, phone number and a short note.
+
+.topic AppendPhoneDirectory
+.title Append Phone Directory
+ Input name of group, password  and a short note.
+
+.topic EditPhoneDirectory
+.title Edit Phone Directory
+ Edit name of group, password  and a short note.
+
+.topic PrinterSetup
+.title Printer Setup
+Set printer {port:_} or output {file:_}.
+If you set a output file then the Dos Navigator will
+query the name of this file before printing.
+
+ You may control printing process in {Print Manager:PrintManager}.
+
+.topic GameSetup
+.title Tetris and Pentix options
+
+You have to choose between Tetris and Pentix.
+You may select a start level and next figure preview.
+
+.topic DBSearch
+.title Search in database
+
+.topic GotoLine
+.title Go to Line
+ Set a number of string to go. First string has a number one.
+
+.topic GotoAddress
+.title Go to address
+ Set a offset from the beginning of file to go.
+Value is absolute. Number is started from the zero.
+
+.topic DiskError
+.title Disk Error
+
+Press {ESC:_} to cancel the operation or {ENTER:_} to repeat it.
+
+.topic SetupDiskColumns
+.title Setup Disk Columns
+ Information to put in current panel columns.
+
+.topic SetupArcColumns
+.title Setup Archive Columns
+ Information to put in current panel columns.
+
+.topic SetupFindColumns
+.title Setup Find Columns
+ Information to put in current panel columns.
+
+.topic FileAttr
+.title Set File Attributes
+You can see and edit attributes, date and time of current file.
+
+.topic FilesAttr
+.title Set Files Attributes
+You can set or cleat attributes of selected files.
+
+.topic SetPassword
+.title Set Password
+
+.topic CmdHistory
+.title Command history
+
+This window contains the history of input commands in current session, that
+permits considerably to reduce the time of enter of similar commands.
+
+With help of cursor arrows choose the necessary command and
+press Enter. The chosen command occurs in command line.
+
+
+The depression of [Esc] key closes the window of history without change
+of contents of command line.
+
+This window has the following functions (on buttons):
+
+ {Run:_} -  The start of command, chosen by cursor
+ {Drop:_} - simply the occurrence of command in command line, that is
+          possible to be added the parameters
+ {Kill:_} - Kills all command history
+ {Cancel:_} - closing of history window
+
+.topic FileMask
+.title File Mask
+
+To operate with group of files you may enter a file mask.
+File mask can include a standard symbols {*:_} and {?:_}.
+
+.topic ExtendedFileMask
+.title Extended File Mask
+
+
+.topic Select
+.title Select
+To tag files in the current directory set a file mask.
+{Wildcards:Wildcards} are allowed.
+
+.topic Unselect
+.title Unselect
+To untag files in the current directory set a file mask.
+{Wildcards:Wildcards} are allowed.
+
+.topic MemoryInfo
+.title Memory Information
+
+.topic SystemInfo
+.title System Information
+
+.topic DirectDiskAccess
+.title Direct Disk Access
+Direct Disk Access is designed to approach disk without using a file system,
+through direct (logical, not physical) sector reading and writing. Faster,
+is possible {the undeleting of files:Reanimator} etc., but
+conflicts are possible with Network, RAM, SUBST etc. drives.
+
+.topic DirectAccessDenied
+.title Direct Access Denied
+
+.topic AsciiChart
+.title ASCII Chart
+ To put character in input line press {Enter:_}.
+
+.topic AllContainingDialog = 48000
+.title Confirmation
+
+.topic YesNoDialog = 48001
+.title Query
+
+.topic YesNoCancelDialog = 48002
+.title Query
+
+.topic WarningDialog = 48003;
+.title Warning
+
+.topic ErrorDialog = 48004
+.title Error
+
+.topic InformationDialog = 48005
+.title Information
+ Press {ENTER:_} after reading.
+
+.topic ConfirmationDialog
+.title Confirmation
+
+.topic QueryDialog
+.title Query
+
+.topic InputBox
+.title Input value
+
+.topic Configuration
+.title DOS Navigator Options
+
+{Internal editor:_} - If installed - to use at F4 {internal editor:Editor}
+and at Alt-F4 - external one.
+
+{Internal viewer:_} - the same for {viewer:View} on F3 and Alt-F3.
+
+{Show hidden files:_} - to show the files with attributes "hidden".
+
+{Screen rest:_} - Interval unusing of keyboard for "switching-off" of screen.
+
+{Screen saver:_} - Method of "switching-off" of screen.
+
+{Swap dir:_} - Directory for saving of current significances.
+
+.topic SubMenuConfig
+.title Dos Navigator Configuration
+
+  {System Setup :SystemSetup} - System and drive access settings
+  {Startup      :OptionsStartup} - Startup and overlay configuration
+  {Interface    :InterfaceSetup} - Interface, cmd line and editor/viewer setup
+  {Confirmations:Confirmations} - Erase and other confirmations
+
+  {Screen savers  :Savers} - Screen savers installations and setup
+  {Printer setup  :PrinterSetup} - Printer ports and init/end strings
+  {Country support:CountrySetup} - Date/time/currency/character case setup
+  {Mouse          :MouseSetup} - Mouse sensitivity and buttons setup
+  {Communications :Communication} - Communication port setup and modem strings
+
+  {Editor/Viewer:EditorDefaults} - Internal Editor/Viewer defaults
+  {Terminal     :Terminal} - Communication Terminal options
+
+.topic SubMenuFileMgr
+.title File Manager Setup
+
+  {Setup               :FileMgrSetup}
+  {Information panel   :DriveInfoSetup}
+  {New Manager defaults:PanelDefaults}
+  {Column defaults     :ColumnsDefaults}
+  {Highlight groups    :HighLight}
+
+.topic OpenFileDialog
+.title Open File
+
+ Select the file
+
+.topic SelectFileDialog
+.title Select file
+ Select the file
+
+.topic ManualDial
+.title Manual Dial
+
+ Enter phone number you want to dial
+
+ For example: 8w0422-123-456 ({W:_} means pause)
+
+.topic TetrisScore
+.title Tetris Top Ten
+
+
+.topic TetrisWinner
+.title Tetris Winner
+
+Congratulations! Can you do it again ?
+
+.topic MkDir
+.title Make Directory
+
+Input the name of directory you want to create. The name must be a
+proper DOS name (i.e. it must not contain symbols >,<,[,],?,*,+,/,%).
+If you don't specify the full path, the directory will be created in the
+current directory. In fact, you can create full directory inherinatce
+(for example if you enter 'Dir1\Dir2\Dir3...', Navigator will create
+directory Dir1, Dir2 as subdirectory of Dir2 etc.)
+
+It is also possible to create several directories in different places of
+your system. You should use semicolon to do that. For example, if you enter
+'Dir1;Dir2;D:\Dir3', Navigator will create directories Dir1 and Dir2 in the
+current directory and Dir3 - in the root directory of D: drive.
+
+
+.topic SortBy
+.title Files sort
+Select a type of sort
+
+.topic QuickDirs
+.title Quick Dirs
+
+You can specify 9 marked directories for Quick access from file panel or
+directory tree.
+
+To go to such directories press {Alt:_} with the {digit:_}.
+To store a current directory in Quick directories list press
+{Alt:_}-{Shift:_}-{Ctrl:_}-digit.
+
+.topic edFile
+.title Text Editor: File Menu
+
+   {Open...     :_}  Load a new file in the active Editor window
+   {Save        :_}  Save changes in the current file
+   {Save as...  :_}  Save the current file using another name
+   {Save all    :_}  Save changes in all files being currently
+                 edited
+   {Print       :_}  Print entire file being edited using
+                 using {Print Manager:PrintManager}
+   {Print block :_}  Print selected text
+   {Main menu   :_}  A way to activate the Main Navigator Menu
+   {Exit        :_}  Close the Editor window
+
+
+.topic edEdit
+.title Text Editor: Edit Menu
+
+ {Undo       :_}  Undo the last editor operation
+ {Cut        :_}  Put the selected text into Clipboard
+              and remove it from the text
+ {Copy       :_}  Put the selected text into Clipboard
+ {Paste      :_}  Insert the contents of Clipboard in the
+              text
+ {Copy to    :_}  Store the selected text in a disk file
+ {Paste from :_}  Insert text from a file in the text
+ {Clear      :_}  Remove the selected text
+
+.topic edSearch
+.title Text Editor: Search Menu
+ {Find              :_}  Locate a string in the text
+ {Replace           :_}  Locate a string in the text and replace
+                     with another string
+ {Search again      :_}  Repeat last search or replace
+ {Reversed search   :_}  Repeat last search or replace in the
+                     opposite direction
+ {Go to line number :_}  Put the edit cursor to desired line number
+
+.topic edParagraph
+.title Text Editor: Paragraph, Block and Misc Menus
+
+{Paragraph:_} menu is designed for operations with the selected text
+as a paragraph:
+
+ {Justify        :_}  Justify the paragraph on both margins
+                  inserting space characters where it's
+                  necessary, paragraph margin is used for
+                  the first line
+ {Right          :_}  Justify the paragraph by its right
+                  margin, left and paragraph margin are
+                  not used
+ {Left           :_}  Justify the paragraph by its left
+                  margin, right and paragraph margin are
+                  not used
+ {Center         :_}  Centrify each line of the paragraph
+                  between its left and right margins
+                  paragraph margin is not used
+ {Margins...     :_}  Set margin values for the current
+                  Editor
+
+
+{Block:_} menu is designed for operations with selected text
+
+ {Move          :_}  Move the selected text to the current
+                 cursor position (persistent blocks
+                 only)
+ {Copy          :_}  Copy the selected text to the current
+                 cursor position (persistent blocks
+                 only)
+ {Indent        :_}  Shift the selected text to the right
+                 for one position
+ {Unindent      :_}  Shift the selected text to the left
+                 for one position
+ {Uppercase     :_}  Convert all the words in the selected
+                 text to the upper case
+ {Lowercase     :_}  Convert all the words in the selected
+                 text to the lower case
+ {Capitalize    :_}  Capitalize all the words in the selected
+                 text
+ {Sort          :_}  Sort all the lines of vertical block
+                 in alphabetical order (the selected text is
+                 used for comparsion)
+ {Calculate sum :_}  Calculate the sum of the numbers in
+                 the vertical block and put it into Clipboard
+
+
+{Misc:_} menu is designed for quick access to some miscellaneous operations:
+
+ {Insert date    :_}  Insert current date in the cursor
+                  position
+ {Insert time    :_}  Insert current time in the cursor
+                  position
+ {Duplicate line :_}  Insert the copy of the current line
+ {ASCII Table    :_}  Use ASCII character map to choose
+                  a symbol to type
+ {Line Drawing   :_}  Toggle Line Draw mode.
+ 
+ {Uppercase, Lowercase:_} and {Capitalize:_} submenus are
+ for converting words, lines and blocks to an appropriate
+ case.
+
+
+.topic edOptions
+.title Text Editor: Options Menu
+
+This is a menu with on/off toggles.
+
+ {Auto wrap mode           :_}
+ {Justify on wrap          :_}
+ {Auto indent mode         :_}
+ {Vertical blocks          :_}
+ {Backspace unindents      :_}
+ {Syntax highlight         :_}
+ {Current line highlight   :_}
+ {Current column highlight :_}
+ {AutoBrackets             :_}
+
+.topic UUEncode
+.title UU Encode
+
+Encoding binary files to the printable text to been send by electronic mail.
+
+  ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ UU Encode ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º                                                          º
+  º   Encode to  °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°Şİ  º
+  º                                                          º
+  º  Prefixes                      Checksum level            º
+  º  [ ] File creation date&time   ( ) None                  º
+  º  [ ] Char mapping table        ( ) of Entire input file  º
+  º  [ ] Statistics                () of Each section       º
+  º                                ( ) of Each line          º
+  º  Lines per section  °°°° Şİ   ( ) Advanced 64-bit       º
+  º                                                          º
+  º  Target file format                                      º
+  º  () DOS <CR>+<LF>  ( ) UNIX                             º
+  º                                                          º
+  º                OK  Ü  Cancel Ü   Tree  Ü   Help  Ü     º
+  º               ßßßßßßßß  ßßßßßßßß  ßßßßßßßß  ßßßßßßßß     º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+.topic UUDecode
+.title UU Decode
+
+Decoding binary files, received by E-Mail
+
+  ÉÍ[ş]ÍÍÍÍÍÍÍÍÍÍÍÍÍÍ UU Decode ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+  º   Target directory                            º
+  º  °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°Şİº
+  º                                               º
+  º   [ ] Check existing files                    º
+  º   [ ] Display error messages                  º
+  º   [ ] Save broken files                       º
+  º                                               º
+  º       °°°OK°°°Ü °Cancel°Ü °°Tree°°Ü °°Help°°Ü º
+  º        ßßßßßßßß  ßßßßßßßß  ßßßßßßßß  ßßßßßßßß º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+.topic CompareDirs
+.title Compare Directories
+
+.topic MakeListFile
+.title Make List File
+Enter name of file to put selected filenames.
+
+To point a place of file name in command you can use {macros:ExtMacros}
+{!:_}, {!.!:_}, {!\!.!:_}. By default a file name placed after the {action:_}
+command.
+
+.topic AdvancedFilter
+.title Advanced Filter
+
+This function is desinged to ease the way of selection filename filter
+for the current file panel. The file mask list contains all extensions
+of files in the current panel, so you can specify particular files to be shown
+(or hidden) in the file panel.
+
+.topic Extract
+.title Extract files from archive
+Enter the target {directory:_} for extract. If the directory does not exist,
+it will be created automatically.
+NB: by default a 'Extract with path names' option is enabled.
+
+.topic ArchiveFiles
+.title Archive Files
+Enter a {name:_} of archive.
+
+The default archive name could be
+ ş {the same as a current file name:_} if you have only
+   one file selected
+ ş {the same as a current directory name:_} if you have more
+   than one selected files
+
+
+.topic ExtViewers
+.title External Viewers
+You can specify a special program to view file accordingly to its extension.
+
+Options|Viewers...
+For Example:  {gif::chow !.!+:_}
+
+See also list of all {macros:ExtMacros}.
+
+.topic ExtEditors
+.title External Editors
+You can specify a special program to edit file accordingly to its extension.
+
+Options|Viewers...
+For Example:  {gif::chow !.!+:_}
+
+See also list of all {macros:ExtMacros}.
+
+Order of using keys [F4] and [Alt-F4] is depends from a
+'Run Internal Editor' in Options|Configuration|Editor/Viewer...
+
+.topic ColumnsSetup
+.title Columns Setup
+You can select fields being shown in the current panel of File Manager:
+  Size
+  Date
+  Time
+  Description
+
+The <{Brief:_}> button is turned OFF all of these fields
+The <{Full:_}> button is turned ON all of these fields
+
+You can specify a special settings for a different panels. The default
+settings({New Manager:_}) is defined in {Options|File Manager|Column defaults...:_}
+.topic DrivesSetup
+.title Drives Setup
+To speed up some disk operation and enable the {Reanimator:Reanimator} and the
+{Disk Editor:DiskEditor} you have to set ON a {direct disk access:DirectDiskAccess}
+for current drive.
+
+All of these options are being setup for each drive
+  {Direct access:_}
+  {Store tree information:_}
+  {Verify writes:_}
+  {Check free space:_}
+
+These are global options for all drives
+  Test {Direct Disk Access:DirectDiskAccess}
+  {Clear Read-Only from CD:_}
+
+.topic FileMgrSetup
+.title File Manager Setup
+
+
+.topic SystemSetup
+.title System Setup
+
+
+.topic OptionsStartup
+.title Startup Options
+
+{Autosave desktop:_} - Auto save current configuration of panels. At
+inclusion of computer the panel will have the kind at its switching-off.
+
+{Auto run User menu:_} - Automatic occurrence {User Menu:UserMenu} at
+start DOS Navigator.
+
+
+{Kill input histories:_} - not to store the history list.
+
+{Enable blinking:_} - to switch off the blinking attribute of text.
+
+{"Fast" command execution:_} - not to load second copy of COMMAND.COM for
+completion of programs. Faster, but is present the conflicts if DOS
+Navigator was run from BAT-file and for it start of some files is present
+yet.
+
+{Custom video mode 1/2:CustomVideo} - Decimal number of video mode for menu {ğ:MenuBox}.
+
+.topic Savers
+.title Screen Savers
+External programs for screen saving.
+Programs (.COM, .EXE, .SS) must be in SSAVERS\ subdirectory of user Dos Navigator
+directory.
+
+.topic EditorDefaults
+.title Internal Editor and Viewer Defaults
+
+.topic FloppyFormat
+.title Diskette Format
+
+.topic AdvancedFloppyFormat
+.title Advanced Floppy Format
+These are options for professional users.
+
+.topic ScrollBack
+.title Scroll Back
+
+.topic EditorHilite
+.title Editor Highlight
+
+.topic ColorDialog
+.title Color Setup
+
+.topic OverwriteQuery
+.title Overwrite Query
+
+In target directory file with such name is already present. You can
+  <{Overwrite>:_}> - overwrite him
+  <{Skip:_}>      - skip operation for a current file
+  <{Append:_}>    - add a new file to the end of old file
+
+You also can set a current choice as default for current operation:
+{Accept choice for all files:_}
+
+.topic ViewerFind
+.title Viewer Find
+Enter a search mask.
+
+
+.topic DBView
+.title DBF View
+
+.topic Help
+.title Help
+
+.topic Desktop
+.title Desktop
+
+.topic DialogWindow
+.title The Dialog Box
+
+.topic DialogInput
+.title Input line
+
+.topic DialogHistory
+.title Input history
+
+.topic DialogButton
+.title Buttons
+
+.topic DialogCase
+.title Dialog Cluster
+
+.topic DialogMessage
+.title Message Window
+
+.topic ViewFile
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ³ Viewing and editing Û
+ ³ files on extensions Û
+ ÀÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛ
+
+When the user is in file panel, at his occasionally the need in
+
+viewing/editing of any external viewer or editor arises. In Navigator
+the opportunity of viewing/editing of particular file is realized.
+Is realized through file of extensions (for viewer - dn.vwr, for editor -
+dn.edt).
+
+This file has described work with particular file type, determined
+on DOS extension.
+For viewing/editing of file is necessary to be moved the cursor on
+file panel to name of this file and for viewing to press F3 and for
+
+editing - Alt-F4 (if is installed in Options|Defaults|{Configuration...:Configuration}
+Internal editor).
+
+For description of viewing of files it is necessary to cause command
+Options|Viewers.
+
+For description of editing of files it is necessary to cause command
+Options|Editors.
+
+The format of record in this file is such:
+
+ ???:command_name
+
+Here ??? - particular extension
+     Command_name - name of program for viewing or editing
+
+See Also: {Internal text-viewer:View}
+
+.topic Wildcards
+.title DOS Wildcards and Filters
+
+DOS file names have two parts: the name (which  can be up to
+8 characters) and  the  extension (which  can  be  up  to  3
+characters)  with  a  period   in   between.  For   example,
+"filename.ext".
+
+   *   Match any characters for the  rest  of  the  name  or
+       extension.  "a*" will  match "a", "ab", and "abc", as
+       well as many others.  '*' applies just to one part of
+       the  file  name, so "a*"  will not match "ab.c".  Use
+       "a*.*" to find all files that start with 'a' and have
+       any extension. (Note: "*a" will match  any  name, and
+       not just names with an `a' at the end  as  you  might
+       expect.)
+
+
+DOS Navigator allows not only single file masks, but containers of
+masks too. These containers are called {"Filters":_}.
+Filter is a file mask sequence in that every mask is separated by ";" char.
+
+E.g. :  *.exe;*.com;*.bat;*.btm;*.cmd
+        *.asm;*.c;*.cpp;*.inc;*.pas      are Filters
+
+.topic CustomVideo
+.title Customized Video modes
+
+DOS Navigator supports not only standard text modes. It is possible to use
+Super EGA, VGA and VESA BIOS extensions. If you want to use it,
+put in System configuration dialog box "Video mode 1" and "Video mode 2" codes
+of desired video modes. This codes must be described in technical documentation
+of your Video system.
+
+  Some of codes is known to me:
+           29 (132x25),30 (132x60) - Realtek VGA cards
+           84,85,86                - Trident VGA cards
+           35 (132x25)             - ATI VGA cards
+           80,81,82                - OAK Technology VGA cards
+                         and most of Super EGA/VGA cards.
+
+If your video system is VESA compatible, you can use universal VESA mode codes
+(note that VESA XGA and VESA SVGA has different mode codes). These codes is
+greater than 256. For VESA SVGA codes are 109 or 110, for example.
+
+ {Note:_}: Most of mouse drivers doesn't support extended
+        video modes. Therefore you must switch off
+        "Standard cursor" option in {Mouse setup:MouseSetup} dialog box
+        if you get any ugly effects when moving mouse cursor
+        in non-standard video modes.
+
+ {Hint:_}: For VGA adapters mode number 256 means mode 80x33.
+
+.topic OS2Support
+.title OS/2 Support
+
+NB: OS/2 is a registered trademark of IBM Corp.
+
+DOS Navigator can start OS/2 applications when it works under OS/2 version
+2.10 or later. To get this possibility you should:
+
+  1) Set OS2COMSPEC environment variable to full name
+     of OS/2 command interpreter
+     (e.g. put Set OS2COMSPEC = C:\OS2\CMD.EXE
+      in DOS session autoexec.bat)
+
+  2) Set "OS/2 support" option in Startup dialog box.
+  3) Restart Navigator.
+
+There are three ways to run OS/2 applications:
+
+   ş From DOS command line:
+
+     Put before command string one of chars listed below:
+         ">" - run foreground Full Screen OS/2 session
+         "<" - run background Full Screen OS/2 session
+         "]" - run foreground Windowed OS/2 session
+         "[" - run background Windowed OS/2 session
+   ş Switch to OS/2 command prompt mode by {Alt-/:_}
+   ş Run executable files from file panel:
+
+     highlight required file and press
+        - Alt-Shift-Enter to run it foreground
+        - Alt-Ctrl-Enter to run background.
+
+     NB: in OS/2 command prompt mode all programs
+         include DOS applications  starts in another
+         sessions. Be sure that parameters for DOS
+         sessions are acceptable for your applications.
+
+ {Hints:_}: ş if Files Highlight and OS/2 support options
+          are enabled OS/2 batch files (*.CMD) are shown
+          as executable files. You can start it as usual
+          .EXE files by pressing Enter. If you'll press
+          Shift-Enter, batch will be started in background.
+
+.topic FilesBBS
+.title 4DOS/Files.BBS support
+
+ Yes, DOS Navigator supports it!
+
+It is possible by setting up Panel|Setup Columns - just set
+"Descriptions" checkbox on. Not only view descriptions is possible, but
+copying, moving and editing too!
+
+Copy/move file with its descriptions is possible only when descriptions are
+present in file panel.
+
+If you want to edit file description (by {Alt-INS:_} key), but file with
+descriptions doesn't exists, Navigator will create file with first file name
+given in "Files with descriptions" line of File Panel Defaults dialog box.
+
+.topic LinkStatusWnd
+.title Navigator Link Status Window
+
+  ÉÍ[ş]ÍÍÍÍÍÍ Navigator Link ÍÍÍÍÍÍÍÍÍÍ»
+  º                                    º
+  º      COM1 57600/8N1/SREJ2.1024  ÄÄÄÄÄÄ Link Info
+  º     Receiving D:\DOC\PEPPER.DOC ÄÄÄÄÄÄ Status
+  º         0 errors per 489 Kb     ÄÄÄÄÄÄ Errors
+  º                                    º
+  ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+
+   Link Info:
+
+   57600/8N1/SREJ2.1024
+              
+   ³     ³³³     ³ ÀÄÄÄ Actual frame size
+   ³     ³³³     ÀÄÄÄÄÄ Selective reject level
+   ³     ³³ÀÄÄÄÄÄÄÄÄÄÄÄ Number of stop bits
+   ³     ³ÀÄÄÄÄÄÄÄÄÄÄÄÄ Parity check type (None/Odd/Even/Mark/Space)
+   ³     ÀÄÄÄÄÄÄÄÄÄÄÄÄÄ Number of data bits
+   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ BPS
+
+
+  See also: {Link Panel:LinkPanel}
+            {Navigator Link:NavyLink}
+
+.topic NavyLink
+.title Navigator Link
+
+Navigator Link allows to access remote computer by a common file {panel:LinkPanel}. The
+following features are implemented: Create/Remove directories, Copy, View and
+Erase files. Navigator Link uses its own communication protocol, developed by
+RIT.
+
+Advantages:
+
+{- block streaming mode:_}
+
+Navigator Link works seamlessly in {server/slave:LinkStatusWnd} mode and doesn't take full
+CPU time during link session. It is also possible to work fine via packet
+transport protocols (ipx/spx, tcp/ip) and other hardware (parrallel port) via
+FOSSIL interface.
+
+{- bi-directional mode and true full duplex:_}
+
+Both machines linked by DN have equal rights on each other's drives, and both
+can work with remote simultaneously.
+
+{- advanced errror correction:_}
+
+Navigator Link uses double-level selective reject method, so it works even on
+high-noise lines.
+
+{- real-time data compression:_}
+
+Link allows to transfer text files and directory data twice faster on the
+same line. The compression works more efficient than modems' internal
+compression methods.
+
+  See also: {Link Status Window:LinkStatusWnd}
+            {Link Panel:LinkPanel}
+            {Serial Port Interface:SerialInterface}
+
+.topic SerialInterface
+.title Serial Port Interface
+
+
+           25 pin      25 pin
+
+   GND       7 ŞÄÄÄÄÄÄÄÄÄİ  7
+
+   TD        2 ŞÄÄÄÄ¿ ÚÄÄİ  2
+                  ÚÄÅÄÙ
+   RD        3 ŞÄÄÙ ÀÄÄÄÄİ  3
+
+   RTS       4 ŞÄÄÄÄ¿ ÚÄÄİ  4
+                  ÚÄÅÄÙ
+   CTS       5 ŞÄÄÙ ÀÄÄÄÄİ  5
+
+   DSR       6 ŞÄÄÄÄ¿ ÚÄÄİ  6
+                  ÚÄÅÄÙ
+   DTR      20 ŞÄÄÙ ÀÄÄÄÄİ 20
+
+
+
+            9 pin       9 pin
+
+   GND       5 ŞÄÄÄÄÄÄÄÄÄİ  5
+
+   TD        3 ŞÄÄÄÄ¿ ÚÄÄİ  3
+                  ÚÄÅÄÙ
+   RD        2 ŞÄÄÙ ÀÄÄÄÄİ  2
+
+   RTS       7 ŞÄÄÄÄ¿ ÚÄÄİ  7
+                  ÚÄÅÄÙ
+   CTS       8 ŞÄÄÙ ÀÄÄÄÄİ  8
+
+   DSR       6 ŞÄÄÄÄ¿ ÚÄÄİ  6
+                  ÚÄÅÄÙ
+   DTR       4 ŞÄÄÙ ÀÄÄÄÄİ  4
+
+
+
+
+           9 pin       25 pin
+
+   GND       5 ŞÄÄÄÄÄÄÄÄÄİ  7
+
+   TD        3 ŞÄÄÄÄ¿ ÚÄÄİ  2
+                  ÚÄÅÄÙ
+   RD        2 ŞÄÄÙ ÀÄÄÄÄİ  3
+
+   RTS       7 ŞÄÄÄÄ¿ ÚÄÄİ  4
+                  ÚÄÅÄÙ
+   CTS       8 ŞÄÄÙ ÀÄÄÄÄİ  5
+
+   DSR       6 ŞÄÄÄÄ¿ ÚÄÄİ  6
+                  ÚÄÅÄÙ
+   DTR       4 ŞÄÄÙ ÀÄÄÄÄİ 20
+
+  See also: {Link Status Window:LinkStatusWnd}
+            {Link Panel:LinkPanel}
+            {Navigator Link:NavyLink}
+
+
+.topic UnpackDiskImg
+.title Unpack Diskette Images
+
+.topic ReplaceCell
+.title Replace Cell
+
+.topic FindCell
+.title Find Cell
+
+.topic GotoCellNumber
+.title Goto Cell Number
+
+.topic SetCellFormat
+.title Set Cell Format
+
+.topic FormatMargins
+.title Format Margins
+
+.topic EditorFind
+.title Editor Find
+
+.topic EditorReplace
+.title Editor Replace
+
+.topic DirHistory
+.title Dir History
+
+.topic EditHistory
+.title Edit History
+
+.topic ViewHistory
+.title View History
+
+.topic ArvidFindResults
+.title Arvid Find Results
+

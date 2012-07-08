@@ -1,0 +1,35 @@
+Normal random number generators, by J. W. Rider
+
+The NRAND.ARC file contains code for two different Turbo Pascal
+units.  One (NRAND0.PAS) contains a Pascal implementation of
+algorithms that can be found in the November 1988 issue of
+Communications of the ACM.  The other (NRAND1.PAS) contains the
+"conventional" methods of generating the same random variates.
+
+In the process of testing NRAND0, I discovered that the
+algorithms are extremely sensitive to the use of the 8087 numeric
+coprocessor.  I was surprised to discover that the conventional
+methods worked BETTER than the advertised "fast" algorithms from
+CACM, but only when the 8087 was used.  When the floating point
+processing was done in software, the CACM algorithms performed
+significantly better.
+
+If you use hardware floating point, use NRAND1 to generate your
+normal random variates. (A 2:1 speed advantage over NRAND0.)
+
+If you use software floating point, with or without the Borland
+emulation package, use NRAND0. (A 2.3:1 speed advantage over
+NRAND1.)
+
+If you have a choice, use hardware floating point (NRAND1).  (A
+better than 5:1 speed advantage over NRAND0 with software
+processing.)
+
+Both units have identical interfaces.
+
+In the interest of portability, both units use the SYSTEM random
+function to generate uniformly distributed random variates.  This
+could easily be changed to incorporate the RAND unit, which can
+be found in RANDOM.ARC, BPROGA DL2.
+
+Copyright 1988, by J. W. Rider.
