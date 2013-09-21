@@ -20,7 +20,7 @@ begin
       begin writeln(' No graphic detected ');halt(1) end;
   DetectGraph(GraphDriver,GraphMode);
   if GraphDriver<EGA then begin
-    writeln('����室�� ����᪨� ������ �� ���� EGA');  halt;
+    writeln('Необходим графический адаптер не ниже EGA');  halt;
   end;
   GraphDriver:=EGA;
   InitGraph(GraphDriver,GraphMode,'');
@@ -137,7 +137,7 @@ begin
   x21:=a0;
   x22:=b0;
   i:=0;
-  writeln(f,'��砫쭠� �窠 : (',x21:6:3,',',x22:6:3,')');
+  writeln(f,'Начальная точка : (',x21:6:3,',',x22:6:3,')');
   repeat
     inc(i);
     x11:=x21;
@@ -153,9 +153,9 @@ begin
     x11:=savex1;
     x12:=savex2;
     line(round(x11*k+xBegin),round(yBegin-x12*k),round(x21*k+xBegin),round(yBegin-x22*k));
-    writeln(f,i:3,'-� �窠 : (',x21:6:3,',',x22:6:3,')');
+    writeln(f,i:3,'-я точка : (',x21:6:3,',',x22:6:3,')');
   until sqrt(dx1*dx1+dx2*dx2)<eps;
-  writeln(f,'��᫮ ���権 - ',i:3);
+  writeln(f,'Число итераций - ',i:3);
 end;
 
 procedure Fletcher(var a0,b0 : extended;eps,h,xBegin,yBegin,k : extended;f0 : MyFunction);
@@ -173,7 +173,7 @@ begin
   dx11:=0;
   dx12:=0;
   setcolor(WHITE);
-  writeln(f,'��砫쭠� �窠 : (',x21:6:3,',',x22:6:3,')');
+  writeln(f,'Начальная точка : (',x21:6:3,',',x22:6:3,')');
   repeat
     inc(i);
     x11:=x21;
@@ -194,9 +194,9 @@ begin
     x11:=savex1;
     x12:=savex2;
     line(round(x11*k+xBegin),round(yBegin-x12*k),round(x21*k+xBegin),round(yBegin-x22*k));
-    writeln(f,i:3,'-� �窠 : (',x21:6:3,',',x22:6:3,')');
+    writeln(f,i:3,'-я точка : (',x21:6:3,',',x22:6:3,')');
   until sqrt(dx11*dx11+dx12*dx12)<eps;
-  writeln(f,'��᫮ ���権 - ',i:3);
+  writeln(f,'Число итераций - ',i:3);
 end;
 
 (*

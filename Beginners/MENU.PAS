@@ -5,7 +5,7 @@ var c: char;
 Procedure Menu;
  begin
       ClrScr;
-      writeln('===  ƒ« ¢­®¥ Œ¥­î  ===' );
+      writeln('===  Ð“Ð»Ð°Ð²Ð½Ð¾Ðµ ÐœÐµÐ½ÑŽ  ===' );
       writeln(' 1. item 1');
       writeln(' 2. item 2');
       writeln(' 3. item 2');

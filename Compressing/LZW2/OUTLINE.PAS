@@ -1,6 +1,6 @@
 (*-----------------------------------------------------------
-    ���������� ࠡ��� ����� LZW2
-    (ᦨ����/�ᦨ���� 䠩��)
+    Демонстрация работы модуля LZW2
+    (сжимает/расжимает файлы)
 -------------------------------------------------------------*)
 {$I-,R-,S-,O-,F-,B-}
 uses bitfile2,{lzss}
@@ -14,26 +14,26 @@ uses bitfile2,{lzss}
              {haffman};
 
 (*-----------------------------------------------------------
-   ��ࠡ�⪠ �⠫쭮� �訡�� �� ࠡ�� �ணࠬ��.
+   Обработка фатальной ошибки при работе программы.
 -------------------------------------------------------------*)
 procedure fatal_error(str:string);
 begin
-   writeln( '���� �ணࠬ��: ', str);
+   writeln( 'Сбой программы: ', str);
    halt(1);
 end;
 
 (*-----------------------------------------------------------
-   �뢮� ᮮ�饭�� �� �ᯮ�짮�����
+   Вывод сообщения об использовании
 -------------------------------------------------------------*)
 
 procedure usage_exit (prog_name:string);
 begin
-   writeln('�ᯮ�짮�����:  DLM A|X sou_file dest_file');
+   writeln('Использование:  DLM A|X sou_file dest_file');
    halt(0);
 end;
 
 (*-----------------------------------------------------------
-   ����७�� ����� 䠩��
+   Измерение длины файла
 -------------------------------------------------------------*)
 
 function file_size (name:string):longint;
@@ -46,7 +46,7 @@ begin
 end;
 
 (*-----------------------------------------------------------
-   �뢮� ᮮ�饭�� � ᮮ⭮襭�� ࠧ��஢ 䠩���
+   Вывод сообщения о соотношении размеров файлов
 *)
 procedure print_ratios(inputf,outputf:string);
 var
@@ -59,11 +59,11 @@ begin
    output_size:= file_size( outputf );
    ratio:= 100 - integer ( output_size * 100 div input_size );
    writeln;
-   writeln('���� �� �室�:        ', input_size );
-   writeln('���� �� ��室�:       ', output_size );
+   writeln('Байт на входе:        ', input_size );
+   writeln('Байт на выходе:       ', output_size );
    if ( output_size = 0 ) then
       output_size := 1;
-   writeln('�⥯��� ᦠ��: ', ratio,'%');
+   writeln('Степень сжатия: ', ratio,'%');
 end;
 
 procedure outputTime(t:longint);
@@ -71,7 +71,7 @@ var i:integer; s:string;
 begin
    i:=t*100 div 182;
    Str(i,S);  insert('.',S,length(S)-1);
-   writeln('�६�        :        ',S,' ᥪ');
+   writeln('Время        :        ',S,' сек');
 end;
 
 var inputf:TInputFile;
@@ -87,8 +87,8 @@ begin
      inputf.Init;
      inputf. Open(paramstr(2));
      outputf.New(paramstr(3));
-     writeln( '������ ',paramstr(2),' � ',paramstr(3));
-     writeln( '�ᯮ���� ', CompressionName );
+     writeln( 'Сжимаю ',paramstr(2),' в ',paramstr(3));
+     writeln( 'Используя ', CompressionName );
       t:=meml[$0:$46C];
       CompressFile( inputf, outputf );
       t:=meml[$0:$46C]-t;
@@ -101,8 +101,8 @@ begin
      inputf.init;
      inputf. Open(paramstr(2));
      outputf.New(paramstr(3));
-     writeln( '�������� ',paramstr(2),' � ',paramstr(3));
-     writeln( '�ᯮ���� ', CompressionName );
+     writeln( 'Разжимаю ',paramstr(2),' в ',paramstr(3));
+     writeln( 'Используя ', CompressionName );
       t:=meml[$0:$46C];
       ExpandFile( inputf, outputf );
       t:=meml[$0:$46C]-t;

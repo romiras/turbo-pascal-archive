@@ -23,11 +23,11 @@ begin
     X := BarSizeX * Color;
     Bar(X, 0, X + BarSizeX, BarSizeY);
   end;
-  WriteLn('Демонстрация записи изображения в BMP-файл');
+  WriteLn('╨Ф╨╡╨╝╨╛╨╜╤Б╤В╤А╨░╤Ж╨╕╤П ╨╖╨░╨┐╨╕╤Б╨╕ ╨╕╨╖╨╛╨▒╤А╨░╨╢╨╡╨╜╨╕╤П ╨▓ BMP-╤Д╨░╨╣╨╗');
 
   WriteBMPFile('TEST.BMP');
 
-  Write('Для продолжения нажмите клавишу <Enter>...');
+  Write('╨Ф╨╗╤П ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╡╨╜╨╕╤П ╨╜╨░╨╢╨╝╨╕╤В╨╡ ╨║╨╗╨░╨▓╨╕╤И╤Г <Enter>...');
   ReadLn;
   CloseGraph;
 end.

@@ -19,7 +19,7 @@ end;
 function getint(ident:string):byte;
 var s:byte;
 begin
-	write('Введите ',ident,' : ');
+	write('╨Т╨▓╨╡╨┤╨╕╤В╨╡ ',ident,' : ');
 	readln(s);
 	getint:=s;
 end;
@@ -244,11 +244,11 @@ procedure printLKP_wrapper(root:PTree);
 begin
 	clrscr;
 	if (root=NIL) then
-		writeln('Дерево пусто!')
+		writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!')
 	else
 		PrintLKP(root);
 	writeln;
-	writeln('Нажмите любую клавишу для выхода в главное меню');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г ╨┤╨╗╤П ╨▓╤Л╤Е╨╛╨┤╨░ ╨▓ ╨│╨╗╨░╨▓╨╜╨╛╨╡ ╨╝╨╡╨╜╤О');
 	readkey;
 end;
 
@@ -266,11 +266,11 @@ procedure printKLP_wrapper(root:PTree);
 begin
 	clrscr;
 	if (root=NIL) then
-		writeln('Дерево пусто!')
+		writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!')
 	else
 		PrintKLP(root);
 	writeln;
-	writeln('Нажмите любую клавишу для выхода в главное меню');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г ╨┤╨╗╤П ╨▓╤Л╤Е╨╛╨┤╨░ ╨▓ ╨│╨╗╨░╨▓╨╜╨╛╨╡ ╨╝╨╡╨╜╤О');
 	readkey;
 end;
 
@@ -288,11 +288,11 @@ procedure printLPK_wrapper(root:PTree);
 begin
 	clrscr;
 	if (root=NIL) then
-		writeln('Дерево пусто!')
+		writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!')
 	else
 		PrintLPK(root);
 	writeln;
-	writeln('Нажмите любую клавишу для выхода в главное меню');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г ╨┤╨╗╤П ╨▓╤Л╤Е╨╛╨┤╨░ ╨▓ ╨│╨╗╨░╨▓╨╜╨╛╨╡ ╨╝╨╡╨╜╤О');
 	readkey;
 end;
 
@@ -306,8 +306,8 @@ end;
 
 procedure countels_wrapper(root:PTree);
 begin
-	writeln('Число вершин дерева : ',countels(root));
-	writeln('Нажмите любую клавишу');
+	writeln('╨з╨╕╤Б╨╗╨╛ ╨▓╨╡╤А╤И╨╕╨╜ ╨┤╨╡╤А╨╡╨▓╨░ : ',countels(root));
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г');
 	writeln;
 	readkey;
 end;
@@ -325,9 +325,9 @@ end;
 
 procedure countleafs_wrapper(root:PTree);
 begin
-	writeln('Число листов дерева : ',countleafs(root));
+	writeln('╨з╨╕╤Б╨╗╨╛ ╨╗╨╕╤Б╤В╨╛╨▓ ╨┤╨╡╤А╨╡╨▓╨░ : ',countleafs(root));
 	writeln;
-	writeln('Нажмите любую клавишу');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г');
 	readkey;
 end;
 
@@ -345,12 +345,12 @@ procedure countdepth_wrapper(root:PTree);
 begin
      if (root<>NIL) then
       begin
-	writeln('Глубина дерева : ',countdepth(root,0));
+	writeln('╨У╨╗╤Г╨▒╨╕╨╜╨░ ╨┤╨╡╤А╨╡╨▓╨░ : ',countdepth(root,0));
 	writeln;
-	writeln('Нажмите любую клавишу');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г');
       end
      else
-         writeln('Дерево пусто!');
+         writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!');
 	readln;
 end;
 
@@ -530,10 +530,10 @@ end;
 procedure printlevel_wrapper(root:PTree;level:integer);
 begin
 	clrscr;
-	writeln('Все вершины на уровне ',level,' : ');
+	writeln('╨Т╤Б╨╡ ╨▓╨╡╤А╤И╨╕╨╜╤Л ╨╜╨░ ╤Г╤А╨╛╨▓╨╜╨╡ ',level,' : ');
 	printlevel(root,level,0);
 	writeln;
-	writeln('Нажмите любую клавишу для выхода в главное меню');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г ╨┤╨╗╤П ╨▓╤Л╤Е╨╛╨┤╨░ ╨▓ ╨│╨╗╨░╨▓╨╜╨╛╨╡ ╨╝╨╡╨╜╤О');
 	readkey;
 end;
 
@@ -597,7 +597,7 @@ begin
         end
      else
        begin
-         writeln('Дерево пусто!');
+         writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!');
          readkey;
        end;
 end;
@@ -605,21 +605,21 @@ end;
 procedure showmenu;
 begin
 	clrscr;
-	writeln(' AVL-дерево');
+	writeln(' AVL-╨┤╨╡╤А╨╡╨▓╨╛');
 	writeln;
-	writeln('  1) Добавить элемент в дерево');
-	writeln('  2) Распечатать дерево в виде левая ветвь - корень - правая ветвь (ЛКП)');
-	writeln('  3) Распечатать дерево в виде корень - левая ветвь - правая ветвь (КЛП)');
-	writeln('  4) Распечатать дерево в виде левая ветвь - правая ветвь - корень (ЛПК)');
-	writeln('  5) Вывести число вершин дерева');
-	writeln('  6) Вывести число листов дерева');
-	writeln('  7) Удалить элемент из дерева');
-	writeln('  8) Распечатать все вершины на заданном уровне');
-	writeln('  9) Вывести глубину дерева');
-	writeln(' 10) Нарисовать дерево');
-       	writeln(' 11) Выход');
+	writeln('  1) ╨Ф╨╛╨▒╨░╨▓╨╕╤В╤М ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨▓ ╨┤╨╡╤А╨╡╨▓╨╛');
+	writeln('  2) ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛ ╨▓ ╨▓╨╕╨┤╨╡ ╨╗╨╡╨▓╨░╤П ╨▓╨╡╤В╨▓╤М - ╨║╨╛╤А╨╡╨╜╤М - ╨┐╤А╨░╨▓╨░╤П ╨▓╨╡╤В╨▓╤М (╨Ы╨Ъ╨Я)');
+	writeln('  3) ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛ ╨▓ ╨▓╨╕╨┤╨╡ ╨║╨╛╤А╨╡╨╜╤М - ╨╗╨╡╨▓╨░╤П ╨▓╨╡╤В╨▓╤М - ╨┐╤А╨░╨▓╨░╤П ╨▓╨╡╤В╨▓╤М (╨Ъ╨Ы╨Я)');
+	writeln('  4) ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛ ╨▓ ╨▓╨╕╨┤╨╡ ╨╗╨╡╨▓╨░╤П ╨▓╨╡╤В╨▓╤М - ╨┐╤А╨░╨▓╨░╤П ╨▓╨╡╤В╨▓╤М - ╨║╨╛╤А╨╡╨╜╤М (╨Ы╨Я╨Ъ)');
+	writeln('  5) ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╤З╨╕╤Б╨╗╨╛ ╨▓╨╡╤А╤И╨╕╨╜ ╨┤╨╡╤А╨╡╨▓╨░');
+	writeln('  6) ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╤З╨╕╤Б╨╗╨╛ ╨╗╨╕╤Б╤В╨╛╨▓ ╨┤╨╡╤А╨╡╨▓╨░');
+	writeln('  7) ╨г╨┤╨░╨╗╨╕╤В╤М ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨╕╨╖ ╨┤╨╡╤А╨╡╨▓╨░');
+	writeln('  8) ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨▓╤Б╨╡ ╨▓╨╡╤А╤И╨╕╨╜╤Л ╨╜╨░ ╨╖╨░╨┤╨░╨╜╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡');
+	writeln('  9) ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╨│╨╗╤Г╨▒╨╕╨╜╤Г ╨┤╨╡╤А╨╡╨▓╨░');
+	writeln(' 10) ╨Э╨░╤А╨╕╤Б╨╛╨▓╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛');
+       	writeln(' 11) ╨Т╤Л╤Е╨╛╨┤');
 	writeln;
-	write('Ваш выбор : ');
+	write('╨Т╨░╤И ╨▓╤Л╨▒╨╛╤А : ');
 
 end;
 
@@ -634,14 +634,14 @@ begin
 		readln(selection);
 		writeln;
 		case selection of
-			1: addelem_wrapper(Tree,getint('элемент для добавления'));
+			1: addelem_wrapper(Tree,getint('╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨┤╨╗╤П ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜╨╕╤П'));
 			2: printLKP_wrapper(Tree);
 			3: printKLP_wrapper(Tree);
 			4: printLPK_wrapper(Tree);
 			5: countels_wrapper(Tree);
 			6: countleafs_wrapper(Tree);
-			7: delelem_wrapper(Tree,getint('элемент для удаления'));
-			8: printlevel_wrapper(Tree,getint('уровень, который нужно распечатать'));
+			7: delelem_wrapper(Tree,getint('╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨┤╨╗╤П ╤Г╨┤╨░╨╗╨╡╨╜╨╕╤П'));
+			8: printlevel_wrapper(Tree,getint('╤Г╤А╨╛╨▓╨╡╨╜╤М, ╨║╨╛╤В╨╛╤А╤Л╨╣ ╨╜╤Г╨╢╨╜╨╛ ╤А╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М'));
 			9: countdepth_wrapper(Tree);
                         10: drawtree_wrapper(Tree);
 			11:clrscr;

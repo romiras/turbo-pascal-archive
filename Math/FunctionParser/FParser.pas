@@ -1,10 +1,10 @@
 unit FParser;
 
-{ Изменен для ТП7, 2004 Romtek
+{ ╨Ш╨╖╨╝╨╡╨╜╨╡╨╜ ╨┤╨╗╤П ╨в╨Я7, 2004 Romtek
 
-  из FuncParser.pas (Дельфи)
-  (c) 2003 Щеглов Илья Александрович, студент факультета ФН
-  МГТУ им. Н.Э. Баумана, Москва }
+  ╨╕╨╖ FuncParser.pas (╨Ф╨╡╨╗╤М╤Д╨╕)
+  (c) 2003 ╨й╨╡╨│╨╗╨╛╨▓ ╨Ш╨╗╤М╤П ╨Р╨╗╨╡╨║╤Б╨░╨╜╨┤╤А╨╛╨▓╨╕╤З, ╤Б╤В╤Г╨┤╨╡╨╜╤В ╤Д╨░╨║╤Г╨╗╤М╤В╨╡╤В╨░ ╨д╨Э
+  ╨Ь╨У╨в╨г ╨╕╨╝. ╨Э.╨н. ╨С╨░╤Г╨╝╨░╨╜╨░, ╨Ь╨╛╤Б╨║╨▓╨░ }
 
 interface
 
@@ -15,12 +15,12 @@ const
  Capacity = 100;
 
 type
- TOperation = Array [1..Capacity] of byte; { код операции }
+ TOperation = Array [1..Capacity] of byte; { ╨║╨╛╨┤ ╨╛╨┐╨╡╤А╨░╤Ж╨╕╨╕ }
 
- TOperand = Array [1..2] of Word; { операнды }
+ TOperand = Array [1..2] of Word; { ╨╛╨┐╨╡╤А╨░╨╜╨┤╤Л }
 
  TAoTOperand = Array [1..Capacity] of TOperand;
- TAoSingle = Array [1..Capacity div 2] of Single; { величины }
+ TAoSingle = Array [1..Capacity div 2] of Single; { ╨▓╨╡╨╗╨╕╤З╨╕╨╜╤Л }
 
 
  TPFRecord = Record

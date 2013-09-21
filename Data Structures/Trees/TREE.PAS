@@ -2,7 +2,7 @@ program treework;
 uses CRT,Graph;
 
 const
-    PathToDriver = '..\..\bgi'; { путь к граф. драйверу [egavga.]bgi }
+    PathToDriver = '..\..\bgi'; { ╨┐╤Г╤В╤М ╨║ ╨│╤А╨░╤Д. ╨┤╤А╨░╨╣╨▓╨╡╤А╤Г [egavga.]bgi }
 
 type PTree = ^TTree;
 	 TTree = record
@@ -13,7 +13,7 @@ type PTree = ^TTree;
 function getint(ident:string):byte;
 var s:byte;
 begin
-	write('Введите ',ident,' : ');
+	write('╨Т╨▓╨╡╨┤╨╕╤В╨╡ ',ident,' : ');
 	readln(s);
 	getint:=s;
 end;
@@ -21,168 +21,168 @@ end;
 procedure addelem(var root:PTree;info:byte);
 var elem:PTree;
 begin
-	if (root=NIL) then (* Если дерево пустое, то *)
+	if (root=NIL) then (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛╨╡, ╤В╨╛ *)
 		begin
-			new(elem); (* Создать новый лист *)
+			new(elem); (* ╨б╨╛╨╖╨┤╨░╤В╤М ╨╜╨╛╨▓╤Л╨╣ ╨╗╨╕╤Б╤В *)
 			elem^.left:=NIL; 
 			elem^.right:=NIL;
-			elem^.info:=info; (* Записать туда значение требуемого элемента *)
-			root:=elem; (* Присоединить новый лист вместо пустого дерева *)
+			elem^.info:=info; (* ╨Ч╨░╨┐╨╕╤Б╨░╤В╤М ╤В╤Г╨┤╨░ ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╤В╤А╨╡╨▒╤Г╨╡╨╝╨╛╨│╨╛ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░ *)
+			root:=elem; (* ╨Я╤А╨╕╤Б╨╛╨╡╨┤╨╕╨╜╨╕╤В╤М ╨╜╨╛╨▓╤Л╨╣ ╨╗╨╕╤Б╤В ╨▓╨╝╨╡╤Б╤В╨╛ ╨┐╤Г╤Б╤В╨╛╨│╨╛ ╨┤╨╡╤А╨╡╨▓╨░ *)
 		end 
-	else  (* Иначе *)
+	else  (* ╨Ш╨╜╨░╤З╨╡ *)
 		begin
-			if (info<root^.info) then  (* Если добавляемое значение меньше текущего узла, то *)
-				addelem(root^.left,info) (* Добавить его в левое поддерево *)
-			else (* Иначе *) 
-				addelem(root^.right,info); (* Добавить его в правое поддерево *)
+			if (info<root^.info) then  (* ╨Х╤Б╨╗╨╕ ╨┤╨╛╨▒╨░╨▓╨╗╤П╨╡╨╝╨╛╨╡ ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨╝╨╡╨╜╤М╤И╨╡ ╤В╨╡╨║╤Г╤Й╨╡╨│╨╛ ╤Г╨╖╨╗╨░, ╤В╨╛ *)
+				addelem(root^.left,info) (* ╨Ф╨╛╨▒╨░╨▓╨╕╤В╤М ╨╡╨│╨╛ ╨▓ ╨╗╨╡╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
+			else (* ╨Ш╨╜╨░╤З╨╡ *) 
+				addelem(root^.right,info); (* ╨Ф╨╛╨▒╨░╨▓╨╕╤В╤М ╨╡╨│╨╛ ╨▓ ╨┐╤А╨░╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
 		end;
 end;
 
 
 procedure printLKP(root:PTree);
 begin
-	if (root<>NIL) then  (* Если дерево не пустое *)
+	if (root<>NIL) then  (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨╜╨╡ ╨┐╤Г╤Б╤В╨╛╨╡ *)
 		begin
-			printLKP(root^.left);  (* Распечатать левое поддерево *)
-			write(root^.info,' '); (* Распечатать корень дерева *)
-			printLKP(root^.right); (* Распечать правое поддерево *)
+			printLKP(root^.left);  (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨╗╨╡╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
+			write(root^.info,' '); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨║╨╛╤А╨╡╨╜╤М ╨┤╨╡╤А╨╡╨▓╨░ *)
+			printLKP(root^.right); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╤М ╨┐╤А╨░╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
 		end;
 end;
 
 procedure printLKP_wrapper(root:PTree);
 begin
 	clrscr;
-	if (root=NIL) then (* Если дерево пустое *)
-		writeln('Дерево пусто!') (* Сообщить об этом *)
-	else (* Иначе *)
-		PrintLKP(root); (* Распечатать  дерево *)
+	if (root=NIL) then (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛╨╡ *)
+		writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!') (* ╨б╨╛╨╛╨▒╤Й╨╕╤В╤М ╨╛╨▒ ╤Н╤В╨╛╨╝ *)
+	else (* ╨Ш╨╜╨░╤З╨╡ *)
+		PrintLKP(root); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М  ╨┤╨╡╤А╨╡╨▓╨╛ *)
 	writeln;
-	writeln('Нажмите любую клавишу для выхода в главное меню');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г ╨┤╨╗╤П ╨▓╤Л╤Е╨╛╨┤╨░ ╨▓ ╨│╨╗╨░╨▓╨╜╨╛╨╡ ╨╝╨╡╨╜╤О');
 	readkey;
 end;
 
 procedure printKLP(root:PTree);
 begin
-	if (root<>NIL) then (* Если дерево не пустое *)
+	if (root<>NIL) then (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨╜╨╡ ╨┐╤Г╤Б╤В╨╛╨╡ *)
 		begin
-			write(root^.info,' '); (* Распечатать корень дерево *)
-			printKLP(root^.left); (* Распечатать левое поддерево *)
-			printKLP(root^.right);(* Распечатать правое поддерево *)
+			write(root^.info,' '); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨║╨╛╤А╨╡╨╜╤М ╨┤╨╡╤А╨╡╨▓╨╛ *)
+			printKLP(root^.left); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨╗╨╡╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
+			printKLP(root^.right);(* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┐╤А╨░╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
 		end;
 end;
 
 procedure printKLP_wrapper(root:PTree);
 begin
 	clrscr;
-	if (root=NIL) then (* Если дерево пустое *)
-		writeln('Дерево пусто!') (* Сообщить об этом *)
-	else  (* Иначе *)
-		PrintKLP(root); (* Распечатать дерево *)
+	if (root=NIL) then (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛╨╡ *)
+		writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!') (* ╨б╨╛╨╛╨▒╤Й╨╕╤В╤М ╨╛╨▒ ╤Н╤В╨╛╨╝ *)
+	else  (* ╨Ш╨╜╨░╤З╨╡ *)
+		PrintKLP(root); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛ *)
 	writeln;
-	writeln('Нажмите любую клавишу для выхода в главное меню');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г ╨┤╨╗╤П ╨▓╤Л╤Е╨╛╨┤╨░ ╨▓ ╨│╨╗╨░╨▓╨╜╨╛╨╡ ╨╝╨╡╨╜╤О');
 	readkey;
 end;
 
 procedure printLPK(root:PTree);
 begin
-	if (root<>NIL) then (* Если дерево не пустое *)
+	if (root<>NIL) then (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨╜╨╡ ╨┐╤Г╤Б╤В╨╛╨╡ *)
 		begin
-			printLPK(root^.left); (* Распечатать левое поддерево *)
-			printLPK(root^.right); (* Распечатать правое поддерево *)
-			write(root^.info,' '); (* Распечатать корень дерева *)
+			printLPK(root^.left); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨╗╨╡╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
+			printLPK(root^.right); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┐╤А╨░╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
+			write(root^.info,' '); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨║╨╛╤А╨╡╨╜╤М ╨┤╨╡╤А╨╡╨▓╨░ *)
 		end; 
 end;
 
 procedure printLPK_wrapper(root:PTree);
 begin
 	clrscr;
-	if (root=NIL) then (* Если дерево пустое *)
-		writeln('Дерево пусто!') (* Сообщить об этом *)
-	else (* Иначе *)
-		PrintLPK(root); (* Распечатать дерево *)
+	if (root=NIL) then (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛╨╡ *)
+		writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!') (* ╨б╨╛╨╛╨▒╤Й╨╕╤В╤М ╨╛╨▒ ╤Н╤В╨╛╨╝ *)
+	else (* ╨Ш╨╜╨░╤З╨╡ *)
+		PrintLPK(root); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛ *)
 	writeln;
-	writeln('Нажмите любую клавишу для выхода в главное меню');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г ╨┤╨╗╤П ╨▓╤Л╤Е╨╛╨┤╨░ ╨▓ ╨│╨╗╨░╨▓╨╜╨╛╨╡ ╨╝╨╡╨╜╤О');
 	readkey;
 end;
 
 function countels(root:PTree):integer;
 begin
-	if (root<>NIL) then (* Если дерево не пустое , то *)
-		countels:=1+countels(root^.left)+countels(root^.right) (* Число его узлов - сумма числа узлов левой и правой ветвей +1 *)
-	else (* Иначе, если дерево пустое *)
-		countels:=0; (* Число его узлов = 0 *)
+	if (root<>NIL) then (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨╜╨╡ ╨┐╤Г╤Б╤В╨╛╨╡ , ╤В╨╛ *)
+		countels:=1+countels(root^.left)+countels(root^.right) (* ╨з╨╕╤Б╨╗╨╛ ╨╡╨│╨╛ ╤Г╨╖╨╗╨╛╨▓ - ╤Б╤Г╨╝╨╝╨░ ╤З╨╕╤Б╨╗╨░ ╤Г╨╖╨╗╨╛╨▓ ╨╗╨╡╨▓╨╛╨╣ ╨╕ ╨┐╤А╨░╨▓╨╛╨╣ ╨▓╨╡╤В╨▓╨╡╨╣ +1 *)
+	else (* ╨Ш╨╜╨░╤З╨╡, ╨╡╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛╨╡ *)
+		countels:=0; (* ╨з╨╕╤Б╨╗╨╛ ╨╡╨│╨╛ ╤Г╨╖╨╗╨╛╨▓ = 0 *)
 end;
 
 procedure countels_wrapper(root:PTree);
 begin
-	writeln('Число вершин дерева : ',countels(root));
-	writeln('Нажмите любую клавишу');
+	writeln('╨з╨╕╤Б╨╗╨╛ ╨▓╨╡╤А╤И╨╕╨╜ ╨┤╨╡╤А╨╡╨▓╨░ : ',countels(root));
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г');
 	writeln;
 	readkey;
 end;
 
 function countleafs(root:PTree):integer;
 begin
-	if (root<>NIL) then (* Если дерево не пустое, то *)
-		if (root^.left=NIL) and (root^.right<>NIL) then  (* Если оно - лист,то *)
-			countleafs:=1 (* Количество листов в нём = 1 *)
-		else (* Иначе *)
-			countleafs:=countleafs(root^.left)+countleafs(root^.right) (* Количество листов = сумме листов левой и правой ветвей *)
-	else (* Иначе, если дерево пустое , *)
-		countleafs:=0; (* Количество листов в нём = 0 *)
+	if (root<>NIL) then (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨╜╨╡ ╨┐╤Г╤Б╤В╨╛╨╡, ╤В╨╛ *)
+		if (root^.left=NIL) and (root^.right<>NIL) then  (* ╨Х╤Б╨╗╨╕ ╨╛╨╜╨╛ - ╨╗╨╕╤Б╤В,╤В╨╛ *)
+			countleafs:=1 (* ╨Ъ╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╨╗╨╕╤Б╤В╨╛╨▓ ╨▓ ╨╜╤С╨╝ = 1 *)
+		else (* ╨Ш╨╜╨░╤З╨╡ *)
+			countleafs:=countleafs(root^.left)+countleafs(root^.right) (* ╨Ъ╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╨╗╨╕╤Б╤В╨╛╨▓ = ╤Б╤Г╨╝╨╝╨╡ ╨╗╨╕╤Б╤В╨╛╨▓ ╨╗╨╡╨▓╨╛╨╣ ╨╕ ╨┐╤А╨░╨▓╨╛╨╣ ╨▓╨╡╤В╨▓╨╡╨╣ *)
+	else (* ╨Ш╨╜╨░╤З╨╡, ╨╡╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛╨╡ , *)
+		countleafs:=0; (* ╨Ъ╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╨╗╨╕╤Б╤В╨╛╨▓ ╨▓ ╨╜╤С╨╝ = 0 *)
 end;
 
 procedure countleafs_wrapper(root:PTree);
 begin
-	writeln('Число листов дерева : ',countels(root));
+	writeln('╨з╨╕╤Б╨╗╨╛ ╨╗╨╕╤Б╤В╨╛╨▓ ╨┤╨╡╤А╨╡╨▓╨░ : ',countels(root));
 	writeln;
-	writeln('Нажмите любую клавишу');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г');
 	readkey;
 end;
 
 function getmostright(root:PTree):byte;
 begin
-	if (root^.right=NIL) then 		(* Если нет правого поддерева *)
-		getmostright:=root^.info (* То этот элемент - самый правый в дереве *)
-	else (* Иначе *)
-		getmostright:=getmostright(root^.right); (* Самый правый элемент этого дерева - самый правый элемент его правого поддерева *)
+	if (root^.right=NIL) then 		(* ╨Х╤Б╨╗╨╕ ╨╜╨╡╤В ╨┐╤А╨░╨▓╨╛╨│╨╛ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨░ *)
+		getmostright:=root^.info (* ╨в╨╛ ╤Н╤В╨╛╤В ╤Н╨╗╨╡╨╝╨╡╨╜╤В - ╤Б╨░╨╝╤Л╨╣ ╨┐╤А╨░╨▓╤Л╨╣ ╨▓ ╨┤╨╡╤А╨╡╨▓╨╡ *)
+	else (* ╨Ш╨╜╨░╤З╨╡ *)
+		getmostright:=getmostright(root^.right); (* ╨б╨░╨╝╤Л╨╣ ╨┐╤А╨░╨▓╤Л╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╤Н╤В╨╛╨│╨╛ ╨┤╨╡╤А╨╡╨▓╨░ - ╤Б╨░╨╝╤Л╨╣ ╨┐╤А╨░╨▓╤Л╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨╡╨│╨╛ ╨┐╤А╨░╨▓╨╛╨│╨╛ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨░ *)
 end;
 
 procedure delelem(var root:PTree;info:byte);
 var temp:PTree;
 begin
-	if (root<>NIL) then (* Если дерево не пустое, то *)
+	if (root<>NIL) then (* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨╜╨╡ ╨┐╤Г╤Б╤В╨╛╨╡, ╤В╨╛ *)
 	  begin
-		if (info<root^.info) then	(* Если удаляемый элемент меньше тек. узла, то *)
-			delelem(root^.left,info)	(* Удалить его из левого поддерева *)
-		else		(* Иначе *)
-		if (info>root^.info) then (* Если удаляемый элемент больше тек. узла, то *)
-			delelem(root^.right,info)	(* Удалить его из правого поддерева *)
-		else	(* Иначе тек. узел - удаляемый элемент *)
+		if (info<root^.info) then	(* ╨Х╤Б╨╗╨╕ ╤Г╨┤╨░╨╗╤П╨╡╨╝╤Л╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨╝╨╡╨╜╤М╤И╨╡ ╤В╨╡╨║. ╤Г╨╖╨╗╨░, ╤В╨╛ *)
+			delelem(root^.left,info)	(* ╨г╨┤╨░╨╗╨╕╤В╤М ╨╡╨│╨╛ ╨╕╨╖ ╨╗╨╡╨▓╨╛╨│╨╛ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨░ *)
+		else		(* ╨Ш╨╜╨░╤З╨╡ *)
+		if (info>root^.info) then (* ╨Х╤Б╨╗╨╕ ╤Г╨┤╨░╨╗╤П╨╡╨╝╤Л╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨▒╨╛╨╗╤М╤И╨╡ ╤В╨╡╨║. ╤Г╨╖╨╗╨░, ╤В╨╛ *)
+			delelem(root^.right,info)	(* ╨г╨┤╨░╨╗╨╕╤В╤М ╨╡╨│╨╛ ╨╕╨╖ ╨┐╤А╨░╨▓╨╛╨│╨╛ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨░ *)
+		else	(* ╨Ш╨╜╨░╤З╨╡ ╤В╨╡╨║. ╤Г╨╖╨╡╨╗ - ╤Г╨┤╨░╨╗╤П╨╡╨╝╤Л╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В *)
 			begin
-				if (root^.left=NIL) and (root^.right=NIL) then (* Если тек. узел - лист, то *)
+				if (root^.left=NIL) and (root^.right=NIL) then (* ╨Х╤Б╨╗╨╕ ╤В╨╡╨║. ╤Г╨╖╨╡╨╗ - ╨╗╨╕╤Б╤В, ╤В╨╛ *)
 					begin
-						dispose(root); (* Удалить его *)
-						root:=NIL;	(* Поставить на его место пустое дерево *)
+						dispose(root); (* ╨г╨┤╨░╨╗╨╕╤В╤М ╨╡╨│╨╛ *)
+						root:=NIL;	(* ╨Я╨╛╤Б╤В╨░╨▓╨╕╤В╤М ╨╜╨░ ╨╡╨│╨╛ ╨╝╨╡╤Б╤В╨╛ ╨┐╤Г╤Б╤В╨╛╨╡ ╨┤╨╡╤А╨╡╨▓╨╛ *)
 					end
 				else
-				if (root^.left=NIL) and (root^.right<>NIL) then (* Если у тек.узла есть только правая ветвь *)
+				if (root^.left=NIL) and (root^.right<>NIL) then (* ╨Х╤Б╨╗╨╕ ╤Г ╤В╨╡╨║.╤Г╨╖╨╗╨░ ╨╡╤Б╤В╤М ╤В╨╛╨╗╤М╨║╨╛ ╨┐╤А╨░╨▓╨░╤П ╨▓╨╡╤В╨▓╤М *)
 					begin
-						temp:=root; 	(* Присоединить её вместо тек. узла *)
+						temp:=root; 	(* ╨Я╤А╨╕╤Б╨╛╨╡╨┤╨╕╨╜╨╕╤В╤М ╨╡╤С ╨▓╨╝╨╡╤Б╤В╨╛ ╤В╨╡╨║. ╤Г╨╖╨╗╨░ *)
 						root:=root^.right;
-						dispose(temp); (* Удалить тек. узел *)
+						dispose(temp); (* ╨г╨┤╨░╨╗╨╕╤В╤М ╤В╨╡╨║. ╤Г╨╖╨╡╨╗ *)
 					end
 				else
-				if (root^.left<>NIL) and (root^.right=NIL) then  (* Если у тек.узла есть только левая ветвь *)
+				if (root^.left<>NIL) and (root^.right=NIL) then  (* ╨Х╤Б╨╗╨╕ ╤Г ╤В╨╡╨║.╤Г╨╖╨╗╨░ ╨╡╤Б╤В╤М ╤В╨╛╨╗╤М╨║╨╛ ╨╗╨╡╨▓╨░╤П ╨▓╨╡╤В╨▓╤М *)
 					begin
-						temp:=root;     (* Присоединить её вместо тек. узла *)
+						temp:=root;     (* ╨Я╤А╨╕╤Б╨╛╨╡╨┤╨╕╨╜╨╕╤В╤М ╨╡╤С ╨▓╨╝╨╡╤Б╤В╨╛ ╤В╨╡╨║. ╤Г╨╖╨╗╨░ *)
 						root:=root^.left;
-						dispose(temp);  (* Удалить тек. узел *)
+						dispose(temp);  (* ╨г╨┤╨░╨╗╨╕╤В╤М ╤В╨╡╨║. ╤Г╨╖╨╡╨╗ *)
 					end
-				else (* Иначе у узла есть обе ветви *)
+				else (* ╨Ш╨╜╨░╤З╨╡ ╤Г ╤Г╨╖╨╗╨░ ╨╡╤Б╤В╤М ╨╛╨▒╨╡ ╨▓╨╡╤В╨▓╨╕ *)
 					begin
-						root^.info:=getmostright(root^.left); (* Вставить на место узла самый правый эл-т левого поддерева *)
-						delelem(root^.left,root^.info); (* Удалить самый правый эл-т из левого поддерева *)
+						root^.info:=getmostright(root^.left); (* ╨Т╤Б╤В╨░╨▓╨╕╤В╤М ╨╜╨░ ╨╝╨╡╤Б╤В╨╛ ╤Г╨╖╨╗╨░ ╤Б╨░╨╝╤Л╨╣ ╨┐╤А╨░╨▓╤Л╨╣ ╤Н╨╗-╤В ╨╗╨╡╨▓╨╛╨│╨╛ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨░ *)
+						delelem(root^.left,root^.info); (* ╨г╨┤╨░╨╗╨╕╤В╤М ╤Б╨░╨╝╤Л╨╣ ╨┐╤А╨░╨▓╤Л╨╣ ╤Н╨╗-╤В ╨╕╨╖ ╨╗╨╡╨▓╨╛╨│╨╛ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨░ *)
 					end;
 						
 			end;
@@ -191,14 +191,14 @@ end;
 
 procedure printlevel(root:Ptree;level,curlevel:integer);
 begin
-	if (root<>NIL) then		(* Если дерево не пустое, то *)
+	if (root<>NIL) then		(* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨╜╨╡ ╨┐╤Г╤Б╤В╨╛╨╡, ╤В╨╛ *)
 		begin
-			if (curlevel=level) then	(* Если тек.вершина на нужном уровне, то *)
-				write(root^.info,' ')		(* Распечатать её *)
-			else	(* Иначе *)
+			if (curlevel=level) then	(* ╨Х╤Б╨╗╨╕ ╤В╨╡╨║.╨▓╨╡╤А╤И╨╕╨╜╨░ ╨╜╨░ ╨╜╤Г╨╢╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡, ╤В╨╛ *)
+				write(root^.info,' ')		(* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨╡╤С *)
+			else	(* ╨Ш╨╜╨░╤З╨╡ *)
 				begin
-					printlevel(root^.left,level,curlevel+1); (* Распечатать все вершины треб. уровня в левом поддереве *)
-					printlevel(root^.right,level,curlevel+1); (* Распечатать все вершины треб. уровня в правом поддереве *)
+					printlevel(root^.left,level,curlevel+1); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨▓╤Б╨╡ ╨▓╨╡╤А╤И╨╕╨╜╤Л ╤В╤А╨╡╨▒. ╤Г╤А╨╛╨▓╨╜╤П ╨▓ ╨╗╨╡╨▓╨╛╨╝ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╡ *)
+					printlevel(root^.right,level,curlevel+1); (* ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨▓╤Б╨╡ ╨▓╨╡╤А╤И╨╕╨╜╤Л ╤В╤А╨╡╨▒. ╤Г╤А╨╛╨▓╨╜╤П ╨▓ ╨┐╤А╨░╨▓╨╛╨╝ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╡ *)
 				end;
 		end;
 end;
@@ -206,23 +206,23 @@ end;
 procedure printlevel_wrapper(root:PTree;level:integer);
 begin
 	clrscr;
-	writeln('Все вершины на уровне ',level,' : ');
+	writeln('╨Т╤Б╨╡ ╨▓╨╡╤А╤И╨╕╨╜╤Л ╨╜╨░ ╤Г╤А╨╛╨▓╨╜╨╡ ',level,' : ');
 	printlevel(root,level,0);
 	writeln;
-	writeln('Нажмите любую клавишу для выхода в главное меню');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г ╨┤╨╗╤П ╨▓╤Л╤Е╨╛╨┤╨░ ╨▓ ╨│╨╗╨░╨▓╨╜╨╛╨╡ ╨╝╨╡╨╜╤О');
 	readkey;
 end;
 
 function countdepth(root:PTree;level:integer):integer;
 var dr,dl:integer;
 begin
-	if (root=NIL) then	(* Если дерево пустое, то *)
-		countdepth:=level-1	(* Глубина текущей ветви = текущему уровню - 1*)
-	else	(* Иначе *)
+	if (root=NIL) then	(* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛╨╡, ╤В╨╛ *)
+		countdepth:=level-1	(* ╨У╨╗╤Г╨▒╨╕╨╜╨░ ╤В╨╡╨║╤Г╤Й╨╡╨╣ ╨▓╨╡╤В╨▓╨╕ = ╤В╨╡╨║╤Г╤Й╨╡╨╝╤Г ╤Г╤А╨╛╨▓╨╜╤О - 1*)
+	else	(* ╨Ш╨╜╨░╤З╨╡ *)
 		begin
 			dr:=countdepth(root^.left,level+1);
 			dl:=countdepth(root^.right,level+1);
-			if (dr>dl) then	(* Глубина текущей ветви равна максимальной из глубин её поддеревьев *)
+			if (dr>dl) then	(* ╨У╨╗╤Г╨▒╨╕╨╜╨░ ╤В╨╡╨║╤Г╤Й╨╡╨╣ ╨▓╨╡╤В╨▓╨╕ ╤А╨░╨▓╨╜╨░ ╨╝╨░╨║╤Б╨╕╨╝╨░╨╗╤М╨╜╨╛╨╣ ╨╕╨╖ ╨│╨╗╤Г╨▒╨╕╨╜ ╨╡╤С ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╤М╨╡╨▓ *)
 				countdepth:=dr
 			else
 				countdepth:=dl;
@@ -234,12 +234,12 @@ procedure countdepth_wrapper(root:PTree);
 begin
      if (root<>NIL) then
       begin
-	writeln('Глубина дерева : ',countdepth(root,0));
+	writeln('╨У╨╗╤Г╨▒╨╕╨╜╨░ ╨┤╨╡╤А╨╡╨▓╨░ : ',countdepth(root,0));
 	writeln;
-	writeln('Нажмите любую клавишу');
+	writeln('╨Э╨░╨╢╨╝╨╕╤В╨╡ ╨╗╤О╨▒╤Г╤О ╨║╨╗╨░╨▓╨╕╤И╤Г');
       end
      else
-         writeln('Дерево пусто!');
+         writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!');
 	readln;
 end;
 
@@ -248,51 +248,51 @@ var Width,Height:integer;
     CurVPort:ViewPortType;
     s:string;
 begin
-     if (root<>NIL) then	(* Если дерево не пустое, то *)
+     if (root<>NIL) then	(* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨╜╨╡ ╨┐╤Г╤Б╤В╨╛╨╡, ╤В╨╛ *)
         begin
              GetViewSettings(CurVPort);	
              width:=CurVPort.x2-CurVPort.x1;
              height:=CurVPort.y2-CurVPort.y1;
              str(root^.info,s);
-             OutTextXY(width div 2,0,s);		(* Вывести значение вершины в верх-центр тек. окна *)
-             if (root^.left<>NIL) then		(* Если у вершины есть левая ветвь *)
-                line(width div 2,8,width div 4,height-3);	(* Нарисовать отрезок прямой к левой ветви *)
-             if (root^.right<>NIL) then		(* Если у вершины есть правая ветвь *)
-                line(width div 2,8,3*width div 4,height-3);	(* Нарисовать отрезок прямой к правой ветви *)
-             with CurVPort do (* Разбить тек. окно по горизонтали пополам, выбрать левую часть, перейти к след. уровню *)
+             OutTextXY(width div 2,0,s);		(* ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨▓╨╡╤А╤И╨╕╨╜╤Л ╨▓ ╨▓╨╡╤А╤Е-╤Ж╨╡╨╜╤В╤А ╤В╨╡╨║. ╨╛╨║╨╜╨░ *)
+             if (root^.left<>NIL) then		(* ╨Х╤Б╨╗╨╕ ╤Г ╨▓╨╡╤А╤И╨╕╨╜╤Л ╨╡╤Б╤В╤М ╨╗╨╡╨▓╨░╤П ╨▓╨╡╤В╨▓╤М *)
+                line(width div 2,8,width div 4,height-3);	(* ╨Э╨░╤А╨╕╤Б╨╛╨▓╨░╤В╤М ╨╛╤В╤А╨╡╨╖╨╛╨║ ╨┐╤А╤П╨╝╨╛╨╣ ╨║ ╨╗╨╡╨▓╨╛╨╣ ╨▓╨╡╤В╨▓╨╕ *)
+             if (root^.right<>NIL) then		(* ╨Х╤Б╨╗╨╕ ╤Г ╨▓╨╡╤А╤И╨╕╨╜╤Л ╨╡╤Б╤В╤М ╨┐╤А╨░╨▓╨░╤П ╨▓╨╡╤В╨▓╤М *)
+                line(width div 2,8,3*width div 4,height-3);	(* ╨Э╨░╤А╨╕╤Б╨╛╨▓╨░╤В╤М ╨╛╤В╤А╨╡╨╖╨╛╨║ ╨┐╤А╤П╨╝╨╛╨╣ ╨║ ╨┐╤А╨░╨▓╨╛╨╣ ╨▓╨╡╤В╨▓╨╕ *)
+             with CurVPort do (* ╨а╨░╨╖╨▒╨╕╤В╤М ╤В╨╡╨║. ╨╛╨║╨╜╨╛ ╨┐╨╛ ╨│╨╛╤А╨╕╨╖╨╛╨╜╤В╨░╨╗╨╕ ╨┐╨╛╨┐╨╛╨╗╨░╨╝, ╨▓╤Л╨▒╤А╨░╤В╤М ╨╗╨╡╨▓╤Г╤О ╤З╨░╤Б╤В╤М, ╨┐╨╡╤А╨╡╨╣╤В╨╕ ╨║ ╤Б╨╗╨╡╨┤. ╤Г╤А╨╛╨▓╨╜╤О *)
                   setviewport(x1,y2,x1+(width div 2),y2+height,ClipOff);	
-             drawtree(root^.left);	 	(* Вывести левое поддерево *)
-             with CurVPort do	(* Разбить тек. окно по горизонтали пополам, выбрать правую часть, перейти к след. уровню *)
+             drawtree(root^.left);	 	(* ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╨╗╨╡╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
+             with CurVPort do	(* ╨а╨░╨╖╨▒╨╕╤В╤М ╤В╨╡╨║. ╨╛╨║╨╜╨╛ ╨┐╨╛ ╨│╨╛╤А╨╕╨╖╨╛╨╜╤В╨░╨╗╨╕ ╨┐╨╛╨┐╨╛╨╗╨░╨╝, ╨▓╤Л╨▒╤А╨░╤В╤М ╨┐╤А╨░╨▓╤Г╤О ╤З╨░╤Б╤В╤М, ╨┐╨╡╤А╨╡╨╣╤В╨╕ ╨║ ╤Б╨╗╨╡╨┤. ╤Г╤А╨╛╨▓╨╜╤О *)
                   setviewport(x1+(width div 2),y2,x2,y2+height,ClipOff);
-             drawtree(root^.right);	(* Вывести правое поддерево *)
+             drawtree(root^.right);	(* ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╨┐╤А╨░╨▓╨╛╨╡ ╨┐╨╛╨┤╨┤╨╡╤А╨╡╨▓╨╛ *)
         end;
 end;
 
 procedure drawtree_wrapper(root:PTree);
 Var GraphDevice,GraphMode:integer;
 begin
-     if (root<>NIL) then	(* Если дерево не пустое *)
+     if (root<>NIL) then	(* ╨Х╤Б╨╗╨╕ ╨┤╨╡╤А╨╡╨▓╨╛ ╨╜╨╡ ╨┐╤Г╤Б╤В╨╛╨╡ *)
         begin
              GraphDevice:=Detect;
-             InitGraph(GraphDevice,GraphMode,PathToDriver); (* Инициализировать графику *)
-             if (GraphResult<>grOK) then		(* Если инициализация не удалась, то *)
+             InitGraph(GraphDevice,GraphMode,PathToDriver); (* ╨Ш╨╜╨╕╤Ж╨╕╨░╨╗╨╕╨╖╨╕╤А╨╛╨▓╨░╤В╤М ╨│╤А╨░╤Д╨╕╨║╤Г *)
+             if (GraphResult<>grOK) then		(* ╨Х╤Б╨╗╨╕ ╨╕╨╜╨╕╤Ж╨╕╨░╨╗╨╕╨╖╨░╤Ж╨╕╤П ╨╜╨╡ ╤Г╨┤╨░╨╗╨░╤Б╤М, ╤В╨╛ *)
                begin
-                  Writeln('Error initializing graphics!');	(* Сообщить об этом *)
+                  Writeln('Error initializing graphics!');	(* ╨б╨╛╨╛╨▒╤Й╨╕╤В╤М ╨╛╨▒ ╤Н╤В╨╛╨╝ *)
                   readkey;
                end
-             else (* Иначе *)
+             else (* ╨Ш╨╜╨░╤З╨╡ *)
                begin
-                  SetViewPort(0,0,GetMaxX,(GetMaxY div (countdepth(root,0)+1)),ClipOff); (*Установить окно на всю ширину экрана
-                                                                                          и 0й уровень дерева *)
+                  SetViewPort(0,0,GetMaxX,(GetMaxY div (countdepth(root,0)+1)),ClipOff); (*╨г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╤М ╨╛╨║╨╜╨╛ ╨╜╨░ ╨▓╤Б╤О ╤И╨╕╤А╨╕╨╜╤Г ╤Н╨║╤А╨░╨╜╨░
+                                                                                          ╨╕ 0╨╣ ╤Г╤А╨╛╨▓╨╡╨╜╤М ╨┤╨╡╤А╨╡╨▓╨░ *)
                   SetTextJustify(CenterText,TopText); 
-                  drawtree(root); (* Нарисовать дерево *)
+                  drawtree(root); (* ╨Э╨░╤А╨╕╤Б╨╛╨▓╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛ *)
                   readkey;
                   closegraph;
                end
         end
-     else (* Иначе *)
+     else (* ╨Ш╨╜╨░╤З╨╡ *)
        begin
-         writeln('Дерево пусто!'); (* Сообщить об этом *)
+         writeln('╨Ф╨╡╤А╨╡╨▓╨╛ ╨┐╤Г╤Б╤В╨╛!'); (* ╨б╨╛╨╛╨▒╤Й╨╕╤В╤М ╨╛╨▒ ╤Н╤В╨╛╨╝ *)
          readkey;
        end;
 end;
@@ -300,21 +300,21 @@ end;
 procedure showmenu;
 begin
 	clrscr;
-	writeln(' Бинарное дерево');
+	writeln(' ╨С╨╕╨╜╨░╤А╨╜╨╛╨╡ ╨┤╨╡╤А╨╡╨▓╨╛');
 	writeln;
-	writeln('  1) Добавить элемент в дерево');
-	writeln('  2) Распечатать дерево в виде левая ветвь - корень - правая ветвь (ЛКП)');
-	writeln('  3) Распечатать дерево в виде корень - левая ветвь - правая ветвь (КЛП)');
-	writeln('  4) Распечатать дерево в виде левая ветвь - правая ветвь - корень (ЛПК)');
-	writeln('  5) Вывести число вершин дерева');
-	writeln('  6) Вывести число листов дерева');
-	writeln('  7) Удалить элемент из дерева');
-	writeln('  8) Распечатать все вершины на заданном уровне');
-	writeln('  9) Вывести глубину дерева');
-	writeln(' 10) Нарисовать дерево');
-	writeln(' 11) Выход');
+	writeln('  1) ╨Ф╨╛╨▒╨░╨▓╨╕╤В╤М ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨▓ ╨┤╨╡╤А╨╡╨▓╨╛');
+	writeln('  2) ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛ ╨▓ ╨▓╨╕╨┤╨╡ ╨╗╨╡╨▓╨░╤П ╨▓╨╡╤В╨▓╤М - ╨║╨╛╤А╨╡╨╜╤М - ╨┐╤А╨░╨▓╨░╤П ╨▓╨╡╤В╨▓╤М (╨Ы╨Ъ╨Я)');
+	writeln('  3) ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛ ╨▓ ╨▓╨╕╨┤╨╡ ╨║╨╛╤А╨╡╨╜╤М - ╨╗╨╡╨▓╨░╤П ╨▓╨╡╤В╨▓╤М - ╨┐╤А╨░╨▓╨░╤П ╨▓╨╡╤В╨▓╤М (╨Ъ╨Ы╨Я)');
+	writeln('  4) ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛ ╨▓ ╨▓╨╕╨┤╨╡ ╨╗╨╡╨▓╨░╤П ╨▓╨╡╤В╨▓╤М - ╨┐╤А╨░╨▓╨░╤П ╨▓╨╡╤В╨▓╤М - ╨║╨╛╤А╨╡╨╜╤М (╨Ы╨Я╨Ъ)');
+	writeln('  5) ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╤З╨╕╤Б╨╗╨╛ ╨▓╨╡╤А╤И╨╕╨╜ ╨┤╨╡╤А╨╡╨▓╨░');
+	writeln('  6) ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╤З╨╕╤Б╨╗╨╛ ╨╗╨╕╤Б╤В╨╛╨▓ ╨┤╨╡╤А╨╡╨▓╨░');
+	writeln('  7) ╨г╨┤╨░╨╗╨╕╤В╤М ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨╕╨╖ ╨┤╨╡╤А╨╡╨▓╨░');
+	writeln('  8) ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М ╨▓╤Б╨╡ ╨▓╨╡╤А╤И╨╕╨╜╤Л ╨╜╨░ ╨╖╨░╨┤╨░╨╜╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡');
+	writeln('  9) ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╨│╨╗╤Г╨▒╨╕╨╜╤Г ╨┤╨╡╤А╨╡╨▓╨░');
+	writeln(' 10) ╨Э╨░╤А╨╕╤Б╨╛╨▓╨░╤В╤М ╨┤╨╡╤А╨╡╨▓╨╛');
+	writeln(' 11) ╨Т╤Л╤Е╨╛╨┤');
 	writeln;
-	write('Ваш выбор : ');
+	write('╨Т╨░╤И ╨▓╤Л╨▒╨╛╤А : ');
 
 end;
 
@@ -322,20 +322,20 @@ Var Tree:PTree;
 	selection:integer;
 
 begin
-	Tree:=NIL; (* Создать пустое дерево *)
+	Tree:=NIL; (* ╨б╨╛╨╖╨┤╨░╤В╤М ╨┐╤Г╤Б╤В╨╛╨╡ ╨┤╨╡╤А╨╡╨▓╨╛ *)
 	repeat
-		showmenu; (* Вывести на экран меню *)
-		readln(selection);  (* Считать с клавиатуры выбор пользователя *)
+		showmenu; (* ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╨╜╨░ ╤Н╨║╤А╨░╨╜ ╨╝╨╡╨╜╤О *)
+		readln(selection);  (* ╨б╤З╨╕╤В╨░╤В╤М ╤Б ╨║╨╗╨░╨▓╨╕╨░╤В╤Г╤А╤Л ╨▓╤Л╨▒╨╛╤А ╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╨╡╨╗╤П *)
 		writeln;
-		case selection of (* Выполнить действия в соответствии с этим выбором *)
-			1: addelem(Tree,getint('элемент для добавления'));
+		case selection of (* ╨Т╤Л╨┐╨╛╨╗╨╜╨╕╤В╤М ╨┤╨╡╨╣╤Б╤В╨▓╨╕╤П ╨▓ ╤Б╨╛╨╛╤В╨▓╨╡╤В╤Б╤В╨▓╨╕╨╕ ╤Б ╤Н╤В╨╕╨╝ ╨▓╤Л╨▒╨╛╤А╨╛╨╝ *)
+			1: addelem(Tree,getint('╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨┤╨╗╤П ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜╨╕╤П'));
 			2: printLKP_wrapper(Tree);
 			3: printKLP_wrapper(Tree);
 			4: printLPK_wrapper(Tree);
 			5: countels_wrapper(Tree);
 			6: countleafs_wrapper(Tree);
-			7: delelem(Tree,getint('элемент для удаления'));
-			8: printlevel_wrapper(Tree,getint('уровень, который нужно распечатать'));
+			7: delelem(Tree,getint('╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨┤╨╗╤П ╤Г╨┤╨░╨╗╨╡╨╜╨╕╤П'));
+			8: printlevel_wrapper(Tree,getint('╤Г╤А╨╛╨▓╨╡╨╜╤М, ╨║╨╛╤В╨╛╤А╤Л╨╣ ╨╜╤Г╨╢╨╜╨╛ ╤А╨░╤Б╨┐╨╡╤З╨░╤В╨░╤В╤М'));
 			9: countdepth_wrapper(Tree);
             10: drawtree_wrapper(Tree);
 			11:clrscr;

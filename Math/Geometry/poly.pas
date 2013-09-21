@@ -5,13 +5,13 @@
 Program Check_Point_In_Poly;
 Uses Crt;
 
-Type Point = Record   { ⨯ �窠 }
+Type Point = Record   { тип точка }
       x, y : integer;
      End;
 
-Var  PointXY : Point;                 { �஢��塞�� �窠 }
-     Poly    : array[0..24] of Point; { ���ᨢ ���設 �����㣮�쭨�� }
-     C       : integer;               { ���-�� ���設 �����㣮�쭨�� }
+Var  PointXY : Point;                 { проверяемая точка }
+     Poly    : array[0..24] of Point; { массив вершин многоугольника }
+     C       : integer;               { кол-во вершин многоугольника }
      i, j    : integer;
 
 Function Max( Num1, Num2 : integer ) : integer;
@@ -24,7 +24,7 @@ Begin
  If Num1<Num2 then Min:=Num1 else Min:=Num2;
 End;
 
-Procedure EnterData; { ��楤�� ����� ������ }
+Procedure EnterData; { Процедура ввода данных }
 Begin
  Write('Enter poly`s vertex number: '); ReadLn ( C );
  For i:=0 to C-1 do

@@ -1,5 +1,5 @@
 Uses rus;
 begin
-  writeln('ÄÅÇÉÑ');
+  writeln('–ê–ë–í–ì–î');
   ReadLn;
 end.

@@ -1,5 +1,5 @@
-{ сильноветвящиеся деревья }
-{ Красно - черные деревья }
+{ СЃРёР»СЊРЅРѕРІРµС‚РІСЏС‰РёРµСЃСЏ РґРµСЂРµРІСЊСЏ }
+{ РљСЂР°СЃРЅРѕ - С‡РµСЂРЅС‹Рµ РґРµСЂРµРІСЊСЏ }
 
 Program PoiskByTree;
 
@@ -47,7 +47,7 @@ Begin
     rotate := gs;
 End;
 
-Function split(v : rec; m,p,g,gg : link):   link;{Перекрашивает}
+Function split(v : rec; m,p,g,gg : link):   link;{РџРµСЂРµРєСЂР°С€РёРІР°РµС‚}
 Begin
     m^.red := true;
     m^.l^.red := false;

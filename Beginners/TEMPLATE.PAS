@@ -44,22 +44,22 @@ end;
 procedure TIntList.AddItem (num: integer);
 var newelem: PIntList;
 begin
-	newelem := new(PIntList, Init);               (* Создать в памяти новый элемент *)
+	newelem := new(PIntList, Init);               (* РЎРѕР·РґР°С‚СЊ РІ РїР°РјСЏС‚Рё РЅРѕРІС‹Р№ СЌР»РµРјРµРЅС‚ *)
 	newelem^.data:=num;
-	newelem^.next:=top;        (* Присоединить к этому элементу список *)
-	top:=newelem;              (* Вернуть его, как начало нового списка *)
+	newelem^.next:=top;        (* РџСЂРёСЃРѕРµРґРёРЅРёС‚СЊ Рє СЌС‚РѕРјСѓ СЌР»РµРјРµРЅС‚Сѓ СЃРїРёСЃРѕРє *)
+	top:=newelem;              (* Р’РµСЂРЅСѓС‚СЊ РµРіРѕ, РєР°Рє РЅР°С‡Р°Р»Рѕ РЅРѕРІРѕРіРѕ СЃРїРёСЃРєР° *)
 end;
 
 
 procedure PrintList (List: PListObject);
 begin
-	if (list=NIL) then      (* Если список пуст *)
-	   writeln ('Список пуст!') (* Сообщить об этом *)
+	if (list=NIL) then      (* Р•СЃР»Рё СЃРїРёСЃРѕРє РїСѓСЃС‚ *)
+	   writeln ('РЎРїРёСЃРѕРє РїСѓСЃС‚!') (* РЎРѕРѕР±С‰РёС‚СЊ РѕР± СЌС‚РѕРј *)
 	else
-	while (list<>NIL) do	(* Пока текущий элемент списка не последний *)
+	while (list<>NIL) do	(* РџРѕРєР° С‚РµРєСѓС‰РёР№ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР° РЅРµ РїРѕСЃР»РµРґРЅРёР№ *)
 	begin
 	        List^.PrintItem;
-		list:=list^.next;	   (* Перейти к следующему элементу *)
+		list:=list^.next;	   (* РџРµСЂРµР№С‚Рё Рє СЃР»РµРґСѓСЋС‰РµРјСѓ СЌР»РµРјРµРЅС‚Сѓ *)
 	end;
 end;
 

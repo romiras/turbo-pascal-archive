@@ -2,7 +2,7 @@
 unit bitfile2;
 interface
 uses objects;
-const BUF_SIZE=10000 and not($F); {��ࠢ������ �� �࠭��� ��ࠣ��}
+const BUF_SIZE=10000 and not($F); {выравниваем на границу параграфа}
       BITS_IN_REGISTER=16;
 type
       PBuffer=^TBuffer;
@@ -110,7 +110,7 @@ begin
  end;
 end;
 
-(*------���� ��।���� ��� ᦠ⮩ ���ଠ樨----------*)
+(*------Ввод очередного бита сжатой информации----------*)
 function TInputFile.input_bit:integer;
 var t:integer;
 begin
@@ -122,7 +122,7 @@ begin
          inc(garbage_bits);
          if garbage_bits > (BITS_IN_REGISTER - 2) then
          begin
-           writeln('�訡�� � ᦠ⮬ 䠩��');
+           writeln('Ошибка в сжатом файле');
            halt(1);
          end;
       end;
@@ -183,7 +183,7 @@ procedure TOutputFile.putbyte(ch:byte);
         end;
  end;
 
-(*------ �뢮� ��।���� ��� ᦠ⮩ ���ଠ樨 ----------*)
+(*------ Вывод очередного бита сжатой информации ----------*)
 procedure TOutputFile.output_bit(bit:integer);
 begin
   buff:=buff shr 1;
@@ -202,7 +202,7 @@ begin
  for i:=count-1 downto 0 do
   output_bit(integer((bts and (1 shl i))<>0));
 end;
-(*----- ���⪠ ����⮢��� �뢮�� -------------------------*)
+(*----- Очистка побитового вывода -------------------------*)
 procedure TOutputFile.done_outputing_bits;
 var b:byte;
 begin
@@ -210,7 +210,7 @@ begin
   putbyte(b);
 end;
 
-(*------ �뢮� 㪠������� ��� � �⫮������ ࠭�� -----------*)
+(*------ Вывод указанного бита и отложенных ранее -----------*)
 procedure TOutputFile.output_bit_plus_follow(bit:integer);
 begin
    output_bit (bit);

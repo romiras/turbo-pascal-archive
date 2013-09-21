@@ -10,7 +10,7 @@ type pt = ^elem;
 function getelem:byte;
 var s:byte;
 begin
-	write('Введите число : ');
+	write('╨Т╨▓╨╡╨┤╨╕╤В╨╡ ╤З╨╕╤Б╨╗╨╛ : ');
 	readln(s);
 	getelem:=s;
 end;
@@ -18,40 +18,40 @@ end;
 procedure push(var root,tail:pt;info:byte);
 var newelem:pt;
 begin
-	new(newelem);          (* Создать в памяти новый элемент *)       
+	new(newelem);          (* ╨б╨╛╨╖╨┤╨░╤В╤М ╨▓ ╨┐╨░╨╝╤П╤В╨╕ ╨╜╨╛╨▓╤Л╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В *)       
 	newelem^.info:=info;   
-	newelem^.next:=root;   (* Присоединить очередь к этому элементу *)
+	newelem^.next:=root;   (* ╨Я╤А╨╕╤Б╨╛╨╡╨┤╨╕╨╜╨╕╤В╤М ╨╛╤З╨╡╤А╨╡╨┤╤М ╨║ ╤Н╤В╨╛╨╝╤Г ╤Н╨╗╨╡╨╝╨╡╨╜╤В╤Г *)
 	newelem^.prev:=NIL;
-	if (root<>NIL) then			(* Если очередь не пуста *)
-		root^.prev:=newelem			(* Присоединить этот элемент к началу очереди *)
-	else						(* Иначе *)
-		tail:=newelem;				(* Создать новую очередь *)
+	if (root<>NIL) then			(* ╨Х╤Б╨╗╨╕ ╨╛╤З╨╡╤А╨╡╨┤╤М ╨╜╨╡ ╨┐╤Г╤Б╤В╨░ *)
+		root^.prev:=newelem			(* ╨Я╤А╨╕╤Б╨╛╨╡╨┤╨╕╨╜╨╕╤В╤М ╤Н╤В╨╛╤В ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨║ ╨╜╨░╤З╨░╨╗╤Г ╨╛╤З╨╡╤А╨╡╨┤╨╕ *)
+	else						(* ╨Ш╨╜╨░╤З╨╡ *)
+		tail:=newelem;				(* ╨б╨╛╨╖╨┤╨░╤В╤М ╨╜╨╛╨▓╤Г╤О ╨╛╤З╨╡╤А╨╡╨┤╤М *)
 	root:=newelem;          
 end;
 
 procedure pop(var root,tail:pt);
 var temp:pt;
 begin
-	if (tail<>NIL) then			(* Если очередь не пуста *)
+	if (tail<>NIL) then			(* ╨Х╤Б╨╗╨╕ ╨╛╤З╨╡╤А╨╡╨┤╤М ╨╜╨╡ ╨┐╤Г╤Б╤В╨░ *)
 		begin						
-			temp:=tail;				(* Сохранить адрес последнего элемента *)
-			tail:=tail^.prev;		(* Отрезать последний элемент от очереди *)
+			temp:=tail;				(* ╨б╨╛╤Е╤А╨░╨╜╨╕╤В╤М ╨░╨┤╤А╨╡╤Б ╨┐╨╛╤Б╨╗╨╡╨┤╨╜╨╡╨│╨╛ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░ *)
+			tail:=tail^.prev;		(* ╨Ю╤В╤А╨╡╨╖╨░╤В╤М ╨┐╨╛╤Б╨╗╨╡╨┤╨╜╨╕╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨╛╤В ╨╛╤З╨╡╤А╨╡╨┤╨╕ *)
 			if (tail=NIL) then		
 				root:=NIL		
 			else
 				tail^.next:=NIL;
-			writeln('Извлечённое значение : ',temp^.info); (* Вывести на экран значение последнего элемента *)
-			dispose(temp);			(* Убрать последний элемент из памяти *)
+			writeln('╨Ш╨╖╨▓╨╗╨╡╤З╤С╨╜╨╜╨╛╨╡ ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ : ',temp^.info); (* ╨Т╤Л╨▓╨╡╤Б╤В╨╕ ╨╜╨░ ╤Н╨║╤А╨░╨╜ ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛╤Б╨╗╨╡╨┤╨╜╨╡╨│╨╛ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░ *)
+			dispose(temp);			(* ╨г╨▒╤А╨░╤В╤М ╨┐╨╛╤Б╨╗╨╡╨┤╨╜╨╕╨╣ ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨╕╨╖ ╨┐╨░╨╝╤П╤В╨╕ *)
 		end
-	else						(* Иначе, если очередь пуста *)
-		Writeln('Очередь пуста');
+	else						(* ╨Ш╨╜╨░╤З╨╡, ╨╡╤Б╨╗╨╕ ╨╛╤З╨╡╤А╨╡╨┤╤М ╨┐╤Г╤Б╤В╨░ *)
+		Writeln('╨Ю╤З╨╡╤А╨╡╨┤╤М ╨┐╤Г╤Б╤В╨░');
 end;
 
 procedure showmenu;
 begin
 	Writeln (' 1) Push ');
 	Writeln (' 2) Pop ');
-	Writeln (' 3) Выход ');
+	Writeln (' 3) ╨Т╤Л╤Е╨╛╨┤ ');
 	Write(' -> ');
 end;
 
@@ -59,7 +59,7 @@ var root,tail: pt;
 	selection : byte;
 
 begin
-	Writeln (' FIFO. Динамическая реализация ');
+	Writeln (' FIFO. ╨Ф╨╕╨╜╨░╨╝╨╕╤З╨╡╤Б╨║╨░╤П ╤А╨╡╨░╨╗╨╕╨╖╨░╤Ж╨╕╤П ');
 	root:=NIL;
 	repeat				
 		showmenu;

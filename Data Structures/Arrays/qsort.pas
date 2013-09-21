@@ -9,7 +9,7 @@ procedure GetArray(var arr:Tarr; var arrsize:integer);
 var i:integer;
 begin
 {
-	write('Ç¢•§®‚• ‡†ß¨•‡ ¨†··®¢†, ™Æ‚Æ‡Î© ≠„¶≠Æ Æ‚·Æ‡‚®‡Æ¢†‚Ï (',1,'..',MaxArrSize,') : ');
+	write('–í–≤–µ–¥–∏—Ç–µ —Ä–∞–∑–º–µ—Ä –º–∞—Å—Å–∏–≤–∞, –∫–æ—Ç–æ—Ä—ã–π –Ω—É–∂–Ω–æ –æ—Ç—Å–æ—Ä—Ç–∏—Ä–æ–≤–∞—Ç—å (',1,'..',MaxArrSize,') : ');
 	readln(arrsize);
 }
 	arrsize:=MaxArrSize;
@@ -75,14 +75,14 @@ var arr:TArr;
 
 begin
 	clrscr;
-	writeln('ÅÎ·‚‡†Ô ·Æ‡‚®‡Æ¢™† ¨†··®¢†.');
+	writeln('–ë—ã—Å—Ç—Ä–∞—è —Å–æ—Ä—Ç–∏—Ä–æ–≤–∫–∞ –º–∞—Å—Å–∏–≤–∞.');
 	GetArray(Arr,ArrSize);
 	clrscr;
-	writeln('à·ÂÆ§≠Î© ¨†··®¢ : ');
+	writeln('–ò—Å—Ö–æ–¥–Ω—ã–π –º–∞—Å—Å–∏–≤ : ');
 	PrintArray(Arr,Arrsize);
 	quicksort(Arr,1,Arrsize);
-	writeln('é‚·Æ‡‚®‡Æ¢†≠≠Î© ¨†··®¢ : ');
+	writeln('–û—Ç—Å–æ—Ä—Ç–∏—Ä–æ–≤–∞–Ω–Ω—ã–π –º–∞—Å—Å–∏–≤ : ');
 	PrintArray(Arr,Arrsize);
-	writeln('ç†¶¨®‚• ´Ó°„Ó ™´†¢®Ë„ §´Ô ¢ÎÂÆ§†.');
+	writeln('–ù–∞–∂–º–∏—Ç–µ –ª—é–±—É—é –∫–ª–∞–≤–∏—à—É –¥–ª—è –≤—ã—Ö–æ–¥–∞.');
 	readkey;
 end.

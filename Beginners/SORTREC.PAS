@@ -4,10 +4,10 @@ const N = 4;
 type
    TInfo = record
      Name: string [40];
-     Age:  integer; { возраст }
+     Age:  integer; { РІРѕР·СЂР°СЃС‚ }
    end;
 
-   List = array [1..N] of TInfo; { массив записей содержит возраст и имя }
+   List = array [1..N] of TInfo; { РјР°СЃСЃРёРІ Р·Р°РїРёСЃРµР№ СЃРѕРґРµСЂР¶РёС‚ РІРѕР·СЂР°СЃС‚ Рё РёРјСЏ }
 
 var
   F: file of TInfo;
@@ -18,7 +18,7 @@ begin { Main }
 
      Assign (F, 'shop.dat');
      rewrite (F);
-     { заполнение массива записей }
+     { Р·Р°РїРѕР»РЅРµРЅРёРµ РјР°СЃСЃРёРІР° Р·Р°РїРёСЃРµР№ }
      for I := 1 to N do
      with Rec do
      begin
@@ -30,7 +30,7 @@ begin { Main }
 
      Close (F);
 (*
-      { форматированный вывод на экран массива записей }
+      { С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РЅР° СЌРєСЂР°РЅ РјР°СЃСЃРёРІР° Р·Р°РїРёСЃРµР№ }
      writeln;
      writeln ('Name' : 40, 'Age' : 10);
      for I := 1 to 40 do write ('=');

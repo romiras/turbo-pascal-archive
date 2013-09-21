@@ -1,9 +1,9 @@
 
 const
-  eps = 1e-8; // точность
+  eps = 1e-8; // С‚РѕС‡РЅРѕСЃС‚СЊ
 
 function Power (base: double; N: integer): double;
-// степень N по основанию base
+// СЃС‚РµРїРµРЅСЊ N РїРѕ РѕСЃРЅРѕРІР°РЅРёСЋ base
 var k: integer;
     P: double;
 begin

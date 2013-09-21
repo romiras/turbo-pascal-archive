@@ -1,3 +1,4 @@
+(* encoding: CP866 (Cyrillic DOS/OEM) *)
 (*
 Function OemToAnsi(S:String):String;
 { DOS -> WIN }

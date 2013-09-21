@@ -37,7 +37,7 @@ end;
 function getelem(elname:string):TWord;
 var s:TWord;
 begin
-	write('Введите ',elname,' : ');
+	write('╨Т╨▓╨╡╨┤╨╕╤В╨╡ ',elname,' : ');
 	readln(s);
         getelem:=s;
 end;
@@ -88,29 +88,29 @@ begin
 		read(hash,temp)
 	until (temp=EmptyElem) or (temp=elem);
 	if (temp=elem) then
-		writeln('Элемент существует в хеше.')
+		writeln('╨н╨╗╨╡╨╝╨╡╨╜╤В ╤Б╤Г╤Й╨╡╤Б╤В╨▓╤Г╨╡╤В ╨▓ ╤Е╨╡╤И╨╡.')
 	else
-		writeln('Элемент не существует в хеше.');
+		writeln('╨н╨╗╨╡╨╝╨╡╨╜╤В ╨╜╨╡ ╤Б╤Г╤Й╨╡╤Б╤В╨▓╤Г╨╡╤В ╨▓ ╤Е╨╡╤И╨╡.');
 end;
 
 Procedure Showmenu;
 begin
 	Writeln;
-	Writeln('Хеш с линейным разрешением коллизий');
-	Writeln('1) Добавить элемент в хеш');
-	Writeln('2) Поиск элемента в хеше');
-	Writeln('3) Выход');
+	Writeln('╨е╨╡╤И ╤Б ╨╗╨╕╨╜╨╡╨╣╨╜╤Л╨╝ ╤А╨░╨╖╤А╨╡╤И╨╡╨╜╨╕╨╡╨╝ ╨║╨╛╨╗╨╗╨╕╨╖╨╕╨╣');
+	Writeln('1) ╨Ф╨╛╨▒╨░╨▓╨╕╤В╤М ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨▓ ╤Е╨╡╤И');
+	Writeln('2) ╨Я╨╛╨╕╤Б╨║ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░ ╨▓ ╤Е╨╡╤И╨╡');
+	Writeln('3) ╨Т╤Л╤Е╨╛╨┤');
 	Writeln;
-	Write(' Ваш выбор : ');
+	Write(' ╨Т╨░╤И ╨▓╤Л╨▒╨╛╤А : ');
 end;
 
 Var Hash:THash;
 	selection:integer;
 
 begin
-	Writeln('Инициализация хеша...');
+	Writeln('╨Ш╨╜╨╕╤Ж╨╕╨░╨╗╨╕╨╖╨░╤Ж╨╕╤П ╤Е╨╡╤И╨░...');
 	if (not (InitHash(Hash))) then
-		writeln('Не могу инициализировать хеш!')
+		writeln('╨Э╨╡ ╨╝╨╛╨│╤Г ╨╕╨╜╨╕╤Ж╨╕╨░╨╗╨╕╨╖╨╕╤А╨╛╨▓╨░╤В╤М ╤Е╨╡╤И!')
 	else
 		begin
 			repeat
@@ -118,8 +118,8 @@ begin
 				readln(selection);
 				writeln;
 				case selection of
-					1: add2hash(Hash,getelem('слово для добавления'));
-					2: searchhashelem(Hash,getelem('слово для поиска'));
+					1: add2hash(Hash,getelem('╤Б╨╗╨╛╨▓╨╛ ╨┤╨╗╤П ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜╨╕╤П'));
+					2: searchhashelem(Hash,getelem('╤Б╨╗╨╛╨▓╨╛ ╨┤╨╗╤П ╨┐╨╛╨╕╤Б╨║╨░'));
 				end;
 			until selection=3;
 			DeInitHash(Hash);

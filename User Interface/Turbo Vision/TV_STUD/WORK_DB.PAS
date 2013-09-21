@@ -19,14 +19,14 @@ uses App, MsgBox, studobj, TV_obj;
 
 
 procedure AbortMsg (msg: string);
- { Вывести сообщение об ошибке и выйти из программы }
+ { Р’С‹РІРµСЃС‚Рё СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ Рё РІС‹Р№С‚Рё РёР· РїСЂРѕРіСЂР°РјРјС‹ }
 begin
      MessageBox (msg ,nil, mfError+ mfOkButton);
 end;
 
 
 procedure CreateCollection (FN: string);
- { Создать коллекцию. Информация о фамилиях берется из текстового файла. }
+ { РЎРѕР·РґР°С‚СЊ РєРѕР»Р»РµРєС†РёСЋ. РРЅС„РѕСЂРјР°С†РёСЏ Рѕ С„Р°РјРёР»РёСЏС… Р±РµСЂРµС‚СЃСЏ РёР· С‚РµРєСЃС‚РѕРІРѕРіРѕ С„Р°Р№Р»Р°. }
 var
   SI: PStudentInfo;
   Rec: TRecord;
@@ -40,7 +40,7 @@ begin
   {$I+}
   if IOresult <> 0 then
   begin
-       AbortMsg ('Can''t open file ' + FN); { Файл не найден }
+       AbortMsg ('Can''t open file ' + FN); { Р¤Р°Р№Р» РЅРµ РЅР°Р№РґРµРЅ }
        exit
   end;
 
@@ -48,15 +48,15 @@ begin
   randomize;
   while not eof (F) do
   begin
-       readln (F, s); { Чтение строки с именем }
+       readln (F, s); { Р§С‚РµРЅРёРµ СЃС‚СЂРѕРєРё СЃ РёРјРµРЅРµРј }
        with Rec do
        begin
          Name := s;
          Mark := random (80)+21; {1..100}
        end;
-       SI := New (PStudentInfo,Init);  { Создаем "карточку" студента }
+       SI := New (PStudentInfo,Init);  { РЎРѕР·РґР°РµРј "РєР°СЂС‚РѕС‡РєСѓ" СЃС‚СѓРґРµРЅС‚Р° }
        SI^.TransferRecord := Rec;
-       PC^.Insert (SI); { Вставляем данные о студенте в коллекцию }
+       PC^.Insert (SI); { Р’СЃС‚Р°РІР»СЏРµРј РґР°РЅРЅС‹Рµ Рѕ СЃС‚СѓРґРµРЅС‚Рµ РІ РєРѕР»Р»РµРєС†РёСЋ }
   end;
 
   close (F);
@@ -65,17 +65,17 @@ end;
 
 
 procedure LoadCollection (FN: string);
- { Загрузка сохраненной раннее коллекции из бинарного файла коллекции }
+ { Р—Р°РіСЂСѓР·РєР° СЃРѕС…СЂР°РЅРµРЅРЅРѕР№ СЂР°РЅРЅРµРµ РєРѕР»Р»РµРєС†РёРё РёР· Р±РёРЅР°СЂРЅРѕРіРѕ С„Р°Р№Р»Р° РєРѕР»Р»РµРєС†РёРё }
 var
   FS: TBufStream;
 begin
   FS.Init (FN, stOpen,1024);
   if FS.Status <> stOK then
   begin
-       AbortMsg ('File not found.'); { Файл не найден }
+       AbortMsg ('File not found.'); { Р¤Р°Р№Р» РЅРµ РЅР°Р№РґРµРЅ }
        exit
   end;
-  PC := PStudentsColl (FS.Get); { Вставить коллекцию из файла  }
+  PC := PStudentsColl (FS.Get); { Р’СЃС‚Р°РІРёС‚СЊ РєРѕР»Р»РµРєС†РёСЋ РёР· С„Р°Р№Р»Р°  }
   FS.Done;
   if FS.Status <> stOK then
      AbortMsg ('Error of loading collection.');
@@ -83,15 +83,15 @@ end;
 
 
 procedure SaveCollection (FN: string);
- { Сохранить коллекцию в файл }
+ { РЎРѕС…СЂР°РЅРёС‚СЊ РєРѕР»Р»РµРєС†РёСЋ РІ С„Р°Р№Р» }
 var
   FS: TBufStream;
 begin
-  FS.Init (FN, stCreate,1024); { Открываем файл коллекции на создание }
-  FS.Put (PC); { Вставляем коллекцию в файл }
-  FS.Done; { Закрываем работу с потоком }
+  FS.Init (FN, stCreate,1024); { РћС‚РєСЂС‹РІР°РµРј С„Р°Р№Р» РєРѕР»Р»РµРєС†РёРё РЅР° СЃРѕР·РґР°РЅРёРµ }
+  FS.Put (PC); { Р’СЃС‚Р°РІР»СЏРµРј РєРѕР»Р»РµРєС†РёСЋ РІ С„Р°Р№Р» }
+  FS.Done; { Р—Р°РєСЂС‹РІР°РµРј СЂР°Р±РѕС‚Сѓ СЃ РїРѕС‚РѕРєРѕРј }
   if FS.Status <> stOK then
-     AbortMsg ('Error while saving collection!'); { Произошла ошибка при сохранении коллекции }
+     AbortMsg ('Error while saving collection!'); { РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° РїСЂРё СЃРѕС…СЂР°РЅРµРЅРёРё РєРѕР»Р»РµРєС†РёРё }
 end;
 
 

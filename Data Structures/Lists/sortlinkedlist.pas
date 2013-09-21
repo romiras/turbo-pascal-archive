@@ -5,28 +5,28 @@ type
 		next : PList;
 	end;
 
-// сортировка односвязного списка
+// СЃРѕСЂС‚РёСЂРѕРІРєР° РѕРґРЅРѕСЃРІСЏР·РЅРѕРіРѕ СЃРїРёСЃРєР°
 procedure sortList(head:PList);  
 var p1, p2, pm, lpm, lp, p : PList;  
 begin  
    p1 := head.next;  
    p2 := head;  
    while p1 <> nil do begin  
-      // Поиск минимального элемента  
+      // РџРѕРёСЃРє РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р°  
       pm := p1; lpm := nil; p := p1; lp := nil;  
       while p <> nil do begin  
          if p.a <= pm.a then begin  
             pm := p;  
-            lpm := lp;  // Запоминаем предыдущий  
+            lpm := lp;  // Р—Р°РїРѕРјРёРЅР°РµРј РїСЂРµРґС‹РґСѓС‰РёР№  
          end;  
          lp := p;  
          p := p.next;  
       end;  
-      // Минимальный элемент убираем из списка  
+      // РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ СѓР±РёСЂР°РµРј РёР· СЃРїРёСЃРєР°  
       if lpm = nil  
       then p1 := pm.next  
       else lpm.next := pm.next;  
-      // и помещаем в новый список  
+      // Рё РїРѕРјРµС‰Р°РµРј РІ РЅРѕРІС‹Р№ СЃРїРёСЃРѕРє  
       p2.next := pm;  
       p2 := p2.next;  
       p2.next := nil;  
