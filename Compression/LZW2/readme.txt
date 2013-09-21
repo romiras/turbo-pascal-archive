@@ -1,0 +1,1 @@
+LZW 12-bit Coder/DeCoder with variable code length.
