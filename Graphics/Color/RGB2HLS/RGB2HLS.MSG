@@ -1,0 +1,19 @@
+Д 4INT ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД It's interesting Д
+ Msg  : 36 of 202                            Addr                        Date
+ From : Dmitry Karasik                2:464/46.36                      25.04.97
+ Subj : ЏаҐ®Ўа §®ў ­ЁҐ RGB <-> HLS
+ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
+Гґeііo Kolya!
+і` ``
+`
+—Ґв ЂЇp 17 1997 18:56, Kolya Nesterov wrote to All:
+
+ KN> ­г¦Ґ­ ЇpЁ­жлЇ ЇҐpҐЄ®¤Ёp®ўЄЁ Ё§ RGB (­ ¤Ґобм §­ ов ўбҐ) 
+ KN> ў HLS (Hue-Luminance-Saturation))
+
+    „Ґа¦Ё:
+                               ‘ ­ Ё«гзиЁ¬Ё, Dmitry
+
+--- ЃҐиҐ­л© Њ ­мпЄ 2.50+
+ * Origin: Remember - Crazy Chickatilo's watching you! (2:464/46.36)
+
