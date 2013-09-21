@@ -1,0 +1,14 @@
+The LZSS program implements a turbo pascal wrapper I've placed around a
+very nice (and fast) implementation of the LZ77 algorithm submitted to the
+DR DOBBS compression contest a few years back by Andy Tam.
+
+The algorithm is implemented in the context of a stand-alone file
+compression utility, which can be used to compress/decompress files
+one at a time.
+
+It should be noted that the plain LZ77 algorithm is unpatented, so using
+this code in a commercial application should be OK.
+
+Douglas P. Webb
+dwebb@binkley.cs.mcgill.ca
+

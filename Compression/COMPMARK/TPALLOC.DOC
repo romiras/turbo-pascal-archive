@@ -1,0 +1,90 @@
+TPALLOC - Routines for allocating blocks of memory larger than 64K
+------------------------------------------------------------------
+Brian Foley
+TurboPower Software
+Compuserve [76317,3247]
+11/88
+Version 1.0
+Released to the public domain
+
+Overview
+------------------------------------------------------------------------------
+
+TPALLOC contains routines that allow you to allocate and deallocate blocks of
+memory larger than 64K using Turbo Pascal 4.0 or 5.0. Whether or not these
+routines will be of use to you is hard to say. On the one hand, their
+usefulness is severely limited by the fact that Turbo Pascal does not allow
+you to declare data structures larger than 64K (actually 65521 bytes). So it
+will be up to you to manipulate huge data structures allocated with TPALLOC.
+On the other hand, we know these routines *can* be useful in some cases. After
+all, we wrote them because we needed them for our own software. In any event,
+we didn't feel any overwhelming need to keep these routines to ourselves, and
+you are welcome to use them if you can.
+
+See DEMO.PAS for a demonstration of how to use TPALLOC.
+
+Using TPALLOC
+------------------------------------------------------------------------------
+
+TPALLOC interfaces the following types and procedures:
+
+type
+  SegOfs =
+    record
+      Ofst, Segm : Word;
+    end;
+
+  This record structure is used to separate a 32-bit pointer into its
+  component parts.
+
+procedure HugeGetMem(var Pt; Bytes : LongInt);
+
+  This routine allocates a block of memory of size Bytes and stores a pointer
+  to it in Pt (a pointer variable of some sort). Pt will be set to nil if
+  Bytes > MaxAvail. HugeGetMem is essentially identical to GetMem except that
+  it can allocate blocks of memory larger than 64K. (It can also allocate
+  blocks less than 64K, of course.)
+
+procedure HugeFreeMem(var Pt; Bytes : LongInt);
+
+  This routine deallocates a block of memory of size Bytes pointed to by Pt (a
+  pointer variable of some sort). Pt is set to nil on exit. HugeFreeMem does
+  nothing if Pt is nil to begin with. HugeFreeMem is essentially identical to
+  FreeMem except that it can deallocate blocks of memory larger than 64K. (It
+  can also deallocate blocks less than 64K, of course.)
+
+The following routines are used internally, but they're interfaced in case you
+need or want to use them. They are especially useful when performing pointer
+arithmetic, something you'll probably need to do if you're working with data
+structures larger than 64K.
+
+function Linear(P : Pointer) : LongInt;
+
+  Converts a pointer to a linear address to allow differences in addresses to
+  be calculated. The pointer must be in the range $0:$0 to $FFFF:$000F.
+
+function LinearToPointer(L : LongInt) : Pointer;
+
+  Returns linear address L as a normalized pointer.
+
+function PtrDiff(P1, P2 : Pointer) : LongInt;
+
+  Returns the number of bytes between P1^ and P2^. The order of P1 and P2 is
+  not important.
+
+function Normalized(P : Pointer) : Pointer;
+
+  Returns P as a normalized pointer. Not used in TPALLOC, but useful when
+  doing pointer arithmetic.
+
+Limitations
+------------------------------------------------------------------------------
+
+It is perfectly safe to use HugeGetMem and HugeFreeMem in combination with
+Turbo Pascal's standard memory management routines. Both routines keep the
+heap manager's free list in order, and they rely on no status variables other
+than those used by Turbo Pascal itself (HeapPtr, FreePtr, and FreeMin). The
+only limitation of these routines that we are currently aware of is that
+HugeFreeMem does not check to make sure that the pointer variable passed to it
+is valid. (It does check for a nil pointer, however, as noted above.)
+

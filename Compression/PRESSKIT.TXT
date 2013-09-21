@@ -1,0 +1,91 @@
+                -------- Presskit Version 1.0
+                -------- May 8th - 1993
+                -------- Douglas P. Webb
+                -------- dwebb@binkley.cs.mcgill.ca
+
+
+I have for several years had an application that required the very best
+compression. The program is written in Turbo Pascal. Naturally almost
+all the code I've come across is written in C, so I've ported as much as
+I could.  Of the code presented here, only the DOUGPACK unit is wholely
+my own original code, the rest was ported/wrapped to allow it's use in
+a Turbo Pascal.  I figured others might like to try some of it out.
+
+The code is all donated to the public domain, although some of it may
+be under the patent cloud. There may be bugs in the implementations
+(although I don't think so) so use them at your own risk.
+
+
+If you make a notable improvement in the code, please mail me a copy.
+
+
+
+LZH
+
+  The LZH unit implements a fairly faithful port of an algorithm that
+  was written in C by Haruyasu Yoshizaki and Haruhiko Okumura.
+
+  The Documentation on how to use the unit is pretty goodm the source
+  code is pretty much undocumented.
+
+  Included is a simple 1 file compression program as a demonstration
+  on how to use the LZH unit.
+
+
+LZW  (DOUGPACK)
+
+  The DOUGPACK unit implements my own interpretation of how the LZW
+  algorithm should be implemented. I take all the credit/blame for
+  the implementation and any bugs it may contain.
+
+  The Documentation on how to use the unit is pretty good the source
+  code has some documentation but is pretty convoluted.
+
+  Included is a simple 1 file compression program as a demonstration
+  on how to use this unit.
+
+  It should be noted that the LZW algorithm is patented, so use of this
+  algorithm in a commercial program might not be a good idea.
+
+
+LZSS
+
+  The LZSS program implements a turbo pascal wrapper I've placed around
+  a very nice (and fast) implementation of the LZ77 algorithm submitted
+  to the DR DOBBS compression contest a few years back by Andy Tam.
+
+  The algorithm is implemented in the context of a stand-alone file
+  compression utility, which can be used to compress/decompress files
+  one at a time.
+
+  It should be noted that the plain LZ77 algorithm is unpatented, so
+  using this code in a commercial application should be OK.
+
+
+SIXPACK
+
+  The SIXPACK program implements a faithful port from C of a unique
+  compression algorithm submitted to the DR DOBBS compression contest
+  a few years back by Philip G. Gage.
+
+  The algorithm is implemented in the context of a stand-alone file
+  compression utility, which can be used to compress/decompress files
+  one at a time.
+
+
+VITTER
+
+  This is a implementation of the dynamic Huffman coding algorithm
+  presented by Jeffrey Scott Vitter in ACM Transactions on Mathematical
+  Software, Vol, 15, June 1989, p 158, and described in Journal of the
+  ACM, Vol. 34, October 1987, p 825.
+
+  The algorithm is implemented in the context of a stand-alone file
+  compression utility, which can be used to compress/decompress files
+  one at a time. This program serves only to illustrate the use of
+  the algorithm.
+
+
+Douglas P. Webb
+dwebb@binkley.cs.mcgill.ca
+May 8th 1993

@@ -1,0 +1,13 @@
+The LZH unit implements a fairly faithful port of an algorithm that was
+written in C by Haruyasu Yoshizaki and Haruhiko Okumura. 
+
+The Documentation on how to use the unit is pretty goodm the source code
+is pretty much undocumented.
+
+Included is a simple 1 file compression program as a demonstration
+on how to use the LZH unit.
+
+
+Douglas P. Webb
+dwebb@binkley.cs.mcgill.ca
+

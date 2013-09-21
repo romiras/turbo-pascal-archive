@@ -1,0 +1,28 @@
+The SIXPACK program implements a faithful port from C of a unique
+compression algorithm submitted to the DR DOBBS compression contest
+a few years back by Philip G. Gage.
+
+The algorithm is implemented in the context of a stand-alone file
+compression utility, which can be used to compress/decompress files
+one at a time.
+
+
+
+NOTE: There is a statement in sixpack:
+
+CONST
+  MaxDistance : Integer = CopyMax[PRED(COPYRANGES)];
+
+  which causes the TP7 compiler to give the error "cannot evaluate
+  this expression".  I have no idea why, but so long as you don't
+  change anything else, you can hard code the value to be:
+
+CONST
+  MaxDistance : integer = 21839;
+
+  TP6 does not have this problem.
+
+
+Douglas P. Webb
+dwebb@binkley.cs.mcgill.ca
+
